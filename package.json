@@ -1,0 +1,57 @@
+{
+  "name": "maldives-reports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "ts-node": "ts-node --transpile-only --compiler-options '{\"esModuleInterop\":true, \"module\":\"commonjs\"}'",
+    "test": "geoprocessing test",
+    "add:template": "geoprocessing add:template",
+    "create:function": "geoprocessing create:function",
+    "create:client": "geoprocessing create:client",
+    "start:client": "geoprocessing start:client",
+    "synth": "geoprocessing synth",
+    "bootstrap": "geoprocessing bootstrap",
+    "deploy": "geoprocessing deploy",
+    "build": "geoprocessing build:lambda && geoprocessing build:client",
+    "build:client": "geoprocessing build:client",
+    "build:lambda": "geoprocessing build:lambda",
+    "storybook": "geoprocessing storybook",
+    "url": "geoprocessing url",
+    "clear-results": "geoprocessing clear-results",
+    "clear-all-results": "geoprocessing clear-all-results"
+  },
+  "keywords": [
+    "@seasketch/geoprocessing"
+  ],
+  "dependencies": {
+    "@turf/area": "^6.3.0",
+    "@turf/bbox": "^6.3.0",
+    "@turf/bbox-clip": "^6.3.0",
+    "@turf/combine": "^6.3.0",
+    "@turf/flatten": "^6.3.0",
+    "@turf/helpers": "^6.3.0",
+    "@turf/invariant": "^6.3.0",
+    "union-subdivided-polygons": "^0.9.1"
+  },
+  "devDependencies": {
+    "@seasketch/geoprocessing": "0.12.2-alpha.29",
+    "@turf/boolean-disjoint": "6.3.0",
+    "@turf/boolean-valid": "6.3.0"
+  },
+  "repositoryUrl": "https://github.com/mcclintock-lab/maldives-reports",
+  "author": "Tim Welch",
+  "license": "MIT",
+  "templates": [
+    "gp-area",
+    "gp-clip-ocean"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcclintock-lab/maldives-reports.git"
+  },
+  "homepage": "https://github.com/mcclintock-lab/maldives-reports#readme",
+  "bugs": {
+    "url": "https://github.com/mcclintock-lab/maldives-reports/issues"
+  }
+}

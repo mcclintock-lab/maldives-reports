@@ -1,0 +1,18 @@
+{
+  "author": "Tim Welch <tim.j.welch@gmail.com>",
+  "organization": "",
+  "region": "ap-south-1",
+  "clients": [
+    {
+      "name": "Area",
+      "description": "Calculates sketch area stats",
+      "source": "src/clients/Area.tsx"
+    }
+  ],
+  "preprocessingFunctions": [
+    "src/functions/clipToOceanEez.ts"
+  ],
+  "geoprocessingFunctions": [
+    "src/functions/area.ts"
+  ]
+}
