@@ -5,7 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "ts-node": "ts-node --transpile-only --compiler-options '{\"esModuleInterop\":true, \"module\":\"commonjs\"}'",
-    "test": "geoprocessing test",
+    "start-data": "http-server data/dist -c-1 --silent",
+    "__test": "geoprocessing test",
+    "test": "npm run test:unit && npm run test:smoke",
+    "test:unit": "npm run __test -- --group=unit",
+    "test:smoke": "start-server-and-test start-data 8080 'npm run __test -- --runInBand --group=smoke'",
     "add:template": "geoprocessing add:template",
     "create:function": "geoprocessing create:function",
     "create:client": "geoprocessing create:client",
@@ -34,12 +38,16 @@
     "@turf/flatten": "^6.3.0",
     "@turf/helpers": "^6.3.0",
     "@turf/invariant": "^6.3.0",
+    "geoblaze": "^0.3.2",
+    "georaster": "1.0.3",
+    "simple-statistics": "^7.7.0",
     "union-subdivided-polygons": "^0.9.1"
   },
   "devDependencies": {
     "@seasketch/geoprocessing": "0.12.2-alpha.29",
     "@turf/boolean-disjoint": "6.3.0",
-    "@turf/boolean-valid": "6.3.0"
+    "@turf/boolean-valid": "6.3.0",
+    "start-server-and-test": "^1.12.5"
   },
   "repositoryUrl": "https://github.com/mcclintock-lab/maldives-reports",
   "author": "Tim Welch",

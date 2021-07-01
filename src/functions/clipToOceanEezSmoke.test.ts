@@ -1,3 +1,6 @@
+/**
+ * @group smoke
+ */
 import { clipToOceanEez } from "./clipToOceanEez";
 import {
   getExampleSketches,
