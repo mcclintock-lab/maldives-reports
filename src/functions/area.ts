@@ -1,30 +1,37 @@
 import {
   Sketch,
   SketchCollection,
+  Feature,
+  FeatureCollection,
   GeoprocessingHandler,
   sketchArea,
 } from "@seasketch/geoprocessing";
-import bbox from "@turf/bbox";
-import { AllGeoJSON, BBox } from "@turf/helpers";
+
+import { STUDY_REGION_AREA_SQ_METERS } from "../functions/areaConstants";
 
 export interface AreaResults {
   /** area of the sketch in square meters */
   area: number;
-  bbox: BBox;
+  /** Percentage of the overall planning area */
+  percPlanningArea: number;
+  /** Unit of measurement for area value */
+  areaUnit: string;
 }
 
 export async function area(
-  sketch: Sketch | SketchCollection
+  feature: Sketch | SketchCollection | Feature | FeatureCollection
 ): Promise<AreaResults> {
+  const area = sketchArea(feature);
   return {
-    area: sketchArea(sketch),
-    bbox: bbox(sketch as AllGeoJSON),
+    area,
+    percPlanningArea: area / STUDY_REGION_AREA_SQ_METERS,
+    areaUnit: "square meters",
   };
 }
 
 export default new GeoprocessingHandler(area, {
   title: "area",
-  description: "Produces the area of the given sketch",
+  description: "Calculates area stats",
   timeout: 2, // seconds
   executionMode: "sync",
   // Specify any Sketch Class form attributes that are required
