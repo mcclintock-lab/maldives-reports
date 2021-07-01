@@ -39,7 +39,7 @@ export async function clipLand(feature: Feature<Polygon | MultiPolygon>) {
 
 export async function clipOutsideEez(
   feature: Feature<Polygon | MultiPolygon>,
-  eezFilterByNames: string[] = []
+  eezFilterByNames: string[] = ["Maldives"]
 ) {
   let eezFeatures = await SubdividedEezLandUnionSource.fetch(bbox(feature));
   // Optionally filter down to a single country/union EEZ boundary
@@ -47,6 +47,7 @@ export async function clipOutsideEez(
     eezFeatures = eezFeatures.filter((e) =>
       eezFilterByNames.includes(e.properties.UNION)
     );
+    if (eezFeatures.length === 0) return null;
   }
   const combined = combine(fc(eezFeatures))
     .features[0] as Feature<MultiPolygon>;

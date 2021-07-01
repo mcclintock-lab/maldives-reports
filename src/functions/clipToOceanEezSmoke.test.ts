@@ -1,6 +1,6 @@
 import { clipToOceanEez } from "./clipToOceanEez";
 import {
-  getExampleFeatures,
+  getExampleSketches,
   writeResultOutput,
 } from "@seasketch/geoprocessing/scripts/testing";
 import { ValidationError } from "@seasketch/geoprocessing";
@@ -12,7 +12,7 @@ describe("Basic smoke tests", () => {
   });
 
   test("clipToOceanEez", async () => {
-    const examples = await getExampleFeatures("gp-clip-ocean");
+    const examples = await getExampleSketches("maldives-");
     for (const example of examples) {
       try {
         const result = await clipToOceanEez(example);
