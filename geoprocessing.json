@@ -20,6 +20,7 @@
   "geoprocessingFunctions": [
     "src/functions/area.ts",
     "src/functions/minWidth.ts",
-    "src/functions/bathymetry.ts"
+    "src/functions/bathymetry.ts",
+    "src/functions/habitat.ts"
   ]
 }

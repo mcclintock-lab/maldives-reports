@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import SegmentControl from "../components/SegmentControl";
 import Overview from "./Overview";
+import Biological from "./Biological";
 
 const enableAllTabs = false;
-const HawaiiReports = () => {
+const AllReport = () => {
   const [tab, setTab] = useState<string>("Overview");
   return (
     <>
@@ -11,12 +12,13 @@ const HawaiiReports = () => {
         <SegmentControl
           value={tab}
           onClick={(segment) => setTab(segment)}
-          segments={["Overview"]}
+          segments={["Overview", "Biological"]}
         />
       </div>
       <Overview hidden={!enableAllTabs && tab !== "Overview"} />
+      <Biological hidden={!enableAllTabs && tab !== "Biological"} />
     </>
   );
 };
 
-export default HawaiiReports;
+export default AllReport;

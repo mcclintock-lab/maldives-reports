@@ -8,6 +8,11 @@ const Percent = new Intl.NumberFormat("en", {
   maximumFractionDigits: 1,
 });
 
+const formatDepth = (val: number) => {
+  const baseVal = Math.abs(parseInt(val.toString()));
+  return val <= 0 ? `${baseVal}m` : `+${baseVal}m`;
+};
+
 const BathymetryCard = () => (
   <ResultsCard title="Depth" functionName="bathymetry">
     {(data: BathymetryResults) => {
@@ -16,9 +21,9 @@ const BathymetryCard = () => (
           <KeySection
             style={{ display: "flex", justifyContent: "space-around" }}
           >
-            <span>Min: {data.min}m</span>
-            <span>Mean: {parseInt(`${data.mean}`)}m</span>
-            <span>Max: {data.max}m</span>
+            <span>Min: {formatDepth(data.max)}</span>
+            <span>Avg: {formatDepth(data.mean)}</span>
+            <span>Max: {formatDepth(data.min)}</span>
           </KeySection>
         </>
       );

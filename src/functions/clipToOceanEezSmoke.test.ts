@@ -35,5 +35,5 @@ describe("Basic smoke tests", () => {
         }
       }
     }
-  });
+  }, 60000);
 });

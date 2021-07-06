@@ -1,0 +1,42 @@
+{
+  "totalArea": 2915588727.711079,
+  "areaByType": [
+    {
+      "class": "Coral/Algae",
+      "totalArea": 675242446.511769,
+      "percArea": 0.231597,
+      "sketchArea": 42109162.30543
+    },
+    {
+      "class": "Rock",
+      "totalArea": 581561066.258582,
+      "percArea": 0.199466,
+      "sketchArea": 26465242.562523
+    },
+    {
+      "class": "Seagrass",
+      "totalArea": 118357178.400579,
+      "percArea": 0.040595,
+      "sketchArea": 7718754.872503
+    },
+    {
+      "class": "Sand",
+      "totalArea": 930819938.082483,
+      "percArea": 0.319256,
+      "sketchArea": 60229114.625781
+    },
+    {
+      "class": "Rubble",
+      "totalArea": 589781933.763336,
+      "percArea": 0.202286,
+      "sketchArea": 22983955.874886
+    },
+    {
+      "class": "Microalgal Mats",
+      "totalArea": 19826164.694331,
+      "percArea": 0.0068,
+      "sketchArea": 1750460.680402
+    }
+  ],
+  "areaUnit": "square meters"
+}

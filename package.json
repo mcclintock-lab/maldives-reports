@@ -34,17 +34,20 @@
     "@turf/bbox-clip": "^6.3.0",
     "@turf/bbox-polygon": "^6.4.0",
     "@turf/combine": "^6.3.0",
+    "@turf/dissolve": "^6.4.0",
     "@turf/explode": "^6.4.0",
     "@turf/flatten": "^6.3.0",
     "@turf/helpers": "^6.3.0",
     "@turf/invariant": "^6.3.0",
+    "flatgeobuf": "^3.17.4",
     "geoblaze": "^0.3.2",
     "georaster": "1.0.3",
     "simple-statistics": "^7.7.0",
-    "union-subdivided-polygons": "^0.9.1"
+    "union-subdivided-polygons": "^0.9.1",
+    "web-streams-polyfill": "^3.0.3"
   },
   "devDependencies": {
-    "@seasketch/geoprocessing": "0.12.2-alpha.29",
+    "@seasketch/geoprocessing": "0.12.2-alpha.31",
     "@turf/boolean-disjoint": "6.3.0",
     "@turf/boolean-valid": "6.3.0",
     "start-server-and-test": "^1.12.5"
