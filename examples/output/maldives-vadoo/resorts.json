@@ -1,0 +1,34 @@
+{
+  "setList": [
+    {
+      "Name": "Velassaru",
+      "Atoll": "South Male Atoll",
+      "Island": "Velassaru",
+      "Size__room": 128
+    },
+    {
+      "Name": "Adaaran Prestige Vadoo",
+      "Atoll": "South Male Atoll",
+      "Island": "Vaadhoo",
+      "Size__room": 50
+    },
+    {
+      "Name": "Dream Island",
+      "Atoll": "South Male Atoll",
+      "Island": " ",
+      "Size__room": 0
+    },
+    {
+      "Name": "Saii Lagoon Maldives",
+      "Atoll": "South Male Atoll",
+      "Island": "Emboodhoo",
+      "Size__room": 198
+    },
+    {
+      "Name": "Hard Rock Hotel Maldives",
+      "Atoll": "South Male Atoll",
+      "Island": "Emboodhoo",
+      "Size__room": 198
+    }
+  ]
+}

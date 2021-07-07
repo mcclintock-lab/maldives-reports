@@ -23,6 +23,8 @@
     "src/functions/bathymetry.ts",
     "src/functions/habitat.ts",
     "src/functions/animals.ts",
-    "src/functions/fads.ts"
+    "src/functions/fads.ts",
+    "src/functions/seaplanes.ts",
+    "src/functions/resorts.ts"
   ]
 }

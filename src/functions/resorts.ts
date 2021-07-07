@@ -15,35 +15,42 @@ import { featureCollection } from "@turf/helpers";
 import pointsWithinPolygon from "@turf/points-within-polygon";
 import logger from "../util/logger";
 import { deserialize } from "../util/flatgeobuf";
+import buffer from "@turf/buffer";
+import config from "../_config";
 
-type FadFeature = Feature<
+type ResortFeature = Feature<
   Point,
   {
+    Name: string;
     Atoll: string;
     Island: string;
-    Location: string;
+    Size__room: number;
   }
 >;
 
-type Fad = FadFeature["properties"];
-export type FadResults = {
-  fads: Fad[];
+type Resort = ResortFeature["properties"];
+export type ResortResults = {
+  setList: Resort[];
 };
 
-export async function fads(
+export async function resorts(
   feature: Feature<Polygon> | FeatureCollection<Polygon>
-): Promise<FadResults> {
+): Promise<ResortResults> {
   if (!feature) throw new Error("Feature is missing");
 
   const box = feature.bbox || bbox(feature);
-  // Dissolve down to a single feature for speed
-  const fc = isFeatureCollection(feature)
-    ? dissolve(feature)
-    : featureCollection([feature]);
+  // Dissolve down to a single feature for speed, then buffer
+  const fc = buffer(
+    isFeatureCollection(feature)
+      ? dissolve(feature)
+      : featureCollection([feature]),
+    config.seaplanes.bufferRadius,
+    { units: config.seaplanes.bufferUnits }
+  );
 
   // Process each category async
   try {
-    const filename = "fads.fgb";
+    const filename = "resorts.fgb";
     const url =
       process.env.NODE_ENV === "test"
         ? `http://127.0.0.1:8080/${filename}`
@@ -52,28 +59,28 @@ export async function fads(
     const iter = deserialize(url, fgBoundingBox(box));
 
     // use Set for de-duping
-    let fads = new Set<Fad>();
+    let resorts = new Set<Resort>();
 
     // Process features as they stream in over the wire
     // @ts-ignore
     for await (const iterFeature of iter) {
-      const fadFeature = iterFeature as FadFeature;
-      if (pointsWithinPolygon(fadFeature, fc)) {
-        fads.add(fadFeature.properties);
+      const typedFeature = iterFeature as ResortFeature;
+      if (pointsWithinPolygon(typedFeature, fc)) {
+        resorts.add(typedFeature.properties);
       }
     }
     return {
-      fads: Array.from(fads),
+      setList: Array.from(resorts),
     };
   } catch (err) {
-    logger.error("fads error", err);
+    logger.error("resorts error", err);
     throw err;
   }
 }
 
-export default new GeoprocessingHandler(fads, {
-  title: "fads",
-  description: "Calculate fads within feature",
+export default new GeoprocessingHandler(resorts, {
+  title: "resorts",
+  description: "Calculate resorts within feature",
   timeout: 10, // seconds
   executionMode: "sync",
   // Specify any Sketch Class form attributes that are required

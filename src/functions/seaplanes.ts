@@ -5,7 +5,9 @@ import {
   Polygon,
   Feature,
   FeatureCollection,
+  toJsonFile,
 } from "@seasketch/geoprocessing";
+import config from "../_config";
 
 import { fgBoundingBox } from "../util/flatgeobuf";
 
@@ -13,67 +15,72 @@ import bbox from "@turf/bbox";
 import dissolve from "@turf/dissolve";
 import { featureCollection } from "@turf/helpers";
 import pointsWithinPolygon from "@turf/points-within-polygon";
+import buffer from "@turf/buffer";
 import logger from "../util/logger";
 import { deserialize } from "../util/flatgeobuf";
 
-type FadFeature = Feature<
+type SeaplanFeature = Feature<
   Point,
   {
-    Atoll: string;
-    Island: string;
-    Location: string;
+    atoll_i: string;
+    atoll_ii: string;
+    island: string;
   }
 >;
 
-type Fad = FadFeature["properties"];
-export type FadResults = {
-  fads: Fad[];
+type Resort = SeaplanFeature["properties"];
+export type SeaplaneResults = {
+  setList: Resort[];
 };
 
-export async function fads(
+export async function seaplanes(
   feature: Feature<Polygon> | FeatureCollection<Polygon>
-): Promise<FadResults> {
+): Promise<SeaplaneResults> {
   if (!feature) throw new Error("Feature is missing");
 
-  const box = feature.bbox || bbox(feature);
-  // Dissolve down to a single feature for speed
-  const fc = isFeatureCollection(feature)
-    ? dissolve(feature)
-    : featureCollection([feature]);
+  // Dissolve down to a single feature for speed, then buffer
+  const fc = buffer(
+    isFeatureCollection(feature)
+      ? dissolve(feature)
+      : featureCollection([feature]),
+    config.seaplanes.bufferRadius,
+    { units: config.seaplanes.bufferUnits }
+  );
+  const searchBox = fc.bbox || bbox(fc);
 
   // Process each category async
   try {
-    const filename = "fads.fgb";
+    const filename = "seaplanes.fgb";
     const url =
       process.env.NODE_ENV === "test"
         ? `http://127.0.0.1:8080/${filename}`
         : `https://gp-maldives-reports-datasets.s3.ap-south-1.amazonaws.com/${filename}`;
 
-    const iter = deserialize(url, fgBoundingBox(box));
+    const iter = deserialize(url, fgBoundingBox(searchBox));
 
     // use Set for de-duping
-    let fads = new Set<Fad>();
+    let seaplanes = new Set<Resort>();
 
     // Process features as they stream in over the wire
     // @ts-ignore
     for await (const iterFeature of iter) {
-      const fadFeature = iterFeature as FadFeature;
-      if (pointsWithinPolygon(fadFeature, fc)) {
-        fads.add(fadFeature.properties);
+      const typedFeature = iterFeature as SeaplanFeature;
+      if (pointsWithinPolygon(typedFeature, fc)) {
+        seaplanes.add(typedFeature.properties);
       }
     }
     return {
-      fads: Array.from(fads),
+      setList: Array.from(seaplanes),
     };
   } catch (err) {
-    logger.error("fads error", err);
+    logger.error("seaplanes error", err);
     throw err;
   }
 }
 
-export default new GeoprocessingHandler(fads, {
-  title: "fads",
-  description: "Calculate fads within feature",
+export default new GeoprocessingHandler(seaplanes, {
+  title: "seaplanes",
+  description: "Calculate seaplanes within feature",
   timeout: 10, // seconds
   executionMode: "sync",
   // Specify any Sketch Class form attributes that are required
