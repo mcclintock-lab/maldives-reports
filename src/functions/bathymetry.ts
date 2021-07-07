@@ -42,7 +42,7 @@ export async function bathymetry(
     return await bathyStats(sketches, raster);
   } catch (err) {
     logger.error("bathymetry error", err);
-    throw new Error(err);
+    throw err;
   }
 }
 

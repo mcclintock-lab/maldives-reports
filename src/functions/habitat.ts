@@ -8,6 +8,7 @@ import {
   FeatureCollection,
   BBox,
 } from "@seasketch/geoprocessing";
+import { fgBoundingBox } from "../util/flatgeobuf";
 
 import area from "@turf/area";
 import bbox from "@turf/bbox";
@@ -47,15 +48,6 @@ export interface AreaStats {
   sketchArea: number;
   /** Dataset-specific field containing habitat type name */
   [HAB_TYPE_FIELD]: string;
-}
-
-function fgBoundingBox(box: BBox) {
-  return {
-    minX: box[0],
-    maxX: box[2],
-    minY: box[1],
-    maxY: box[3],
-  };
 }
 
 /**
@@ -118,7 +110,7 @@ export async function habitat(
     };
   } catch (err) {
     logger.error("habitat error", err);
-    throw new Error(err);
+    throw err;
   }
 }
 
