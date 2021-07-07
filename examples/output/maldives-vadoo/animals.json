@@ -1,66 +1,68 @@
-[
-  {
-    "category": "Fish",
-    "species": [
-      "Snapper",
-      "Parrotfish",
-      "Grouper 30-40 cm",
-      "Moray eel",
-      "Humphead wrasse",
-      "Haemulidae",
-      "Grouper total",
-      "Grouper 50-60 cm",
-      "Grouper 40-50 cm",
-      "Barramundi cod",
-      "Bumphead parrot",
-      "Butterflyfish",
-      "Grouper >60 cm"
-    ],
-    "sites": [
-      "Vadhoo Caves",
-      "Embudhu (South Male)",
-      "Embudhoo",
-      "Laguna Beyru House Reef"
-    ]
-  },
-  {
-    "category": "Rare Animals",
-    "species": [
-      "Mantas",
-      "Turtles",
-      "Sharks"
-    ],
-    "sites": [
-      "Vadhoo Caves",
-      "Embudhoo",
-      "Embudhu (South Male)",
-      "Laguna Beyru House Reef"
-    ]
-  },
-  {
-    "category": "Invertebrates",
-    "species": [
-      "Triton",
-      "Tripneustes",
-      "Banded coral shrimp",
-      "Pencil urchin",
-      "Lobster",
-      "Giant clam total",
-      "Giant clam 40-50 cm",
-      "Giant clam 30-40 cm",
-      "Giant clam 20-30 cm",
-      "Giant clam 10-20 cm",
-      "Giant clam >50 cm",
-      "Giant clam <10 cm",
-      "Edible sea cucumber",
-      "Diadema",
-      "Crown-of-thorns starfish (COTS)"
-    ],
-    "sites": [
-      "Vadhoo Caves",
-      "Embudhu (South Male)",
-      "Embudhoo",
-      "Laguna Beyru House Reef"
-    ]
-  }
-]
+{
+  "animalsByCategory": [
+    {
+      "category": "Fish",
+      "species": [
+        "Snapper",
+        "Parrotfish",
+        "Grouper 30-40 cm",
+        "Moray eel",
+        "Humphead wrasse",
+        "Haemulidae",
+        "Grouper total",
+        "Grouper 50-60 cm",
+        "Grouper 40-50 cm",
+        "Barramundi cod",
+        "Bumphead parrot",
+        "Butterflyfish",
+        "Grouper >60 cm"
+      ],
+      "sites": [
+        "Vadhoo Caves",
+        "Embudhu (South Male)",
+        "Embudhoo",
+        "Laguna Beyru House Reef"
+      ]
+    },
+    {
+      "category": "Rare Animal",
+      "species": [
+        "Mantas",
+        "Turtles",
+        "Sharks"
+      ],
+      "sites": [
+        "Vadhoo Caves",
+        "Embudhoo",
+        "Embudhu (South Male)",
+        "Laguna Beyru House Reef"
+      ]
+    },
+    {
+      "category": "Invertebrate",
+      "species": [
+        "Triton",
+        "Tripneustes",
+        "Banded coral shrimp",
+        "Pencil urchin",
+        "Lobster",
+        "Giant clam total",
+        "Giant clam 40-50 cm",
+        "Giant clam 30-40 cm",
+        "Giant clam 20-30 cm",
+        "Giant clam 10-20 cm",
+        "Giant clam >50 cm",
+        "Giant clam <10 cm",
+        "Edible sea cucumber",
+        "Diadema",
+        "Crown-of-thorns starfish (COTS)"
+      ],
+      "sites": [
+        "Vadhoo Caves",
+        "Embudhu (South Male)",
+        "Embudhoo",
+        "Laguna Beyru House Reef"
+      ]
+    }
+  ]
+}

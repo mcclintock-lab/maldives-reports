@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from "react";
-import HabitatCard from "./HabitatCard";
-import AnimalsCard from "./AnimalsCard";
+import FadCard from "./FadCard";
 
 interface ReportProps {
   hidden: boolean;
@@ -10,8 +9,7 @@ const Biological: FunctionComponent<ReportProps> = ({
   hidden,
 }: ReportProps) => (
   <div style={{ display: hidden ? "none" : "block" }}>
-    <HabitatCard />
-    <AnimalsCard />
+    <FadCard />
   </div>
 );
 

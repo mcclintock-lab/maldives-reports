@@ -36,8 +36,11 @@ const SizeCard = () => (
           </p>
 
           <KeySection>
-            📐 The sketch is <b>{areaDisplay}</b> {areaUnitDisplay}, which is{" "}
-            <b>{percDisplay}</b> of the total planning area.
+            📐 The sketch is{" "}
+            <b>
+              {areaDisplay} {areaUnitDisplay}
+            </b>
+            , which is <b>{percDisplay}</b> of the total planning area.
           </KeySection>
         </>
       );

@@ -1,17 +1,19 @@
-[
-  {
-    "category": "Fish",
-    "species": [],
-    "sites": []
-  },
-  {
-    "category": "Rare Animals",
-    "species": [],
-    "sites": []
-  },
-  {
-    "category": "Invertebrates",
-    "species": [],
-    "sites": []
-  }
-]
+{
+  "animalsByCategory": [
+    {
+      "category": "Fish",
+      "species": [],
+      "sites": []
+    },
+    {
+      "category": "Rare Animal",
+      "species": [],
+      "sites": []
+    },
+    {
+      "category": "Invertebrate",
+      "species": [],
+      "sites": []
+    }
+  ]
+}

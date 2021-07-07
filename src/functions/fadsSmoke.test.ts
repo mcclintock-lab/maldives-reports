@@ -2,12 +2,11 @@
  * @jest-environment node
  * @group smoke
  */
-import Handler, { animalObsConfigs } from "./animals";
+import Handler from "./fads";
 import {
   getExamplePolygonSketchAll,
   writeResultOutput,
 } from "@seasketch/geoprocessing/scripts/testing";
-import path from "path";
 
 describe("Basic smoke tests", () => {
   test("handler function is present", () => {
@@ -18,13 +17,8 @@ describe("Basic smoke tests", () => {
     for (const example of examples) {
       const result = await Handler.func(example);
       expect(result).toBeTruthy();
-      for (const run of result.animalsByCategory) {
-        expect(run.category).toBeTruthy();
-        expect(run.sites.length).toBeGreaterThanOrEqual(0);
-        expect(run.species.length).toBeGreaterThanOrEqual(0);
-      }
-
-      writeResultOutput(result, "animals", example.properties.name);
+      expect(result.fads.length).toBeGreaterThanOrEqual(0);
+      writeResultOutput(result, "fads", example.properties.name);
     }
   });
 });

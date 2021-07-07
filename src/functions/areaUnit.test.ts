@@ -2,10 +2,7 @@
  * @group unit
  */
 import Handler from "./area";
-import {
-  getExampleSketches,
-  writeResultOutput,
-} from "@seasketch/geoprocessing/scripts/testing";
+import { getExampleSketches } from "@seasketch/geoprocessing/scripts/testing";
 
 const area = Handler.func;
 

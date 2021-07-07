@@ -7,6 +7,7 @@ export interface KeySectionProps {
 
 const keyStyle = {
   padding: 10,
+  marginBottom: 10,
   borderRadus: 4,
   backgroundColor: "#efefef",
   boxShadow:

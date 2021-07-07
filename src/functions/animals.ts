@@ -28,13 +28,15 @@ type AnimalObsFeature = Feature<
   }
 >;
 
-interface AnimalObsResult {
+export interface AnimalObsResult {
   category: string;
   species: string[];
   sites: string[];
 }
 
-export type AnimalObsResults = AnimalObsResult[];
+export type AnimalObsResults = {
+  animalsByCategory: AnimalObsResult[];
+};
 
 type AnimalObsConfig = { category: string; filename: string };
 export const animalObsConfigs: AnimalObsConfig[] = [
@@ -43,11 +45,11 @@ export const animalObsConfigs: AnimalObsConfig[] = [
     filename: "reefcheck_fish.fgb",
   },
   {
-    category: "Rare Animals",
+    category: "Rare Animal",
     filename: "reefcheck_rare_animals.fgb",
   },
   {
-    category: "Invertebrates",
+    category: "Invertebrate",
     filename: "reefcheck_invertebrates.fgb",
   },
 ];
@@ -98,9 +100,12 @@ export async function animals(
 
   // Process each category async
   try {
-    return await Promise.all(
+    const animalsByCategory = await Promise.all(
       animalObsConfigs.map((config) => calcAnimalObs(config, box, fc))
     );
+    return {
+      animalsByCategory,
+    };
   } catch (err) {
     logger.error("animals error", err);
     throw err;

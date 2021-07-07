@@ -50,7 +50,7 @@ async function minWidth(
 export default new GeoprocessingHandler(minWidth, {
   title: "minWidth",
   description: "Check if meets minimum width guidelines",
-  timeout: 2, // seconds
+  timeout: 20, // seconds
   executionMode: "sync",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
