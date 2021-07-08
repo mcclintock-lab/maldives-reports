@@ -2,10 +2,14 @@ import {
   Sketch,
   SketchCollection,
   Feature,
+  Polygon,
   FeatureCollection,
   GeoprocessingHandler,
   sketchArea,
+  isFeatureCollection,
 } from "@seasketch/geoprocessing";
+import dissolve from "@turf/dissolve";
+import { featureCollection } from "@turf/helpers";
 
 import { STUDY_REGION_AREA_SQ_METERS } from "../functions/areaConstants";
 
@@ -19,9 +23,16 @@ export interface AreaResults {
 }
 
 export async function area(
-  feature: Sketch | SketchCollection | Feature | FeatureCollection
+  feature:
+    | Sketch<Polygon>
+    | SketchCollection<Polygon>
+    | Feature<Polygon>
+    | FeatureCollection<Polygon>
 ): Promise<AreaResults> {
-  const area = sketchArea(feature);
+  const fc = isFeatureCollection(feature)
+    ? dissolve(feature)
+    : featureCollection([feature]);
+  const area = sketchArea(fc);
   return {
     area,
     percPlanningArea: area / STUDY_REGION_AREA_SQ_METERS,

@@ -1,3 +1,24 @@
 {
-  "setList": []
+  "setList": [
+    {
+      "atoll_i": "Malé Atholhu (K)",
+      "atoll_ii": "Kaafu",
+      "island": "Meerufenfushi"
+    },
+    {
+      "atoll_i": " ",
+      "atoll_ii": "North Male' Atoll",
+      "island": "Kanifinolhu ( Clubmed)"
+    },
+    {
+      "atoll_i": " ",
+      "atoll_ii": "North Male' Atoll",
+      "island": "Kuda Huraa"
+    },
+    {
+      "atoll_i": "Malé Atholhu (K)",
+      "atoll_ii": "Kaafu",
+      "island": "Anantara Dhigu"
+    }
+  ]
 }

@@ -1,6 +1,11 @@
 {
   "setList": [
     {
+      "atoll_i": "Malé Atholhu (K)",
+      "atoll_ii": "Kaafu",
+      "island": "Meerufenfushi"
+    },
+    {
       "atoll_i": " ",
       "atoll_ii": "North Male' Atoll",
       "island": "Kanifinolhu ( Clubmed)"
@@ -9,6 +14,16 @@
       "atoll_i": " ",
       "atoll_ii": "North Male' Atoll",
       "island": "Kuda Huraa"
+    },
+    {
+      "atoll_i": "Malé Atholhu (K)",
+      "atoll_ii": "kaafu",
+      "island": "Ziyaaraiyfushi"
+    },
+    {
+      "atoll_i": "Malé Atholhu (K)",
+      "atoll_ii": "kaafu",
+      "island": "Reethi Rah Resort"
     }
   ]
 }
