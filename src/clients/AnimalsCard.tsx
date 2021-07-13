@@ -76,7 +76,7 @@ const AnimalsCard = () => (
         <>
           <p>
             The following species were observed at survey sites within this
-            sketch.
+            design.
           </p>
           {sections}
           <p>

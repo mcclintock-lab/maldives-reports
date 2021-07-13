@@ -6,7 +6,7 @@ import {
   MultiPolygon,
   Feature,
   FeatureCollection,
-  BBox,
+  roundDecimal,
 } from "@seasketch/geoprocessing";
 import { fgBoundingBox } from "../util/flatgeobuf";
 
@@ -17,7 +17,6 @@ import dissolve from "@turf/dissolve";
 import { featureCollection } from "@turf/helpers";
 import { HAB_TYPE_FIELD } from "./habitatConstants";
 import logger from "../util/logger";
-import { roundDecimal } from "../util/roundDecimal";
 import { deserialize } from "../util/flatgeobuf";
 
 // Must be generated first by habitat-4-precalc

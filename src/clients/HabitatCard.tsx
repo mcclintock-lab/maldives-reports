@@ -4,6 +4,8 @@ import {
   squareMeterToKilometer,
   Table,
   Column,
+  percentLower,
+  roundLower,
 } from "@seasketch/geoprocessing/client";
 // import { STUDY_REGION_AREA_SQ_METERS } from "../functions/areaConstants";
 import { HAB_TYPE_FIELD } from "../functions/habitatConstants";
@@ -11,15 +13,6 @@ import { KeySection } from "../components/KeySection";
 
 // Import type definitions from function
 import { HabitatResults, AreaStats } from "../functions/habitat";
-
-const Number = new Intl.NumberFormat("en", {
-  style: "decimal",
-  maximumFractionDigits: 1,
-});
-const Percent = new Intl.NumberFormat("en", {
-  style: "percent",
-  maximumFractionDigits: 1,
-});
 
 const HabitatCard = () => (
   <ResultsCard title="Habitat" functionName="habitat">
@@ -35,16 +28,24 @@ const HabitatCard = () => (
           Header: `Area (${areaUnitDisplay})`,
           style: { textAlign: "center", fontSize: 14 },
           accessor: (row) => {
-            const num = Number.format(squareMeterToKilometer(row.sketchArea));
-            return num === "0" ? "-" : num;
+            if (row.sketchArea === 0) {
+              return "-";
+            } else {
+              return roundLower(squareMeterToKilometer(row.sketchArea), {
+                lower: 0.1,
+              });
+            }
           },
         },
         {
           Header: "Area (% of total)",
           style: { textAlign: "center", fontSize: 14 },
           accessor: (row) => {
-            const num = Percent.format(row.sketchArea / row.totalArea);
-            return num === "0%" ? "-" : num;
+            if (row.sketchArea === 0) {
+              return "-";
+            } else {
+              return percentLower(row.sketchArea / row.totalArea);
+            }
           },
         },
       ];

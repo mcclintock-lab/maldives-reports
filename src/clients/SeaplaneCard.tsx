@@ -13,18 +13,14 @@ const Card = () => (
         <>
           <p>Seaplanes can be used to access areas quickly.</p>
           <KeySection>
-            {data.setList.length > 0 ? (
-              <p>
-                There are <b>{data.setList.length}</b> commercial seaplanes
-                available within{" "}
-                <b>
-                  {config.seaplanes.bufferRadius} {config.seaplanes.bufferUnits}
-                </b>{" "}
-                of this sketch.
-              </p>
-            ) : (
-              <p>No seaplanes found</p>
-            )}
+            <p>
+              <b>{data.setList.length}</b> commercial seaplanes are available
+              within{" "}
+              <b>
+                {config.seaplanes.bufferRadius} {config.seaplanes.bufferUnits}
+              </b>{" "}
+              of this design.
+            </p>
           </KeySection>
         </>
       );

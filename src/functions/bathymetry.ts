@@ -56,15 +56,31 @@ export async function bathyStats(
   raster: object
 ): Promise<BathymetryResults> {
   const sketchStats = features.map((feature, index) => {
-    // @ts-ignore
-    const min = geoblaze.min(raster, feature)[0];
-    // @ts-ignore
-    const max = geoblaze.max(raster, feature)[0];
-    // @ts-ignore
-    const mean = geoblaze.mean(raster, feature)[0];
-    return { min, max, mean };
+    try {
+      // @ts-ignore
+      const min = geoblaze.min(raster, feature)[0];
+      // @ts-ignore
+      const max = geoblaze.max(raster, feature)[0];
+      // @ts-ignore
+      const mean = geoblaze.mean(raster, feature)[0];
+      return { min, max, mean };
+    } catch (err) {
+      if (err === "No Values were found in the given geometry") {
+        // Temp workaround
+        const firstCoordValue = geoblaze.identify(
+          raster,
+          feature.geometry.coordinates[0][0]
+        )[0];
+        return {
+          min: firstCoordValue,
+          mean: firstCoordValue,
+          max: firstCoordValue,
+        };
+      } else {
+        throw err;
+      }
+    }
   });
-
   return {
     min: min(sketchStats.map((s) => s.min)),
     max: max(sketchStats.map((s) => s.max)),

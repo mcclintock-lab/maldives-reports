@@ -3,17 +3,7 @@
     {
       "atoll_i": "Malé Atholhu (K)",
       "atoll_ii": "Kaafu",
-      "island": "Rihiveli"
-    },
-    {
-      "atoll_i": "Malé Atholhu (K)",
-      "atoll_ii": "Kaafu",
-      "island": "Rihiveli"
-    },
-    {
-      "atoll_i": "Malé Atholhu (K)",
-      "atoll_ii": "Kaafu",
-      "island": "Rihiveli"
+      "island": "Meerufenfushi"
     },
     {
       "atoll_i": " ",
@@ -32,8 +22,13 @@
     },
     {
       "atoll_i": "Malé Atholhu (K)",
-      "atoll_ii": "Kaafu",
-      "island": "Villivaru Biyaadhoo"
+      "atoll_ii": "kaafu",
+      "island": "Ziyaaraiyfushi"
+    },
+    {
+      "atoll_i": "Malé Atholhu (K)",
+      "atoll_ii": "kaafu",
+      "island": "Reethi Rah Resort"
     }
   ]
 }

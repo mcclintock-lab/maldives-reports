@@ -16,17 +16,13 @@ const Card = () => (
         <>
           <p>Nearby resort amenities.</p>
           <KeySection>
-            {data.setList.length > 0 ? (
-              <p>
-                There are <b>{data.setList.length}</b> resorts within{" "}
-                <b>
-                  {config.resorts.bufferRadius} {config.resorts.bufferUnits}
-                </b>{" "}
-                of this sketch with capacity of <b>{numRooms}</b> rooms.
-              </p>
-            ) : (
-              <p>No resorts found</p>
-            )}
+            <p>
+              <b>{data.setList.length}</b> resorts are available within{" "}
+              <b>
+                {config.resorts.bufferRadius} {config.resorts.bufferUnits}
+              </b>{" "}
+              of this design, with a capacity of <b>{numRooms}</b> rooms.
+            </p>
           </KeySection>
         </>
       );

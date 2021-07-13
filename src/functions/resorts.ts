@@ -38,7 +38,7 @@ export async function resorts(
 ): Promise<ResortResults> {
   if (!feature) throw new Error("Feature is missing");
 
-  const box = feature.bbox || bbox(feature);
+  const searchBox = feature.bbox || bbox(feature);
   // Dissolve down to a single feature for speed, then buffer
   const fc = buffer(
     isFeatureCollection(feature)
@@ -56,7 +56,7 @@ export async function resorts(
         ? `http://127.0.0.1:8080/${filename}`
         : `https://gp-maldives-reports-datasets.s3.ap-south-1.amazonaws.com/${filename}`;
 
-    const iter = deserialize(url, fgBoundingBox(box));
+    const iter = deserialize(url, fgBoundingBox(searchBox));
 
     // use Set for de-duping
     let resorts = new Set<Resort>();

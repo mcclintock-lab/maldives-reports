@@ -21,9 +21,15 @@ const BathymetryCard = () => (
           <KeySection
             style={{ display: "flex", justifyContent: "space-around" }}
           >
-            <span>Min: {formatDepth(data.max)}</span>
-            <span>Avg: {formatDepth(data.mean)}</span>
-            <span>Max: {formatDepth(data.min)}</span>
+            <span>
+              Min: <b>{formatDepth(data.max)}</b>
+            </span>
+            <span>
+              Avg: <b>{formatDepth(data.mean)}</b>
+            </span>
+            <span>
+              Max: <b>{formatDepth(data.min)}</b>
+            </span>
           </KeySection>
         </>
       );

@@ -13,14 +13,12 @@ const Card = () => (
           <p>
             FADs are artificial structures deployed in the ocean to attract
             schools of fish.{" "}
-            {data.fads.length > 0 ? (
-              <span>
-                <b>{data.fads.length} FADs</b> are located within this sketch
-              </span>
-            ) : null}
           </p>
-          <>
-            <KeySection>
+          <KeySection>
+            <>
+              <span>
+                <b>{data.fads.length}</b> FADs are located within this design
+              </span>
               {data.fads.length > 0 ? (
                 <Table
                   columns={[
@@ -44,11 +42,9 @@ const Card = () => (
                     a.Atoll.localeCompare(b.Atoll)
                   )}
                 />
-              ) : (
-                <p>No FADs found</p>
-              )}
-            </KeySection>
-          </>
+              ) : null}
+            </>
+          </KeySection>
         </>
       );
     }}

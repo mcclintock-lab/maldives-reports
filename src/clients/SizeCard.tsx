@@ -2,6 +2,8 @@ import React from "react";
 import {
   ResultsCard,
   squareMeterToKilometer,
+  percentLower,
+  roundLower,
 } from "@seasketch/geoprocessing/client";
 import { STUDY_REGION_AREA_SQ_METERS } from "../functions/areaConstants";
 import { KeySection } from "../components/KeySection";
@@ -11,20 +13,12 @@ import { AreaResults } from "../functions/area";
 
 const STUDY_REGION_AREA_SQ_KM = STUDY_REGION_AREA_SQ_METERS / 1000;
 
-const Number = new Intl.NumberFormat("en", { style: "decimal" });
-const Percent = new Intl.NumberFormat("en", {
-  style: "percent",
-  maximumFractionDigits: 1,
-});
-
 const SizeCard = () => (
   <ResultsCard title="Size" functionName="area">
     {(data: AreaResults) => {
-      const areaDisplay = Number.format(
-        Math.round(squareMeterToKilometer(data.area))
-      );
+      const areaDisplay = roundLower(squareMeterToKilometer(data.area));
       const percArea = data.area / STUDY_REGION_AREA_SQ_METERS;
-      const percDisplay = Percent.format(percArea);
+      const percDisplay = percentLower(percArea);
       const areaUnitDisplay = "sq. km";
       return (
         <>
@@ -36,7 +30,7 @@ const SizeCard = () => (
           </p>
 
           <KeySection>
-            📐 The sketch is{" "}
+            This design is{" "}
             <b>
               {areaDisplay} {areaUnitDisplay}
             </b>

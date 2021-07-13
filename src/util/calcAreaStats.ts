@@ -1,7 +1,11 @@
 import area from "@turf/area";
-import { FeatureCollection, Polygon, Feature } from "@seasketch/geoprocessing";
+import {
+  FeatureCollection,
+  Polygon,
+  Feature,
+  roundDecimal,
+} from "@seasketch/geoprocessing";
 import { strict as assert } from "assert";
-import { roundDecimal } from "../util/roundDecimal";
 
 /**
  * Calculates area stats for a given feature collection.
