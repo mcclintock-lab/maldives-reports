@@ -5,6 +5,11 @@ import {
   Feature,
   roundDecimal,
 } from "@seasketch/geoprocessing";
+import {
+  habIdToName,
+  HAB_ID_FIELD,
+  HAB_NAME_FIELD,
+} from "../functions/habitatConstants";
 import { strict as assert } from "assert";
 
 /**
@@ -13,20 +18,17 @@ import { strict as assert } from "assert";
  * @param {} collection - a GeoJSON feature collection
  * @param {*} typeProperty - feature property to stratify by
  */
-export function calcAreaStats(
-  collection: FeatureCollection<Polygon>,
-  typeProperty: string
-) {
+export function calcAreaStats(collection: FeatureCollection<Polygon>) {
   // Sum area by type, single pass
-  const areaByType = collection.features.reduce<{ [key: string]: number }>(
+  const areaByClass = collection.features.reduce<{ [key: string]: number }>(
     (progress, feat) => {
       const featArea = area(feat);
       if (!feat || !feat.properties) return progress;
       return {
         ...progress,
-        [feat.properties[typeProperty]]:
-          feat.properties[typeProperty] in progress
-            ? progress[feat.properties[typeProperty]] + featArea
+        [feat.properties[HAB_ID_FIELD]]:
+          feat.properties[HAB_ID_FIELD] in progress
+            ? progress[feat.properties[HAB_ID_FIELD]] + featArea
             : featArea,
       };
     },
@@ -39,26 +41,27 @@ export function calcAreaStats(
     if (!feat || !feat.properties) return progress;
     return {
       ...progress,
-      [feat.properties[typeProperty]]:
-        feat.properties[typeProperty] in progress
-          ? progress[feat.properties[typeProperty]].concat(feat)
+      [feat.properties[HAB_ID_FIELD]]:
+        feat.properties[HAB_ID_FIELD] in progress
+          ? progress[feat.properties[HAB_ID_FIELD]].concat(feat)
           : [feat],
     };
   }, {});
 
   // Sum total area
-  const totalArea = Object.values(areaByType).reduce(
+  const totalArea = Object.values(areaByClass).reduce(
     (sum, val) => sum + val,
     0
   );
 
   // Calculate percentage area by type
-  const areaStatsByType = Object.keys(areaByType).map((type) => {
-    assert(areaByType[type] >= 0 && areaByType[type] <= totalArea);
+  const areaStatsByType = Object.keys(areaByClass).map((type) => {
+    assert(areaByClass[type] >= 0 && areaByClass[type] <= totalArea);
     return {
-      [typeProperty]: type,
-      totalArea: roundDecimal(areaByType[type], 6),
-      percArea: roundDecimal(areaByType[type] / totalArea, 6),
+      [HAB_ID_FIELD]: parseInt(type),
+      [HAB_NAME_FIELD]: habIdToName[type],
+      totalArea: roundDecimal(areaByClass[type], 6),
+      percArea: roundDecimal(areaByClass[type] / totalArea, 6),
     };
   });
 
@@ -66,7 +69,7 @@ export function calcAreaStats(
 
   return {
     totalArea: +totalArea.toFixed(6),
-    areaByType: areaStatsByType,
+    areaByClass: areaStatsByType,
     areaUnit: "square meters",
   };
 }
