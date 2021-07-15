@@ -12,7 +12,7 @@ import { min, max, mean } from "simple-statistics";
 
 import bbox from "@turf/bbox";
 // @ts-ignore
-import geoblaze from "geoblaze";
+import geoblaze, { Georaster } from "geoblaze";
 import logger from "../util/logger";
 
 /** Biomass analysis result for a single bathymetry type and region */
@@ -30,6 +30,8 @@ export async function bathymetry(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>
 ): Promise<BathymetryResults> {
   /** Raster datasource, fallback to localhost in test environment */
+  if (!sketch) throw new Error("Feature is missing");
+
   const bathyFilename = "bathy.tif";
   const bathyUrl =
     process.env.NODE_ENV === "test"
@@ -53,7 +55,7 @@ export async function bathyStats(
   /** Polygons to filter for */
   features: Feature<Polygon>[],
   /** bathymetry raster to search */
-  raster: object
+  raster: Georaster
 ): Promise<BathymetryResults> {
   const sketchStats = features.map((feature, index) => {
     try {

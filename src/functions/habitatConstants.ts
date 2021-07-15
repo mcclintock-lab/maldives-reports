@@ -1,8 +1,8 @@
 export const HAB_ID_FIELD = "class_id";
 export const HAB_NAME_FIELD = "class";
 
-export const X_RESOLUTION = 10;
-export const Y_RESOLUTION = 10;
+export const X_RESOLUTION = 5;
+export const Y_RESOLUTION = 5;
 
 export const habIdToName: Record<string, string> = {
   "1": "Coral/Algae",

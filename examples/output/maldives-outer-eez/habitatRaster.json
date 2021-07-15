@@ -6,7 +6,7 @@
       "class": "Coral/Algae",
       "totalArea": 675242446.511775,
       "percArea": 0.231597,
-      "sketchArea": 202871.479175
+      "sketchArea": 15275
     },
     {
       "class_id": 2,
@@ -20,7 +20,7 @@
       "class": "Rock",
       "totalArea": 581561066.258598,
       "percArea": 0.199466,
-      "sketchArea": 237968.976314
+      "sketchArea": 0
     },
     {
       "class_id": 4,
@@ -34,14 +34,14 @@
       "class": "Sand",
       "totalArea": 930819938.082482,
       "percArea": 0.319256,
-      "sketchArea": 1823.6254
+      "sketchArea": 0
     },
     {
       "class_id": 6,
       "class": "Seagrass",
       "totalArea": 118357178.400584,
       "percArea": 0.040595,
-      "sketchArea": 417.522073
+      "sketchArea": 400
     }
   ],
   "areaUnit": "square meters"
