@@ -22,6 +22,7 @@
     "src/functions/minWidth.ts",
     "src/functions/bathymetry.ts",
     "src/functions/habitat.ts",
+    "src/functions/habitatRaster.ts",
     "src/functions/animals.ts",
     "src/functions/fads.ts",
     "src/functions/seaplanes.ts",
