@@ -16,7 +16,7 @@ import {
 import { KeySection } from "../components/KeySection";
 
 const HabitatCard = () => (
-  <ResultsCard title="Habitat" functionName="habitat">
+  <ResultsCard title="Habitat Raster" functionName="habitatRaster">
     {(data: HabitatResults) => {
       const areaUnitDisplay = "sq. km";
       const columns: Column<AreaStats>[] = [

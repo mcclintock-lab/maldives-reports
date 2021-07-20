@@ -5,11 +5,6 @@ import {
   Feature,
   roundDecimal,
 } from "@seasketch/geoprocessing";
-import {
-  habIdToName,
-  HAB_ID_FIELD,
-  HAB_NAME_FIELD,
-} from "../functions/habitatConstants";
 import { strict as assert } from "assert";
 
 /**
@@ -18,7 +13,12 @@ import { strict as assert } from "assert";
  * @param {} collection - a GeoJSON feature collection
  * @param {*} typeProperty - feature property to stratify by
  */
-export function calcAreaStats(collection: FeatureCollection<Polygon>) {
+export function calcAreaStats(
+  collection: FeatureCollection<Polygon>,
+  idField: string,
+  nameField: string,
+  idToName: Record<string, string>
+) {
   // Sum area by type, single pass
   const areaByClass = collection.features.reduce<{ [key: string]: number }>(
     (progress, feat) => {
@@ -26,9 +26,9 @@ export function calcAreaStats(collection: FeatureCollection<Polygon>) {
       if (!feat || !feat.properties) return progress;
       return {
         ...progress,
-        [feat.properties[HAB_ID_FIELD]]:
-          feat.properties[HAB_ID_FIELD] in progress
-            ? progress[feat.properties[HAB_ID_FIELD]] + featArea
+        [feat.properties[idField]]:
+          feat.properties[idField] in progress
+            ? progress[feat.properties[idField]] + featArea
             : featArea,
       };
     },
@@ -41,9 +41,9 @@ export function calcAreaStats(collection: FeatureCollection<Polygon>) {
     if (!feat || !feat.properties) return progress;
     return {
       ...progress,
-      [feat.properties[HAB_ID_FIELD]]:
-        feat.properties[HAB_ID_FIELD] in progress
-          ? progress[feat.properties[HAB_ID_FIELD]].concat(feat)
+      [feat.properties[idField]]:
+        feat.properties[idField] in progress
+          ? progress[feat.properties[idField]].concat(feat)
           : [feat],
     };
   }, {});
@@ -58,8 +58,8 @@ export function calcAreaStats(collection: FeatureCollection<Polygon>) {
   const areaStatsByType = Object.keys(areaByClass).map((type) => {
     assert(areaByClass[type] >= 0 && areaByClass[type] <= totalArea);
     return {
-      [HAB_ID_FIELD]: parseInt(type),
-      [HAB_NAME_FIELD]: habIdToName[type],
+      [idField]: parseInt(type),
+      [nameField]: idToName[type],
       totalArea: roundDecimal(areaByClass[type], 6),
       percArea: roundDecimal(areaByClass[type] / totalArea, 6),
     };

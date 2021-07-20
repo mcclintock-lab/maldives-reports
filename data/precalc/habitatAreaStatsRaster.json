@@ -1,0 +1,42 @@
+{
+  "totalArea": 0,
+  "areaByClass": [
+    {
+      "class_id": 1,
+      "class": "Coral/Algae",
+      "totalArea": 0,
+      "percArea": 0
+    },
+    {
+      "class_id": 2,
+      "class": "Microalgal Mats",
+      "totalArea": 0,
+      "percArea": 0
+    },
+    {
+      "class_id": 3,
+      "class": "Rock",
+      "totalArea": 0,
+      "percArea": 0
+    },
+    {
+      "class_id": 4,
+      "class": "Rubble",
+      "totalArea": 0,
+      "percArea": 0
+    },
+    {
+      "class_id": 5,
+      "class": "Sand",
+      "totalArea": 0,
+      "percArea": 0
+    },
+    {
+      "class_id": 6,
+      "class": "Seagrass",
+      "totalArea": 0,
+      "percArea": 0
+    }
+  ],
+  "areaUnit": "square meters"
+}

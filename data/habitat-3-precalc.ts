@@ -3,6 +3,11 @@
 
 import fs from "fs";
 import { calcAreaStats } from "../src/util/calcAreaStats";
+import {
+  habIdToName,
+  HAB_ID_FIELD,
+  HAB_NAME_FIELD,
+} from "../src/functions/habitatConfig";
 import { FeatureCollection, Polygon } from "@seasketch/geoprocessing";
 import { strict as assert } from "assert";
 import { deserialize } from "flatgeobuf/lib/cjs/geojson";
@@ -13,7 +18,7 @@ const DEST_PATH = `${__dirname}/precalc/habitatAreaStats.json`;
 const buffer = fs.readFileSync(`${SRC_PATH}`);
 const bytes = new Uint8Array(buffer);
 const hab = deserialize(bytes) as FeatureCollection<Polygon>;
-const stats = calcAreaStats(hab);
+const stats = calcAreaStats(hab, HAB_ID_FIELD, HAB_NAME_FIELD, habIdToName);
 
 fs.writeFile(DEST_PATH, JSON.stringify(stats, null, 2), (err) =>
   err
