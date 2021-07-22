@@ -42,6 +42,7 @@
     "@turf/invariant": "^6.3.0",
     "@turf/points-within-polygon": "^6.4.0",
     "flatgeobuf": "^3.17.4",
+    "geoblaze": "^0.3.2",
     "georaster": "1.5.4",
     "simple-statistics": "^7.7.0",
     "union-subdivided-polygons": "^0.9.1",
