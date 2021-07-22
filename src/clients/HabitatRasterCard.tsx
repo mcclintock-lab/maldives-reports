@@ -12,7 +12,7 @@ import { HabitatResult } from "../functions/habitatConfig";
 import { KeySection } from "../components/KeySection";
 
 const HabitatCard = () => (
-  <ResultsCard title="Habitat Raster" functionName="habitatRaster">
+  <ResultsCard title="Habitat Raster (Debug only)" functionName="habitatRaster">
     {(data: HabitatResult) => {
       const areaUnitDisplay = "sq. km";
       const columns: Column<HabitatResult["areaByClass"][0]>[] = [

@@ -1,0 +1,259 @@
+{
+  "fads": [
+    {
+      "Atoll": "Ga.Alifu",
+      "Island": "Gemnafushi",
+      "Location": "20 miles SE of Gemanafushi"
+    },
+    {
+      "Atoll": "Ga.Alifu",
+      "Island": "Dhaandhoo",
+      "Location": "16 miles E of Dhaandhoo"
+    },
+    {
+      "Atoll": "Laamu",
+      "Island": "Gan",
+      "Location": "15.5 miles SE of Gan"
+    },
+    {
+      "Atoll": "Ga.Alifu",
+      "Island": "Villigili",
+      "Location": "13 miles E of Maamuta"
+    },
+    {
+      "Atoll": "Gnaviyani",
+      "Island": "Fuamulah",
+      "Location": "10 miles E of Fuamulah"
+    },
+    {
+      "Atoll": "Ga.Dhaalu",
+      "Island": "Gadhdhoo",
+      "Location": "12miles SW of Gadhdhoo"
+    },
+    {
+      "Atoll": "Seenu",
+      "Island": "Maradhoo",
+      "Location": "16.6  Miles E of Villigili"
+    },
+    {
+      "Atoll": "Gnaviyani",
+      "Island": "Fuamulah",
+      "Location": "11.5  miles SE of Fuamulah"
+    },
+    {
+      "Atoll": "Gnaviyani",
+      "Island": "Fuamulah",
+      "Location": "15  miles W of Fuamulah"
+    },
+    {
+      "Atoll": "Seenu",
+      "Island": "Gan",
+      "Location": "13 miles SW of Gan"
+    },
+    {
+      "Atoll": "Ga.Alifu",
+      "Island": "Kolamafushi",
+      "Location": "17.5 miles NE of Kolamaafushi"
+    },
+    {
+      "Atoll": "Laamu",
+      "Island": "Fares",
+      "Location": "10 miles S of Fares"
+    },
+    {
+      "Atoll": "Laamu",
+      "Island": "Hithadhoo",
+      "Location": "12 miles SE of Hithadhoo"
+    },
+    {
+      "Atoll": "Thaa",
+      "Island": "Guraidhoo",
+      "Location": "9 miles SE of Guraidhoo"
+    },
+    {
+      "Atoll": "Meemu",
+      "Island": "Dhithudi",
+      "Location": "10 miles SE of dhithudi"
+    },
+    {
+      "Atoll": "Laamu",
+      "Island": "Maabaidhoo",
+      "Location": "11 miles E of Maabaidhoo"
+    },
+    {
+      "Atoll": "Meemu",
+      "Island": "Mulah",
+      "Location": "13 miles  SE of mulaku"
+    },
+    {
+      "Atoll": "Meemu",
+      "Island": "Maduvvari",
+      "Location": "12 miles NE of Raiymandhoo"
+    },
+    {
+      "Atoll": "Vaavu",
+      "Island": "Keyodhoo",
+      "Location": "17 miles NE of Keyodhoo"
+    },
+    {
+      "Atoll": "Kaafu",
+      "Island": "Dhiffushi",
+      "Location": "13 miles E of dhiffushi"
+    },
+    {
+      "Atoll": "kaafu",
+      "Island": "Huraa",
+      "Location": "17 miles SE of Hura"
+    },
+    {
+      "Atoll": "Kaafu",
+      "Island": "Maafushi",
+      "Location": "12.6 miles SE of Maafushi"
+    },
+    {
+      "Atoll": "Lhaviyani",
+      "Island": "Olhuvelifushi",
+      "Location": "12 miles SE of Olhuvelifushi"
+    },
+    {
+      "Atoll": "Kaafu",
+      "Island": "Gaafaru",
+      "Location": "17 miles E of Gaafaru"
+    },
+    {
+      "Atoll": "Lhaviyani",
+      "Island": "Faadhoo",
+      "Location": "10.25 miles NE of Faadhoo"
+    },
+    {
+      "Atoll": "Noonu",
+      "Island": "Maafaru",
+      "Location": "8.5 miles E of Maafaru"
+    },
+    {
+      "Atoll": "shaviyani",
+      "Island": "Funadhoo",
+      "Location": "11.5 miles NE of Funadhoo"
+    },
+    {
+      "Atoll": "Ha.Dhaalu",
+      "Island": "Kulhudhufushi",
+      "Location": "15.5 miles SE of Kulhudhufushi"
+    },
+    {
+      "Atoll": "Raa",
+      "Island": "Kandholhudhoo",
+      "Location": "16.8 miles W of Hura, near Kandholhudhoo"
+    },
+    {
+      "Atoll": "shaviyani",
+      "Island": "Komandoo",
+      "Location": "23 miles SW of komandoo"
+    },
+    {
+      "Atoll": "Ha.Dhaalu",
+      "Island": "Makunudhoo",
+      "Location": "20 miles W of Makunudhoo"
+    },
+    {
+      "Atoll": "Baa",
+      "Island": "Fulhadhoo",
+      "Location": "19 miles W of Fulhadhoo"
+    },
+    {
+      "Atoll": "Raa",
+      "Island": "Meedhoo",
+      "Location": "16 miles W of Maafaru"
+    },
+    {
+      "Atoll": "Baa",
+      "Island": "Thulhaadhoo",
+      "Location": "12.6 miles NW of Thulhaadhoo"
+    },
+    {
+      "Atoll": "Alifu/N",
+      "Island": "Maalhos",
+      "Location": "15 miles SW of Maalhos"
+    },
+    {
+      "Atoll": "Alifu/N",
+      "Island": "Ukulhas",
+      "Location": "15 miles NW of Mathiveri"
+    },
+    {
+      "Atoll": "Alifu/S",
+      "Island": "Fenfushi/Maamigili",
+      "Location": "16 miles SW of Fenfushi"
+    },
+    {
+      "Atoll": "Faafu",
+      "Island": "Nillandhoo",
+      "Location": "28 miles W of Himithi"
+    },
+    {
+      "Atoll": "Thaa",
+      "Island": "Hirilandhoo",
+      "Location": "28 miles SW of Hirilandhoo"
+    },
+    {
+      "Atoll": "Thaa",
+      "Island": "Hirilandhoo",
+      "Location": "15 miles SW of Hirilandhoo"
+    },
+    {
+      "Atoll": "Dhaalu",
+      "Island": "Kudhahuvadhoo",
+      "Location": "14 miles SW of Kudhahuvadhoo"
+    },
+    {
+      "Atoll": "Dhaalu",
+      "Island": "Hulhudheli",
+      "Location": "15.5 miles W of Hulhudheli"
+    },
+    {
+      "Atoll": "Thaa",
+      "Island": "Kimbidhoo",
+      "Location": "9 Miles SW of Omadhoo"
+    },
+    {
+      "Atoll": "Laamu",
+      "Island": "Maavah",
+      "Location": "14 miles SW of Maavah"
+    },
+    {
+      "Atoll": "Ga.Alifu",
+      "Island": "Kolamafushi",
+      "Location": "14 miles NW of Kolamafushi"
+    },
+    {
+      "Atoll": "Ga.Dhaalu",
+      "Island": "Fiyori",
+      "Location": "12.5 miles S of Fiyori"
+    },
+    {
+      "Atoll": "Seenu",
+      "Island": "Feydhoo",
+      "Location": "17 miles SW of Gan Kandu"
+    },
+    {
+      "Atoll": "Ga.Alifu",
+      "Island": "Dhevvadhoo",
+      "Location": "17 miles NW of Meradhoo"
+    },
+    {
+      "Atoll": "Seenu",
+      "Island": "Hithadhoo",
+      "Location": "13 miles NW of Hithadhoo"
+    },
+    {
+      "Atoll": "Ga.Dhaalu",
+      "Island": "Thinadhoo",
+      "Location": "16.5 miles SW of Thinadhoo"
+    },
+    {
+      "Atoll": "Ga.Dhaalu",
+      "Island": "Nadallaa",
+      "Location": "15 miles SW of Nadallaa"
+    }
+  ]
+}
