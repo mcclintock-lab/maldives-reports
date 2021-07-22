@@ -13,7 +13,7 @@ describe("Basic smoke tests", () => {
   test("handler function is present", () => {
     expect(typeof Handler.func).toBe("function");
   });
-  test("tests run against all hawaii polygon examples", async () => {
+  test("tests run against polygon examples", async () => {
     const examples = await getExamplePolygonSketchAll("maldives-");
     for (const example of examples) {
       const result = await Handler.func(example);
