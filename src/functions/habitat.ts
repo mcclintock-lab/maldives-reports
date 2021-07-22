@@ -44,7 +44,10 @@ export async function habitat(
   // Default to vector for precision and fallback to raster, error if just too big
   let methodDesc = "";
   const areaByClass = await (async () => {
-    if (numPoints < config.vectorCalcBounds.maxPoints) {
+    if (
+      numPoints < config.vectorCalcBounds.maxPoints &&
+      boxArea < config.vectorCalcBounds.maxArea
+    ) {
       methodDesc = "vector";
       return areaByClassVector(fc, box, config);
     } else if (

@@ -28,10 +28,7 @@ describe("habitatRaster - Basic smoke tests", () => {
     expect(typeof habitatRaster).toBe("function");
   });
   test("test run all polygon examples", async () => {
-    const examples = [
-      ...(await getExamplePolygonSketchAll("habitatRaster-")),
-      ...(await getExamplePolygonSketchAll("maldives-")),
-    ];
+    const examples = await getExamplePolygonSketchAll("maldives-");
     for (const example of examples) {
       const result = await habitatRaster(example);
       expect(result).toBeTruthy();

@@ -64,6 +64,7 @@ export const config: HabitatConfig = {
   },
   rasterUrl,
   vectorCalcBounds: {
+    maxArea: 4000000000,
     maxPoints: 5000,
   },
   vectorUrl,

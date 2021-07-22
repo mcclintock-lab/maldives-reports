@@ -25,6 +25,7 @@ export interface RasterConfig {
 
 export interface VectorConfig {
   vectorCalcBounds: {
+    maxArea: number;
     maxPoints: number;
   };
   vectorUrl: string;

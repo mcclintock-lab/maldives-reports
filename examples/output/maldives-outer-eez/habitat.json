@@ -6,7 +6,7 @@
       "class": "Coral/Algae",
       "totalArea": 675242446.511775,
       "percArea": 0.231597,
-      "sketchArea": 13070.937271
+      "sketchArea": 15275
     },
     {
       "class_id": 2,
@@ -41,10 +41,10 @@
       "class": "Seagrass",
       "totalArea": 118357178.400584,
       "percArea": 0.040595,
-      "sketchArea": 297.629752
+      "sketchArea": 400
     }
   ],
   "areaUnit": "square meters",
   "success": true,
-  "methodDesc": "vector"
+  "methodDesc": "raster"
 }
