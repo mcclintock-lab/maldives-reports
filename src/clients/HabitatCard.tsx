@@ -8,21 +8,17 @@ import {
   roundLower,
 } from "@seasketch/geoprocessing/client";
 // import { STUDY_REGION_AREA_SQ_METERS } from "../functions/areaConstants";
-import {
-  HAB_NAME_FIELD,
-  HabitatResults,
-  AreaStats,
-} from "../functions/habitatConfig";
+import { HabitatResult } from "../functions/habitatConfig";
 import { KeySection } from "../components/KeySection";
 
 const HabitatCard = () => (
   <ResultsCard title="Habitat" functionName="habitat">
-    {(data: HabitatResults) => {
+    {(data: HabitatResult) => {
       const areaUnitDisplay = "sq. km";
-      const columns: Column<AreaStats>[] = [
+      const columns: Column<HabitatResult["areaByClass"][0]>[] = [
         {
           Header: "Habitat",
-          accessor: (row) => row[HAB_NAME_FIELD],
+          accessor: (row) => row.class,
           style: { backgroundColor: "#efefef", fontSize: 14 },
         },
         {
@@ -51,6 +47,30 @@ const HabitatCard = () => (
         },
       ];
 
+      const keySection = (() => {
+        if (!data.success) {
+          return <span>{data.message}</span>;
+        } else if (data.areaByClass.length === 0) {
+          return (
+            <span>This sketch does not overlap with any protected areas</span>
+          );
+        } else {
+          return (
+            <>
+              <Table
+                columns={columns}
+                data={data.areaByClass.sort((a, b) =>
+                  a.class.localeCompare(b.class)
+                )}
+              />
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                <small>(Method: {data.methodDesc})</small>
+              </div>
+            </>
+          );
+        }
+      })();
+
       return (
         <>
           <p>
@@ -58,18 +78,7 @@ const HabitatCard = () => (
             management area network to support a wide array of species.
           </p>
 
-          <KeySection>
-            {data.areaByClass.length ? (
-              <Table
-                columns={columns}
-                data={data.areaByClass.sort((a, b) =>
-                  a[HAB_NAME_FIELD].localeCompare(b[HAB_NAME_FIELD])
-                )}
-              />
-            ) : (
-              <span>This sketch does not overlap with any protected areas</span>
-            )}
-          </KeySection>
+          <KeySection>{keySection}</KeySection>
         </>
       );
     }}

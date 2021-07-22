@@ -5,11 +5,13 @@ import {
   RasterConfig,
   VectorConfig,
   ClassFeatureProps,
-  MethodMeta,
+  FunctionResponse,
+  AreaByClassResponse,
 } from "../util/areaByClass";
 
 //// BASE ////
 
+const linearUnits = "meters";
 const areaUnits = "square meters";
 
 //// CLASS /////
@@ -48,6 +50,7 @@ const vectorUrl =
 //// CONFIG ////
 
 export const config: HabitatConfig = {
+  linearUnits,
   areaUnits,
   classIdToName,
   rasterResolution,
@@ -68,26 +71,12 @@ export const config: HabitatConfig = {
 
 //// TYPES ////
 
+/** habitat analysis is class-based and uses both raster and vector */
 type HabitatConfig = BaseConfig & ClassConfig & RasterConfig & VectorConfig;
 
+/** habitat features are polygons with feature class properties for categorization */
 export type HabitatFeature = Feature<Polygon, ClassFeatureProps>;
-
-export type AreaStats = ClassFeatureProps & {
-  /** Total area with this habitat type */
-  totalArea: number;
-  /** Percentage of overall habitat with this habitat type */
-  percArea: number;
-  /** Total area within feature with this habitat type, rounded to the nearest meter */
-  sketchArea: number;
-};
-
-export type HabitatResults = MethodMeta & {
-  totalArea: number;
-  areaByClass: AreaStats[];
-  areaUnit: string;
-  success: boolean;
-  message?: string;
-};
+export type HabitatResult = FunctionResponse & AreaByClassResponse;
 
 /*
 Value	Pixel count	Area (deg²)

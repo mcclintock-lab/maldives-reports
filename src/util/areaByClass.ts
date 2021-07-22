@@ -20,8 +20,11 @@ import combine from "@turf/combine";
 import logger from "../util/logger";
 
 export interface BaseConfig {
+  linearUnits: string;
   areaUnits: string;
 }
+
+//// BASE TYPES - move to geoprocessing ////
 
 export interface ClassConfig {
   /** Map of class IDs to names */
@@ -53,10 +56,32 @@ export interface ClassFeatureProps {
   class: string;
 }
 
-export interface MethodMeta {
+/** Base response object for geoprocessing function */
+export type FunctionResponse = {
+  success: boolean;
+  message?: string;
   // Description of the underlying analysis.  A gp functions method may vary depending on parameters
   methodDesc?: string;
-}
+};
+
+//// AREA BY CLASS TYPES ////
+
+/** Additional properties for gp functions calculating area by class */
+export type AreaByClassResponse = {
+  totalArea: number;
+  areaByClass: AreaByClassMetric[];
+  areaUnit: string;
+};
+
+/**   */
+export type AreaByClassMetric = ClassFeatureProps & {
+  /** Total area with this habitat type */
+  totalArea: number;
+  /** Percentage of overall habitat with this habitat type */
+  percArea: number;
+  /** Total area within feature with this habitat type, rounded to the nearest meter */
+  sketchArea: number;
+};
 
 export async function areaByClassVector<P extends ClassFeatureProps>(
   fc: FeatureCollection<Polygon>,

@@ -7,7 +7,7 @@ import {
   roundDecimal,
 } from "@seasketch/geoprocessing";
 import bbox from "@turf/bbox";
-import { config, HabitatResults } from "./habitatConfig";
+import { config, HabitatResult } from "./habitatConfig";
 import { areaByClassRaster } from "../util/areaByClass";
 import logger from "../util/logger";
 import dissolve from "@turf/dissolve";
@@ -23,7 +23,7 @@ import habitatAreaStats from "../../data/precalc/habitatAreaStats.json";
  */
 export async function habitatRaster(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>
-): Promise<HabitatResults> {
+): Promise<HabitatResult> {
   if (!sketch) throw new Error("Feature is missing");
 
   try {
@@ -38,6 +38,7 @@ export async function habitatRaster(
     return {
       ...habitatAreaStats,
       success: true,
+      methodDesc: "raster",
       areaByClass: habitatAreaStats.areaByClass.map((abc) => ({
         ...abc,
         sketchArea: roundDecimal(areaByClass[abc.class_id] || 0, 6),

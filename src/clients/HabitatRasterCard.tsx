@@ -8,21 +8,17 @@ import {
   roundLower,
 } from "@seasketch/geoprocessing/client";
 // import { STUDY_REGION_AREA_SQ_METERS } from "../functions/areaConstants";
-import {
-  HAB_NAME_FIELD,
-  HabitatResults,
-  AreaStats,
-} from "../functions/habitatConfig";
+import { HabitatResult } from "../functions/habitatConfig";
 import { KeySection } from "../components/KeySection";
 
 const HabitatCard = () => (
   <ResultsCard title="Habitat Raster" functionName="habitatRaster">
-    {(data: HabitatResults) => {
+    {(data: HabitatResult) => {
       const areaUnitDisplay = "sq. km";
-      const columns: Column<AreaStats>[] = [
+      const columns: Column<HabitatResult["areaByClass"][0]>[] = [
         {
           Header: "Habitat",
-          accessor: (row) => row[HAB_NAME_FIELD],
+          accessor: (row) => row.class,
           style: { backgroundColor: "#efefef", fontSize: 14 },
         },
         {
@@ -63,7 +59,7 @@ const HabitatCard = () => (
               <Table
                 columns={columns}
                 data={data.areaByClass.sort((a, b) =>
-                  a[HAB_NAME_FIELD].localeCompare(b[HAB_NAME_FIELD])
+                  a.class.localeCompare(b.class)
                 )}
               />
             ) : (

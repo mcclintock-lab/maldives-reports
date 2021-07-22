@@ -45,5 +45,6 @@
     }
   ],
   "areaUnit": "square meters",
-  "success": true
+  "success": true,
+  "methodDesc": "raster"
 }
