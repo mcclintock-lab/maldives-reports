@@ -7,7 +7,7 @@ import {
   ClassFeatureProps,
   FunctionResponse,
   AreaByClassResponse,
-} from "../util/areaByClass";
+} from "../util/areaByClassTypes";
 
 //// BASE ////
 
@@ -30,7 +30,7 @@ const classIdToName: Record<string, string> = {
 const rasterResolution = 5;
 const rasterPixelArea = rasterResolution * rasterResolution;
 const rasterPixelBytes = 1; // 8 bit integer
-const rasterMaxSize = 4_000_000_000_000; // 4GB max buffer size
+const rasterMaxSize = 4000000000000; // 4GB max buffer size
 const rasterMaxBytes = rasterMaxSize / rasterPixelBytes / rasterPixelArea;
 
 const rasterFilename = "habitat_cog.tif";
@@ -59,12 +59,12 @@ export const config: HabitatConfig = {
   rasterMaxSize,
   rasterMaxBytes,
   rasterCalcBounds: {
-    maxArea: 40_000_000_000,
-    maxPoints: 20_000,
+    maxArea: 40000000000,
+    maxPoints: 20000,
   },
   rasterUrl,
   vectorCalcBounds: {
-    maxPoints: 5_000,
+    maxPoints: 5000,
   },
   vectorUrl,
 };
