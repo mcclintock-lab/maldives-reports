@@ -1,15 +1,20 @@
-import { Feature, Polygon, BBox } from "@seasketch/geoprocessing";
+import { Feature, Polygon } from "@seasketch/geoprocessing";
+import {
+  BaseConfig,
+  ClassConfig,
+  RasterConfig,
+  VectorConfig,
+  ClassFeatureProps,
+  MethodMeta,
+} from "../util/areaByClass";
 
-//// CONSTANTS ////
+//// BASE ////
 
-export const HAB_ID_FIELD = "class_id";
-export const HAB_NAME_FIELD = "class";
+const areaUnits = "square meters";
 
-export const X_RESOLUTION = 5;
-export const Y_RESOLUTION = 5;
-export const AREA_PER_PIXEL = X_RESOLUTION * Y_RESOLUTION;
+//// CLASS /////
 
-export const habIdToName: Record<string, string> = {
+const classIdToName: Record<string, string> = {
   "1": "Coral/Algae",
   "2": "Microalgal Mats",
   "3": "Rock",
@@ -18,45 +23,71 @@ export const habIdToName: Record<string, string> = {
   "6": "Seagrass",
 };
 
-//// DATASETS ////
+//// RASTER ////
+
+const rasterResolution = 5;
+const rasterPixelArea = rasterResolution * rasterResolution;
+const rasterPixelBytes = 1; // 8 bit integer
+const rasterMaxSize = 4_000_000_000_000; // 4GB max buffer size
+const rasterMaxBytes = rasterMaxSize / rasterPixelBytes / rasterPixelArea;
 
 const rasterFilename = "habitat_cog.tif";
-export const rasterUrl =
+const rasterUrl =
   process.env.NODE_ENV === "production"
     ? `https://gp-maldives-reports-datasets.s3.ap-south-1.amazonaws.com/${rasterFilename}`
     : `http://127.0.0.1:8080/${rasterFilename}`;
 
+//// VECTOR ////
+
 const vectorFilename = "habitat.fgb";
-export const vectorUrl =
+const vectorUrl =
   process.env.NODE_ENV === "production"
     ? `https://gp-maldives-reports-datasets.s3.ap-south-1.amazonaws.com/${vectorFilename}`
     : `http://127.0.0.1:8080/${vectorFilename}`;
 
+//// CONFIG ////
+
+export const config: HabitatConfig = {
+  areaUnits,
+  classIdToName,
+  rasterResolution,
+  rasterPixelArea,
+  rasterPixelBytes,
+  rasterMaxSize,
+  rasterMaxBytes,
+  rasterCalcBounds: {
+    maxArea: 40_000_000_000,
+    maxPoints: 20_000,
+  },
+  rasterUrl,
+  vectorCalcBounds: {
+    maxPoints: 5_000,
+  },
+  vectorUrl,
+};
+
 //// TYPES ////
 
-export interface HabitatProps {
-  /** Dataset-specific attribute containing habitat class id number */
-  [HAB_ID_FIELD]: number;
-  /** Dataset-specific attribute containing habitat type name */
-  [HAB_NAME_FIELD]: string;
-}
+type HabitatConfig = BaseConfig & ClassConfig & RasterConfig & VectorConfig;
 
-export type HabitatFeature = Feature<Polygon, HabitatProps>;
+export type HabitatFeature = Feature<Polygon, ClassFeatureProps>;
 
-export interface AreaStats extends HabitatProps {
-  /** Total area with this habitat type in square meters */
+export type AreaStats = ClassFeatureProps & {
+  /** Total area with this habitat type */
   totalArea: number;
   /** Percentage of overall habitat with this habitat type */
   percArea: number;
   /** Total area within feature with this habitat type, rounded to the nearest meter */
   sketchArea: number;
-}
+};
 
-export interface HabitatResults {
+export type HabitatResults = MethodMeta & {
   totalArea: number;
   areaByClass: AreaStats[];
   areaUnit: string;
-}
+  success: boolean;
+  message?: string;
+};
 
 /*
 Value	Pixel count	Area (deg²)

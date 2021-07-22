@@ -44,5 +44,6 @@
       "sketchArea": 30300
     }
   ],
-  "areaUnit": "square meters"
+  "areaUnit": "square meters",
+  "success": true
 }

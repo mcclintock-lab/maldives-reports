@@ -1,30 +1,24 @@
 import {
   GeoprocessingHandler,
-  intersect,
   isFeatureCollection,
   Polygon,
-  MultiPolygon,
   Feature,
   FeatureCollection,
   roundDecimal,
 } from "@seasketch/geoprocessing";
-import { fgBoundingBox } from "../util/flatgeobuf";
 
 import area from "@turf/area";
 import bbox from "@turf/bbox";
-import combine from "@turf/combine";
 import dissolve from "@turf/dissolve";
+import explode from "@turf/explode";
 import { featureCollection } from "@turf/helpers";
-import {
-  HabitatFeature,
-  HabitatResults,
-  HAB_ID_FIELD,
-  vectorUrl,
-} from "./habitatConfig";
-import logger from "../util/logger";
-import { deserialize } from "../util/flatgeobuf";
+import bboxPolygon from "@turf/bbox-polygon";
+import { areaByClassRaster, areaByClassVector } from "../util/areaByClass";
+import { HabitatResults, config } from "./habitatConfig";
 
 // Must be generated first by habitat-4-precalc
+// TODO: migrate to habitatAreaStatsRaster.json
+// Note: habitat-4-precalc-raster does not generate correct totals.  Fix or augment with the qgis precalc numbers in habitatConfig.ts
 import habitatAreaStats from "../../data/precalc/habitatAreaStats.json";
 
 /**
@@ -35,48 +29,52 @@ export async function habitat(
 ): Promise<HabitatResults> {
   if (!feature) throw new Error("Feature is missing");
   const box = feature.bbox || bbox(feature);
+  const boxArea = area(bboxPolygon(box));
+  const boxBytes = boxArea / config.rasterPixelBytes / config.rasterPixelArea;
+
   // Dissolve down to a single feature for speed
   const fc = isFeatureCollection(feature)
     ? dissolve(feature)
     : featureCollection([feature]);
-  const sketchMulti = (combine(fc) as FeatureCollection<MultiPolygon>)
-    .features[0];
 
-  // Intersect habitat polys one at a time as they come over the wire, maintaining habitat properties
-  try {
-    const iter = deserialize(vectorUrl, fgBoundingBox(box));
+  const numPoints = explode(fc).features.length;
 
-    let clippedHabFeatures: HabitatFeature[] = [];
-    let areaByClass: Record<string, number> = {};
-    // @ts-ignore
-    for await (const habFeature of iter) {
-      const polyClipped = intersect(habFeature, sketchMulti, {
-        properties: habFeature.properties,
-      }) as HabitatFeature;
-      if (polyClipped) {
-        clippedHabFeatures.push(polyClipped);
-
-        // Sum total area by class ID within feature in square meters
-        const polyArea = area(polyClipped);
-        areaByClass[
-          polyClipped.properties[HAB_ID_FIELD]
-        ] = areaByClass.hasOwnProperty(polyClipped.properties[HAB_ID_FIELD])
-          ? areaByClass[polyClipped.properties[HAB_ID_FIELD]] + polyArea
-          : polyArea;
-      }
+  // Choose method using heuristic of sketch area/complexity -
+  // Chosen based on manually testing when the analysis fails or doesn't return in timely manner (30 seconds)
+  // Default to vector for precision and fallback to raster, error if just too big
+  const areaByClass = await (async () => {
+    if (numPoints < config.vectorCalcBounds.maxPoints) {
+      return areaByClassVector(fc, box, config);
+    } else if (
+      boxArea < config.rasterCalcBounds.maxArea &&
+      numPoints < config.rasterCalcBounds.maxPoints &&
+      boxBytes < config.rasterMaxBytes
+    ) {
+      return areaByClassRaster(fc, box, config);
+    } else {
+      return undefined;
     }
+  })();
 
-    // Flatten into array response
+  if (areaByClass) {
+    // Merge calc with precalc
     return {
       ...habitatAreaStats,
-      areaByClass: habitatAreaStats.areaByClass.map((abt) => ({
-        ...abt,
-        sketchArea: roundDecimal(areaByClass[abt[HAB_ID_FIELD]] || 0, 6),
+      success: true,
+      areaByClass: habitatAreaStats.areaByClass.map((abc) => ({
+        ...abc,
+        sketchArea: roundDecimal(areaByClass[abc.class_id] || 0, 6),
       })),
     };
-  } catch (err) {
-    logger.error("habitat error", err);
-    throw err;
+  } else {
+    // Nope
+    return {
+      success: false,
+      areaByClass: [],
+      totalArea: 0,
+      areaUnit: config.areaUnits,
+      message: `Unable to run habitat analysis.  Sketch is too large or too complex`,
+    };
   }
 }
 

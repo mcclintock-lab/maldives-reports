@@ -6,7 +6,8 @@ import {
   roundDecimal,
 } from "@seasketch/geoprocessing";
 import { strict as assert } from "assert";
-import { rasterClassStats } from "../functions/habitatRaster";
+import { rasterClassStats } from "./areaByClass";
+import { config } from "../functions/habitatConfig";
 
 /**
  * Calculates area of all classes for a given raster
@@ -19,10 +20,11 @@ export async function calcAreaStatsRaster(
   raster: FeatureCollection<Polygon>,
   idField: string,
   nameField: string,
+  areaPerPixel: number,
   /** hash mapping class ID to name */
   idToName: Record<string, string>
 ) {
-  const areaByClass = await rasterClassStats(raster);
+  const areaByClass = await rasterClassStats(raster, config);
 
   // TODO: refactor shared code with calcAreaStats
 
@@ -50,6 +52,6 @@ export async function calcAreaStatsRaster(
   return {
     totalArea: +totalArea.toFixed(6),
     areaByClass: areaStatsByType,
-    areaUnit: "square meters",
+    areaUnit: config.areaUnits,
   };
 }

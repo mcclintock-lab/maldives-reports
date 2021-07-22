@@ -6,6 +6,7 @@ import {
   roundDecimal,
 } from "@seasketch/geoprocessing";
 import { strict as assert } from "assert";
+import { config } from "../functions/habitatConfig";
 
 /**
  * Calculates area stats for a given feature collection.
@@ -70,6 +71,6 @@ export function calcAreaStats(
   return {
     totalArea: +totalArea.toFixed(6),
     areaByClass: areaStatsByType,
-    areaUnit: "square meters",
+    areaUnit: config.areaUnits,
   };
 }

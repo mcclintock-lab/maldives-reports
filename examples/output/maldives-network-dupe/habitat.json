@@ -44,5 +44,6 @@
       "sketchArea": 417.522073
     }
   ],
-  "areaUnit": "square meters"
+  "areaUnit": "square meters",
+  "success": true
 }
