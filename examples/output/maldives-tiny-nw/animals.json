@@ -1,0 +1,19 @@
+{
+  "animalsByCategory": [
+    {
+      "category": "Fish",
+      "species": [],
+      "sites": []
+    },
+    {
+      "category": "Rare Animal",
+      "species": [],
+      "sites": []
+    },
+    {
+      "category": "Invertebrate",
+      "species": [],
+      "sites": []
+    }
+  ]
+}

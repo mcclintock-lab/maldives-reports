@@ -8,14 +8,15 @@ import {
   writeResultOutput,
 } from "@seasketch/geoprocessing/scripts/testing";
 
-describe("Biomass smoke tests", () => {
+describe("bathymetry smoke tests", () => {
   it("has a handler function", () => {
     expect(typeof bathymetry).toBe("function");
   });
-  it("find bathymetry for all types in new maui", async () => {
+  it("find bathymetry for all types", async () => {
     const examples = await getExamplePolygonSketchAll("maldives-");
     for (const example of examples) {
       const result = await bathymetry(example);
+      expect(result).toBeTruthy();
       expect(result.min).toBeTruthy();
       expect(result.max).toBeTruthy();
       expect(result.mean).toBeTruthy();

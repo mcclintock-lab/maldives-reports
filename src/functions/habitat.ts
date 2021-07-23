@@ -1,122 +1,97 @@
 import {
   GeoprocessingHandler,
-  intersect,
   isFeatureCollection,
   Polygon,
-  MultiPolygon,
   Feature,
   FeatureCollection,
   roundDecimal,
 } from "@seasketch/geoprocessing";
-import { fgBoundingBox } from "../util/flatgeobuf";
 
 import area from "@turf/area";
 import bbox from "@turf/bbox";
-import combine from "@turf/combine";
 import dissolve from "@turf/dissolve";
+import explode from "@turf/explode";
 import { featureCollection } from "@turf/helpers";
-import { HAB_TYPE_FIELD } from "./habitatConstants";
-import logger from "../util/logger";
-import { deserialize } from "../util/flatgeobuf";
+import bboxPolygon from "@turf/bbox-polygon";
+import { areaByClassRaster, areaByClassVector } from "../util/areaByClass";
+import { HabitatResult, config } from "./habitatConfig";
 
 // Must be generated first by habitat-4-precalc
+// TODO: migrate to habitatAreaStatsRaster.json
+// Note: habitat-4-precalc-raster does not generate correct totals.  Fix or augment with the qgis precalc numbers in habitatConfig.ts
 import habitatAreaStats from "../../data/precalc/habitatAreaStats.json";
-
-type HabitatFeature = Feature<
-  Polygon,
-  {
-    /** Dataset-specific attribute containing habitat type name */
-    [HAB_TYPE_FIELD]: string;
-    /** Unique ID added to all bundled features */
-    gid: number;
-  }
->;
-
-export interface HabitatResults {
-  totalArea: number;
-  areaByType: AreaStats[];
-  areaUnit: string;
-}
-
-export interface AreaStats {
-  /** Total area with this habitat type in square meters */
-  totalArea: number;
-  /** Percentage of overall habitat with this habitat type */
-  percArea: number;
-  /** Total area within feature with this habitat type, rounded to the nearest meter */
-  sketchArea: number;
-  /** Dataset-specific field containing habitat type name */
-  [HAB_TYPE_FIELD]: string;
-}
 
 /**
  * Returns the area captured by the Feature polygon(s)
  */
 export async function habitat(
   feature: Feature<Polygon> | FeatureCollection<Polygon>
-): Promise<HabitatResults> {
+): Promise<HabitatResult> {
   if (!feature) throw new Error("Feature is missing");
-
   const box = feature.bbox || bbox(feature);
+  const boxArea = area(bboxPolygon(box));
+  const boxBytes = boxArea / config.rasterPixelBytes / config.rasterPixelArea;
+
   // Dissolve down to a single feature for speed
   const fc = isFeatureCollection(feature)
     ? dissolve(feature)
     : featureCollection([feature]);
-  const sketchMulti = (combine(fc) as FeatureCollection<MultiPolygon>)
-    .features[0];
 
-  const filename = "habitat.fgb";
-  const url =
-    process.env.NODE_ENV === "test"
-      ? `http://127.0.0.1:8080/${filename}`
-      : `https://gp-maldives-reports-datasets.s3.ap-south-1.amazonaws.com/${filename}`;
+  const numPoints = explode(fc).features.length;
 
-  // Intersect habitat polys one at a time as they come over the wire, maintaining habitat properties
-  try {
-    const iter = deserialize(url, fgBoundingBox(box));
-
-    let clippedHabFeatures: HabitatFeature[] = [];
-    let sumAreaByHabType: {
-      [key: string]: number;
-    } = {};
-    // @ts-ignore
-    for await (const habFeature of iter) {
-      const polyClipped = intersect(habFeature, sketchMulti, {
-        properties: habFeature.properties,
-      }) as HabitatFeature;
-      if (polyClipped) {
-        clippedHabFeatures.push(polyClipped);
-
-        // Sum total area by hab type within feature in square meters
-        const polyArea = area(polyClipped);
-        sumAreaByHabType[
-          polyClipped.properties[HAB_TYPE_FIELD]
-        ] = sumAreaByHabType.hasOwnProperty(
-          polyClipped.properties[HAB_TYPE_FIELD]
-        )
-          ? sumAreaByHabType[polyClipped.properties[HAB_TYPE_FIELD]] + polyArea
-          : polyArea;
-      }
+  // Choose method using heuristic of sketch area/complexity -
+  // Chosen based on manually testing when the analysis fails or doesn't return in timely manner (30 seconds)
+  // Default to vector for precision and fallback to raster, error if just too big
+  let methodDesc = "";
+  const areaByClass = await (async () => {
+    if (
+      numPoints < config.vectorCalcBounds.maxPoints &&
+      boxArea < config.vectorCalcBounds.maxArea
+    ) {
+      methodDesc = "vector";
+      return areaByClassVector(fc, box, config);
+    } else if (
+      boxArea < config.rasterCalcBounds.maxArea &&
+      numPoints < config.rasterCalcBounds.maxPoints &&
+      boxBytes < config.rasterMaxBytes
+    ) {
+      methodDesc = "raster";
+      return areaByClassRaster(fc, box, config);
+    } else {
+      return undefined;
     }
+  })();
 
-    // Flatten into array response
-    return {
-      ...habitatAreaStats,
-      areaByType: habitatAreaStats.areaByType.map((abt) => ({
-        ...abt,
-        sketchArea: roundDecimal(sumAreaByHabType[abt[HAB_TYPE_FIELD]] || 0, 6),
-      })),
-    };
-  } catch (err) {
-    logger.error("habitat error", err);
-    throw err;
-  }
+  // Merge with precalc
+  const mergedAreaByClass = habitatAreaStats.areaByClass.map(
+    (precalcAreaStat) => ({
+      ...precalcAreaStat,
+      sketchArea: areaByClass
+        ? roundDecimal(areaByClass[precalcAreaStat.class_id] || 0, 6)
+        : 0,
+    })
+  );
+
+  const start = areaByClass
+    ? { success: true }
+    : {
+        success: false,
+        message:
+          "No result. Analysis cannot run on a sketch of this size/complexity",
+      };
+  return {
+    ...start,
+    ...habitatAreaStats, // merge with precalc
+    methodDesc,
+    areaByClass: mergedAreaByClass,
+  };
 }
 
 export default new GeoprocessingHandler(habitat, {
   title: "habitat",
   description: "Calculate habitat within feature",
-  timeout: 120, // seconds
+  timeout: 240, // seconds
+  memory: 8192,
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

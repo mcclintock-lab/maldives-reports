@@ -6,6 +6,7 @@ import {
   roundDecimal,
 } from "@seasketch/geoprocessing";
 import { strict as assert } from "assert";
+import { BaseConfig, ClassConfig } from "./areaByClassTypes";
 
 /**
  * Calculates area stats for a given feature collection.
@@ -15,18 +16,18 @@ import { strict as assert } from "assert";
  */
 export function calcAreaStats(
   collection: FeatureCollection<Polygon>,
-  typeProperty: string
+  config: BaseConfig & ClassConfig
 ) {
   // Sum area by type, single pass
-  const areaByType = collection.features.reduce<{ [key: string]: number }>(
+  const areaByClass = collection.features.reduce<{ [key: string]: number }>(
     (progress, feat) => {
       const featArea = area(feat);
       if (!feat || !feat.properties) return progress;
       return {
         ...progress,
-        [feat.properties[typeProperty]]:
-          feat.properties[typeProperty] in progress
-            ? progress[feat.properties[typeProperty]] + featArea
+        [feat.properties.class_id]:
+          feat.properties.class_id in progress
+            ? progress[feat.properties.class_id] + featArea
             : featArea,
       };
     },
@@ -39,26 +40,27 @@ export function calcAreaStats(
     if (!feat || !feat.properties) return progress;
     return {
       ...progress,
-      [feat.properties[typeProperty]]:
-        feat.properties[typeProperty] in progress
-          ? progress[feat.properties[typeProperty]].concat(feat)
+      [feat.properties.class_id]:
+        feat.properties.class_id in progress
+          ? progress[feat.properties.class_id].concat(feat)
           : [feat],
     };
   }, {});
 
   // Sum total area
-  const totalArea = Object.values(areaByType).reduce(
+  const totalArea = Object.values(areaByClass).reduce(
     (sum, val) => sum + val,
     0
   );
 
   // Calculate percentage area by type
-  const areaStatsByType = Object.keys(areaByType).map((type) => {
-    assert(areaByType[type] >= 0 && areaByType[type] <= totalArea);
+  const areaStatsByType = Object.keys(areaByClass).map((type) => {
+    assert(areaByClass[type] >= 0 && areaByClass[type] <= totalArea);
     return {
-      [typeProperty]: type,
-      totalArea: roundDecimal(areaByType[type], 6),
-      percArea: roundDecimal(areaByType[type] / totalArea, 6),
+      class_id: parseInt(type),
+      class: config.classIdToName[type],
+      totalArea: roundDecimal(areaByClass[type], 6),
+      percArea: roundDecimal(areaByClass[type] / totalArea, 6),
     };
   });
 
@@ -66,7 +68,7 @@ export function calcAreaStats(
 
   return {
     totalArea: +totalArea.toFixed(6),
-    areaByType: areaStatsByType,
-    areaUnit: "square meters",
+    areaByClass: areaStatsByType,
+    areaUnit: config.areaUnits,
   };
 }

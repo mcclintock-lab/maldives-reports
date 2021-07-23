@@ -2,18 +2,64 @@
   "animalsByCategory": [
     {
       "category": "Fish",
-      "species": [],
-      "sites": []
+      "species": [
+        "Bumphead parrot",
+        "Butterflyfish",
+        "Grouper total",
+        "Barramundi cod",
+        "Haemulidae",
+        "Humphead wrasse",
+        "Moray eel",
+        "Parrotfish",
+        "Snapper",
+        "Grouper >60 cm",
+        "Grouper 40-50 cm",
+        "Grouper 30-40 cm",
+        "Grouper 50-60 cm"
+      ],
+      "sites": [
+        "HP Reef",
+        "Honkey's",
+        "Sultans",
+        "Banana Reef"
+      ]
     },
     {
       "category": "Rare Animal",
-      "species": [],
-      "sites": []
+      "species": [
+        "Sharks",
+        "Turtles",
+        "Mantas"
+      ],
+      "sites": [
+        "Banana Reef"
+      ]
     },
     {
       "category": "Invertebrate",
-      "species": [],
-      "sites": []
+      "species": [
+        "Lobster",
+        "Giant clam total",
+        "Banded coral shrimp",
+        "Crown-of-thorns starfish (COTS)",
+        "Diadema",
+        "Edible sea cucumber",
+        "Pencil urchin",
+        "Tripneustes",
+        "Triton",
+        "Giant clam 40-50 cm",
+        "Giant clam <10 cm",
+        "Giant clam >50 cm",
+        "Giant clam 10-20 cm",
+        "Giant clam 20-30 cm",
+        "Giant clam 30-40 cm"
+      ],
+      "sites": [
+        "HP Reef",
+        "Honkey's",
+        "Sultans",
+        "Banana Reef"
+      ]
     }
   ]
 }
