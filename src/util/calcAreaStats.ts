@@ -6,7 +6,7 @@ import {
   roundDecimal,
 } from "@seasketch/geoprocessing";
 import { strict as assert } from "assert";
-import { config } from "../functions/habitatConfig";
+import { BaseConfig, ClassConfig } from "./areaByClassTypes";
 
 /**
  * Calculates area stats for a given feature collection.
@@ -16,9 +16,7 @@ import { config } from "../functions/habitatConfig";
  */
 export function calcAreaStats(
   collection: FeatureCollection<Polygon>,
-  idField: string,
-  nameField: string,
-  idToName: Record<string, string>
+  config: BaseConfig & ClassConfig
 ) {
   // Sum area by type, single pass
   const areaByClass = collection.features.reduce<{ [key: string]: number }>(
@@ -27,9 +25,9 @@ export function calcAreaStats(
       if (!feat || !feat.properties) return progress;
       return {
         ...progress,
-        [feat.properties[idField]]:
-          feat.properties[idField] in progress
-            ? progress[feat.properties[idField]] + featArea
+        [feat.properties.class_id]:
+          feat.properties.class_id in progress
+            ? progress[feat.properties.class_id] + featArea
             : featArea,
       };
     },
@@ -42,9 +40,9 @@ export function calcAreaStats(
     if (!feat || !feat.properties) return progress;
     return {
       ...progress,
-      [feat.properties[idField]]:
-        feat.properties[idField] in progress
-          ? progress[feat.properties[idField]].concat(feat)
+      [feat.properties.class_id]:
+        feat.properties.class_id in progress
+          ? progress[feat.properties.class_id].concat(feat)
           : [feat],
     };
   }, {});
@@ -59,8 +57,8 @@ export function calcAreaStats(
   const areaStatsByType = Object.keys(areaByClass).map((type) => {
     assert(areaByClass[type] >= 0 && areaByClass[type] <= totalArea);
     return {
-      [idField]: parseInt(type),
-      [nameField]: idToName[type],
+      class_id: parseInt(type),
+      class: config.classIdToName[type],
       totalArea: roundDecimal(areaByClass[type], 6),
       percArea: roundDecimal(areaByClass[type] / totalArea, 6),
     };

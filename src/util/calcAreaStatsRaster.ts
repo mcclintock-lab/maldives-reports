@@ -7,7 +7,7 @@ import {
 } from "@seasketch/geoprocessing";
 import { strict as assert } from "assert";
 import { rasterClassStats } from "./areaByClass";
-import { config } from "../functions/habitatConfig";
+import { BaseConfig, ClassConfig, RasterConfig } from "./areaByClassTypes";
 
 /**
  * Calculates area of all classes for a given raster
@@ -18,11 +18,7 @@ import { config } from "../functions/habitatConfig";
  */
 export async function calcAreaStatsRaster(
   raster: FeatureCollection<Polygon>,
-  idField: string,
-  nameField: string,
-  areaPerPixel: number,
-  /** hash mapping class ID to name */
-  idToName: Record<string, string>
+  config: BaseConfig & ClassConfig & RasterConfig
 ) {
   const areaByClass = await rasterClassStats(raster, config);
 
@@ -39,8 +35,8 @@ export async function calcAreaStatsRaster(
     const area = areaByClass[type];
     assert(area >= 0 && area <= totalArea);
     return {
-      [idField]: parseInt(type),
-      [nameField]: idToName[type],
+      class_id: parseInt(type),
+      class: config.classIdToName[type],
       totalArea: roundDecimal(area, 6),
       percArea:
         area === 0 || totalArea === 0 ? 0 : roundDecimal(area / totalArea, 6),
