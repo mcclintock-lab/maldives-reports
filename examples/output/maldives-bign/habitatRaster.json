@@ -1,6 +1,4 @@
 {
-  "success": false,
-  "message": "No result. Analysis cannot run on a sketch of this size/complexity",
   "totalArea": 2915588727.7111,
   "areaByClass": [
     {
@@ -47,5 +45,6 @@
     }
   ],
   "areaUnit": "square meters",
+  "success": false,
   "methodDesc": ""
 }

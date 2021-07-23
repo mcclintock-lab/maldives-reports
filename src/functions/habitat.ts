@@ -72,9 +72,16 @@ export async function habitat(
     })
   );
 
+  const start = areaByClass
+    ? { success: true }
+    : {
+        success: false,
+        message:
+          "No result. Analysis cannot run on a sketch of this size/complexity",
+      };
   return {
+    ...start,
     ...habitatAreaStats, // merge with precalc
-    success: areaByClass ? true : false,
     methodDesc,
     areaByClass: mergedAreaByClass,
   };
@@ -83,7 +90,8 @@ export async function habitat(
 export default new GeoprocessingHandler(habitat, {
   title: "habitat",
   description: "Calculate habitat within feature",
-  timeout: 120, // seconds
+  timeout: 240, // seconds
+  memory: 8192,
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

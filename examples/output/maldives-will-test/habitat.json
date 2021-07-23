@@ -1,4 +1,5 @@
 {
+  "success": true,
   "totalArea": 2915588727.7111,
   "areaByClass": [
     {
@@ -45,6 +46,5 @@
     }
   ],
   "areaUnit": "square meters",
-  "success": true,
   "methodDesc": "vector"
 }
