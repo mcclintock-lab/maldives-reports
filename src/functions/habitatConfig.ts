@@ -1,13 +1,26 @@
-import { Feature, Polygon } from "@seasketch/geoprocessing";
 import {
-  BaseConfig,
-  ClassConfig,
-  RasterConfig,
-  VectorConfig,
+  Feature,
+  Polygon,
+  FunctionMeta,
+  ClassDatasourceMeta,
+  RasterDatasourceMeta,
+  VectorDatasourceMeta,
   ClassFeatureProps,
   FunctionResponse,
-  AreaByClassResponse,
-} from "../util/areaByClassTypes";
+  AreaByClassMetricResult,
+} from "@seasketch/geoprocessing";
+
+//// TYPES ////
+
+/** habitat analysis is class-based and uses both raster and vector */
+type HabitatConfig = FunctionMeta &
+  ClassDatasourceMeta &
+  RasterDatasourceMeta &
+  VectorDatasourceMeta;
+
+/** habitat features are polygons with feature class properties for categorization */
+export type HabitatFeature = Feature<Polygon, ClassFeatureProps>;
+export type HabitatResult = FunctionResponse & AreaByClassMetricResult;
 
 //// BASE ////
 
@@ -69,15 +82,6 @@ export const config: HabitatConfig = {
   },
   vectorUrl,
 };
-
-//// TYPES ////
-
-/** habitat analysis is class-based and uses both raster and vector */
-type HabitatConfig = BaseConfig & ClassConfig & RasterConfig & VectorConfig;
-
-/** habitat features are polygons with feature class properties for categorization */
-export type HabitatFeature = Feature<Polygon, ClassFeatureProps>;
-export type HabitatResult = FunctionResponse & AreaByClassResponse;
 
 /*
 Value	Pixel count	Area (deg²)

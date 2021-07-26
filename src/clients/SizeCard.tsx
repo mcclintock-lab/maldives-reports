@@ -1,12 +1,12 @@
 import React from "react";
 import {
   ResultsCard,
+  KeySection,
   squareMeterToKilometer,
   percentLower,
   roundLower,
 } from "@seasketch/geoprocessing/client";
 import { STUDY_REGION_AREA_SQ_METERS } from "../functions/areaConstants";
-import { KeySection } from "../components/KeySection";
 
 // Import type definitions from function
 import { AreaResults } from "../functions/area";

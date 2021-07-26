@@ -5,11 +5,11 @@ import {
   SketchCollection,
   isFeatureCollection,
   roundDecimal,
+  areaByClassRaster,
+  logger,
 } from "@seasketch/geoprocessing";
 import bbox from "@turf/bbox";
 import { config, HabitatResult } from "./habitatConfig";
-import { areaByClassRaster } from "../util/areaByClass";
-import logger from "../util/logger";
 import dissolve from "@turf/dissolve";
 import area from "@turf/area";
 import bboxPolygon from "@turf/bbox-polygon";
@@ -42,6 +42,8 @@ export async function habitatRaster(
 
     let methodDesc = "";
     const areaByClass = await (async () => {
+      if (!config.rasterCalcBounds)
+        throw new Error("Missing configuration - rasterCalcBounds");
       if (
         boxArea < config.rasterCalcBounds.maxArea &&
         numPoints < config.rasterCalcBounds.maxPoints &&

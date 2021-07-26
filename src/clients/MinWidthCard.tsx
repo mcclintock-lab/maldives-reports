@@ -1,9 +1,9 @@
 import React from "react";
 import {
   ResultsCard,
+  KeySection,
   SketchAttributesCard,
 } from "@seasketch/geoprocessing/client";
-import { KeySection } from "../components/KeySection";
 
 // Import the results type definition from your functions to type-check your
 // component render functions

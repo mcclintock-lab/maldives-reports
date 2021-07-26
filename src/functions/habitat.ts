@@ -5,6 +5,8 @@ import {
   Feature,
   FeatureCollection,
   roundDecimal,
+  areaByClassVector,
+  areaByClassRaster
 } from "@seasketch/geoprocessing";
 
 import area from "@turf/area";
@@ -13,7 +15,7 @@ import dissolve from "@turf/dissolve";
 import explode from "@turf/explode";
 import { featureCollection } from "@turf/helpers";
 import bboxPolygon from "@turf/bbox-polygon";
-import { areaByClassRaster, areaByClassVector } from "../util/areaByClass";
+
 import { HabitatResult, config } from "./habitatConfig";
 
 // Must be generated first by habitat-4-precalc
@@ -27,7 +29,7 @@ import habitatAreaStats from "../../data/precalc/habitatAreaStats.json";
 export async function habitat(
   feature: Feature<Polygon> | FeatureCollection<Polygon>
 ): Promise<HabitatResult> {
-  if (!feature) throw new Error("Feature is missing");
+  if (!feature) throw new Error("Missing input feature");
   const box = feature.bbox || bbox(feature);
   const boxArea = area(bboxPolygon(box));
   const boxBytes = boxArea / config.rasterPixelBytes / config.rasterPixelArea;
@@ -44,6 +46,8 @@ export async function habitat(
   // Default to vector for precision and fallback to raster, error if just too big
   let methodDesc = "";
   const areaByClass = await (async () => {
+    if (!config.vectorCalcBounds || !config.rasterCalcBounds)
+      throw new Error("Missing configuration - CalcBounds");
     if (
       numPoints < config.vectorCalcBounds.maxPoints &&
       boxArea < config.vectorCalcBounds.maxArea

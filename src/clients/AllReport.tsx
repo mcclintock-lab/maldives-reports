@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SegmentControl from "../components/SegmentControl";
+import { SegmentControl } from "@seasketch/geoprocessing/client";
 import Overview from "./Overview";
 import Biological from "./Biological";
 import Human from "./Human";

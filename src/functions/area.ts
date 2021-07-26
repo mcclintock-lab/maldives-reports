@@ -4,10 +4,13 @@ import {
   Feature,
   Polygon,
   FeatureCollection,
-  GeoprocessingHandler,
-  sketchArea,
-  isFeatureCollection,
-} from "@seasketch/geoprocessing";
+} from "@seasketch/geoprocessing/dist/src/types";
+
+import { GeoprocessingHandler } from "@seasketch/geoprocessing/dist/src/GeoprocessingHandler";
+
+import sketchArea from "@turf/area";
+
+import { isFeatureCollection } from "@seasketch/geoprocessing/dist/src/helpers/types";
 import dissolve from "@turf/dissolve";
 import { featureCollection } from "@turf/helpers";
 

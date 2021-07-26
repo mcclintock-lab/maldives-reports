@@ -5,15 +5,13 @@ import {
   GeoprocessingHandler,
   Polygon,
   toSketchArray,
-  bboxOverlap,
+  logger,
 } from "@seasketch/geoprocessing";
 
 import { min, max, mean } from "simple-statistics";
 
-import bbox from "@turf/bbox";
 // @ts-ignore
 import geoblaze, { Georaster } from "geoblaze";
-import logger from "../util/logger";
 
 /** Biomass analysis result for a single bathymetry type and region */
 export interface BathymetryResults {

@@ -1,6 +1,9 @@
 import React from "react";
-import { ResultsCard, Table } from "@seasketch/geoprocessing/client";
-import { KeySection } from "../components/KeySection";
+import {
+  ResultsCard,
+  Table,
+  KeySection,
+} from "@seasketch/geoprocessing/client";
 import config from "../_config";
 
 // Import type definitions from function

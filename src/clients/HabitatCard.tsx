@@ -1,6 +1,7 @@
 import React from "react";
 import {
   ResultsCard,
+  KeySection,
   squareMeterToKilometer,
   Table,
   Column,
@@ -9,7 +10,6 @@ import {
 } from "@seasketch/geoprocessing/client";
 // import { STUDY_REGION_AREA_SQ_METERS } from "../functions/areaConstants";
 import { HabitatResult } from "../functions/habitatConfig";
-import { KeySection } from "../components/KeySection";
 
 const HabitatCard = () => (
   <ResultsCard title="Habitat" functionName="habitat">
