@@ -26,6 +26,7 @@
     "src/functions/animals.ts",
     "src/functions/fads.ts",
     "src/functions/seaplanes.ts",
-    "src/functions/resorts.ts"
+    "src/functions/resorts.ts",
+    "src/functions/gfw.ts"
   ]
 }
