@@ -33,6 +33,13 @@ export async function gfw(
     Authorization: `Bearer ${TOKEN}`,
   };
 
+  const end = new Date();
+  end.setDate(end.getDate() - 4);
+  const endDate = end.toISOString().split("T")[0];
+  const start = new Date(end);
+  start.setMonth(start.getMonth() - 12);
+  const startDate = start.toISOString().split("T")[0];
+
   const reportParams = {
     name: "Apparent fishing effort - Maldives",
     geometry: feature,
@@ -40,10 +47,12 @@ export async function gfw(
     timeGroup: "none",
     filters: [""],
     datasets: ["public-global-fishing-tracks:latest"],
-    dateRange: ["2020-09-01", "2021-09-01"],
+    dateRange: [startDate, endDate],
   };
 
-  // Start Report
+  console.log(reportParams);
+
+  // ezz Report
 
   const response = await fetch(
     "https://gateway.api.globalfishingwatch.org/v1/reports",
@@ -167,7 +176,8 @@ export default new GeoprocessingHandler(gfw, {
   title: "gfw",
   description: "Global Fishing Watch report",
   timeout: 30, // seconds
-  executionMode: "sync",
+  memory: 128,
+  executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
 });
