@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import AdmZip from "adm-zip";
+import AdmZip, { IZipEntry } from "adm-zip";
 import csvtojson from "csvtojson";
 import fs from "fs";
 import {
@@ -11,6 +11,8 @@ import {
 export interface VesselFishingEffort {
   Period: string;
   Flag: string;
+  "Vessel Name": string;
+  "Fishing hours": string;
   mmsi: string;
   imo: string;
   "Call Sign": string;
@@ -66,7 +68,7 @@ export async function gfw(
 
   // Check Done Loop
 
-  let done = undefined;
+  let done = false;
   let tries = 0;
   while (!done) {
     const doneResponse = await fetch(
@@ -84,6 +86,9 @@ export async function gfw(
     const doneResult = await doneResponse.json();
     if (doneResult.status === "done") {
       done = true;
+      console.log(`Ready - ${doneResult.status}`);
+    } else if (doneResult.status === "failed") {
+      return []; // TODO: handle better, indicating unavailable
     } else if (tries === 30) {
       throw new Error("Waited 30 seconds for report to finish, bailed out");
     } else {
@@ -118,7 +123,7 @@ export async function gfw(
   if (!zipResponse.ok)
     throw new Error(`unexpected zip response ${zipResponse.statusText}`);
 
-  let csvEntry = undefined;
+  let csvEntry: IZipEntry | undefined = undefined;
   if (mode === "memory") {
     var zip = new AdmZip(await zipResponse.buffer());
     var zipEntries = zip.getEntries();
@@ -150,11 +155,11 @@ export async function gfw(
   const csvString = csvEntry.getData().toString();
 
   if (csvString.length === 0) {
-    throw new Error("CSV url is empty");
+    console.log("CSV is empty", csvString);
+    return [];
   }
 
   const json = await csvtojson().fromString(csvString);
-
   return json as VesselFishingEffort[];
 }
 

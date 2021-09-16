@@ -1,0 +1,92 @@
+{
+  "animalsByCategory": [
+    {
+      "category": "Fish",
+      "species": [
+        "Butterflyfish",
+        "Barramundi cod",
+        "Bumphead parrot",
+        "Grouper >60 cm",
+        "Grouper 30-40 cm",
+        "Grouper 40-50 cm",
+        "Grouper 50-60 cm",
+        "Grouper total",
+        "Haemulidae",
+        "Humphead wrasse",
+        "Moray eel",
+        "Parrotfish",
+        "Snapper"
+      ],
+      "sites": [
+        "Maamigili",
+        "Flat Reef/Ambara Faru",
+        "Kashavaru Falhu Etere",
+        "Litholhu Kandu",
+        "Kashavaru Falhu",
+        "Fushi Falhu",
+        "Fottheyo Faru",
+        "Anabara Reef",
+        "Vattaru Faru",
+        "Thuvaru Island Reef",
+        "Maduvaree Island Reef",
+        "Diggaru Faru"
+      ]
+    },
+    {
+      "category": "Rare Animal",
+      "species": [
+        "Turtles",
+        "Mantas",
+        "Sharks"
+      ],
+      "sites": [
+        "Maamigili",
+        "Anabara Reef",
+        "Kashavaru Falhu Etere",
+        "Kashavaru Falhu",
+        "Litholhu Kandu",
+        "Flat Reef/Ambara Faru",
+        "Fushi Falhu",
+        "Fottheyo Faru",
+        "Vattaru Faru",
+        "Maduvaree Island Reef",
+        "Diggaru Faru"
+      ]
+    },
+    {
+      "category": "Invertebrate",
+      "species": [
+        "Banded coral shrimp",
+        "Crown-of-thorns starfish (COTS)",
+        "Diadema",
+        "Giant clam <10 cm",
+        "Giant clam >50 cm",
+        "Giant clam 10-20 cm",
+        "Giant clam 20-30 cm",
+        "Giant clam 30-40 cm",
+        "Giant clam 40-50 cm",
+        "Giant clam total",
+        "Lobster",
+        "Pencil urchin",
+        "Tripneustes",
+        "Triton",
+        "Edible sea cucumber",
+        "Trochus"
+      ],
+      "sites": [
+        "Maamigili",
+        "Flat Reef/Ambara Faru",
+        "Kashavaru Falhu Etere",
+        "Litholhu Kandu",
+        "Kashavaru Falhu",
+        "Fushi Falhu",
+        "Fottheyo Faru",
+        "Anabara Reef",
+        "Vattaru Faru",
+        "Thuvaru Island Reef",
+        "Maduvaree Island Reef",
+        "Diggaru Faru"
+      ]
+    }
+  ]
+}

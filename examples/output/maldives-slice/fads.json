@@ -1,0 +1,19 @@
+{
+  "fads": [
+    {
+      "Atoll": "Meemu",
+      "Island": "Maduvvari",
+      "Location": "12 miles NE of Raiymandhoo"
+    },
+    {
+      "Atoll": "Alifu/S",
+      "Island": "Fenfushi/Maamigili",
+      "Location": "16 miles SW of Fenfushi"
+    },
+    {
+      "Atoll": "Faafu",
+      "Island": "Nillandhoo",
+      "Location": "28 miles W of Himithi"
+    }
+  ]
+}

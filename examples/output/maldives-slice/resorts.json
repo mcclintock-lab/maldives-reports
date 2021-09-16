@@ -1,0 +1,274 @@
+{
+  "setList": [
+    {
+      "Name": "Holiday Inn Veyvah",
+      "Atoll": "Meemu Atoll",
+      "Island": "Veyvah",
+      "Size__room": 3
+    },
+    {
+      "Name": "Muli Inn Surfview",
+      "Atoll": "Meemu Atoll",
+      "Island": "Muli",
+      "Size__room": 5
+    },
+    {
+      "Name": "Kandoofa Village",
+      "Atoll": "Meemu Atoll",
+      "Island": "Mulah",
+      "Size__room": 6
+    },
+    {
+      "Name": "Wunderbar Inn",
+      "Atoll": "Meemu Atoll",
+      "Island": "Maduvvari",
+      "Size__room": 6
+    },
+    {
+      "Name": "Vavoy Beach View",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Thinadhoo",
+      "Size__room": 3
+    },
+    {
+      "Name": "Plumeria Boutique",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Thinadhoo",
+      "Size__room": 21
+    },
+    {
+      "Name": "Plumeria Sea View",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Thinadhoo",
+      "Size__room": 27
+    },
+    {
+      "Name": "Magic Life Guest House",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Felidhoo",
+      "Size__room": 4
+    },
+    {
+      "Name": "Vaali Beach Lodge",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Felidhoo",
+      "Size__room": 8
+    },
+    {
+      "Name": "Masfalhi View Inn",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Felidhoo",
+      "Size__room": 4
+    },
+    {
+      "Name": "Hevana Holidays",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Keyodhoo",
+      "Size__room": 5
+    },
+    {
+      "Name": "White Maakanaa Lodge",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Keyodhoo",
+      "Size__room": 4
+    },
+    {
+      "Name": "Due Palme Guest House",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Keyodhoo",
+      "Size__room": 4
+    },
+    {
+      "Name": "Venus Villa",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Keyodhoo",
+      "Size__room": 4
+    },
+    {
+      "Name": "Boaveli Maldives Guest House",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Keyodhoo",
+      "Size__room": 4
+    },
+    {
+      "Name": "Manta View",
+      "Atoll": "Vaavu Atoll",
+      "Island": "Keyodhoo",
+      "Size__room": 5
+    },
+    {
+      "Name": "Sun Aqua Vilu Reef",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Meedhuffushi",
+      "Size__room": 100
+    },
+    {
+      "Name": "Beach Stay Maldives",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Meedhoo",
+      "Size__room": 6
+    },
+    {
+      "Name": "Angsana Velavaru",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Velavaru",
+      "Size__room": 119
+    },
+    {
+      "Name": "Filitheyo",
+      "Atoll": "Faafu Atoll",
+      "Island": "Filitheyo",
+      "Size__room": 125
+    },
+    {
+      "Name": "Maaz Inn Fenfushi",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Fenfushi",
+      "Size__room": 0
+    },
+    {
+      "Name": "Sun Island",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Nalaguraidhoo",
+      "Size__room": 462
+    },
+    {
+      "Name": "Holiday Island",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": " ",
+      "Size__room": 142
+    },
+    {
+      "Name": "Dravida Hotels Diving & Spa",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 0
+    },
+    {
+      "Name": "La Cabana Maamigili",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 7
+    },
+    {
+      "Name": "Palm Aqua",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 0
+    },
+    {
+      "Name": "Chill Holidays Maldives",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 4
+    },
+    {
+      "Name": "Rincodon Hotel",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 0
+    },
+    {
+      "Name": "Smera Grand",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 18
+    },
+    {
+      "Name": "Koimala Sky Inn",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 6
+    },
+    {
+      "Name": "Palm Tree Maamigili",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 0
+    },
+    {
+      "Name": "Whale Shark Inn Maldives",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 2
+    },
+    {
+      "Name": "Shamar Guesthouse & Dive Center",
+      "Atoll": "Ari Atoll (Alifu Dhaalu)",
+      "Island": "Maamigili",
+      "Size__room": 6
+    },
+    {
+      "Name": "Sunbreak View",
+      "Atoll": "Faafu Atoll",
+      "Island": "Magoodhoo",
+      "Size__room": 0
+    },
+    {
+      "Name": "Sun Aqua Iru Veli",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Aluvifushi",
+      "Size__room": 121
+    },
+    {
+      "Name": "Sevidlam Rinbudhoo Inn",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Rinbudhoo",
+      "Size__room": 3
+    },
+    {
+      "Name": "Villa Stella",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Rinbudhoo",
+      "Size__room": 3
+    },
+    {
+      "Name": "Baglioni Resort Maldives",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Maagau",
+      "Size__room": 96
+    },
+    {
+      "Name": "Dhebanveli Guest House",
+      "Atoll": "Faafu Atoll",
+      "Island": "Nilandhoo",
+      "Size__room": 6
+    },
+    {
+      "Name": "Apquo Veli Hotels",
+      "Atoll": "Faafu Atoll",
+      "Island": "Nilandhoo",
+      "Size__room": 6
+    },
+    {
+      "Name": "Remora Inn Guest House",
+      "Atoll": "Faafu Atoll",
+      "Island": "Nilandhoo",
+      "Size__room": 7
+    },
+    {
+      "Name": "Isle Heron",
+      "Atoll": "Faafu Atoll",
+      "Island": "Nilandhoo",
+      "Size__room": 8
+    },
+    {
+      "Name": "Orchid Guesthouse",
+      "Atoll": "Faafu Atoll",
+      "Island": "Nilandhoo",
+      "Size__room": 3
+    },
+    {
+      "Name": "Aaaveee Nature's Paradise",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Dhoores",
+      "Size__room": 33
+    },
+    {
+      "Name": "The St. Regis Vommuli Resort",
+      "Atoll": "Dhaalu Atoll",
+      "Island": "Vommuli",
+      "Size__room": 77
+    }
+  ]
+}
