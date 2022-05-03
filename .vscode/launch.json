@@ -16,6 +16,22 @@
         "console": "integratedTerminal",
         "internalConsoleOptions": "neverOpen",
         "port": 9229        
-    }
+    }, {
+      "name": "Debug Script",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "-r",
+        "ts-node/register/transpile-only",
+        "--inspect",
+        "--loader",
+        "ts-node/esm",
+        "data/scripts/gfw-data-fetch.ts"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229        
+  }
   ]
 }
