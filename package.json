@@ -8,8 +8,10 @@
     "start-data": "http-server data/dist -c-1 --silent",
     "__test": "geoprocessing test",
     "test": "npm run test:unit && npm run test:smoke",
-    "test:unit": "npm run __test -- --group=unit --verbose",
-    "test:smoke": "start-server-and-test start-data 8080 'npm run __test -- --runInBand --group=smoke --verbose'",
+    "test:unit": "npm run __test -- --group=unit",
+    "test:unit:matching": "npm run __test -- --runInBand --group=unit -t",
+    "test:smoke": "start-server-and-test start-data 8080 'npm run __test -- --runInBand --group=smoke --silent'",
+    "test:smoke:matching": "npm run __test -- --runInBand --group=smoke -t",
     "add:template": "geoprocessing add:template",
     "create:function": "geoprocessing create:function",
     "create:client": "geoprocessing create:client",
@@ -49,7 +51,7 @@
     "web-streams-polyfill": "^3.0.3"
   },
   "devDependencies": {
-    "@seasketch/geoprocessing": "0.12.2-alpha.42",
+    "@seasketch/geoprocessing": "0.15.0",
     "@turf/boolean-disjoint": "6.3.0",
     "@turf/boolean-valid": "6.3.0",
     "start-server-and-test": "^1.12.5"
