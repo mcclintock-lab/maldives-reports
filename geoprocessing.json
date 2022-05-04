@@ -7,25 +7,11 @@
       "name": "AllReport",
       "description":  "All reports",
       "source": "src/clients/AllReport.tsx"
-    },
-    {
-      "name": "Overview",
-      "description": "Overview report",
-      "source": "src/clients/Overview.tsx"
     }
   ],
   "preprocessingFunctions": [
     "src/functions/clipToOceanEez.ts"
   ],
-  "geoprocessingFunctions": [
-    "src/functions/area.ts",
-    "src/functions/minWidth.ts",
-    "src/functions/bathymetry.ts",
-    "src/functions/habitat.ts",
-    "src/functions/habitatRaster.ts",
-    "src/functions/animals.ts",
-    "src/functions/fads.ts",
-    "src/functions/seaplanes.ts",
-    "src/functions/resorts.ts"
+  "geoprocessingFunctions": [    
   ]
 }
