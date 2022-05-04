@@ -54,6 +54,7 @@
     "@seasketch/geoprocessing": "0.15.0",
     "@turf/boolean-disjoint": "6.3.0",
     "@turf/boolean-valid": "6.3.0",
+    "http-server": "^0.12.3",
     "start-server-and-test": "^1.12.5"
   },
   "repositoryUrl": "https://github.com/mcclintock-lab/maldives-reports",
