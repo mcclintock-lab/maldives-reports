@@ -1,0 +1,68 @@
+{
+  "metrics": [
+    {
+      "metricId": "singleGeomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 631041
+    },
+    {
+      "metricId": "singleGeomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 547229
+    },
+    {
+      "metricId": "singleGeomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 248112
+    },
+    {
+      "metricId": "singleGeomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 20985
+    },
+    {
+      "metricId": "singleGeomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 72977
+    },
+    {
+      "metricId": "singleGeomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 892746
+    },
+    {
+      "metricId": "singleGeomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 89977
+    },
+    {
+      "metricId": "singleGeomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 55284
+    }
+  ]
+}
