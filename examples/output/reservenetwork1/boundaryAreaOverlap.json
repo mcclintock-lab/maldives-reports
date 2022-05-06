@@ -1,0 +1,262 @@
+{
+  "metrics": [
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 29327699007.827236,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 161090213426.5634,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 190417912434.3907,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5747933866.714345,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 44434960662.59031,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 50182894529.30466,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 23580098868.420727,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 116655071608.0395,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 140235170476.46024,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.031639687674264616,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.17378942817289564,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.20542911584716034,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0501803216613891,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.3879238472057329,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.43810416886712206,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.029025875601541417,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.14359632738090544,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.17262220298244688,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    }
+  ],
+  "sketch": {
+    "type": "FeatureCollection",
+    "properties": {
+      "id": "627453ac1c322d157c04ee2d",
+      "name": "reservenetwork1",
+      "updatedAt": "2022-05-05T22:46:11.447Z",
+      "createdAt": "2022-05-05T22:46:04.417Z",
+      "sketchClassId": "60df598a9c4e3e7b27873a59",
+      "isCollection": true,
+      "userAttributes": []
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "62744ee41c322d157c04ee26",
+          "name": "reserve1",
+          "updatedAt": "2022-05-05T22:46:10.922Z",
+          "createdAt": "2022-05-05T22:25:40.875Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "1",
+        "bbox": [
+          73.1839055829919,
+          5.185754100715826,
+          75.68457296874816,
+          6.682771829215904
+        ],
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "627453a41c322d157c04ee2c",
+          "name": "reserve2",
+          "updatedAt": "2022-05-05T22:46:11.513Z",
+          "createdAt": "2022-05-05T22:45:56.103Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "2",
+        "bbox": [
+          71.82562521484229,
+          0.6426837467517563,
+          77.10561558195818,
+          4.329976035532335
+        ],
+        "geometry": null
+      }
+    ]
+  }
+}
