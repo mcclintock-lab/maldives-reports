@@ -1,7 +1,6 @@
 import React from "react";
 import {
   ReportResult,
-  squareMeterToMile,
   percentWithEdge,
   keyBy,
   toNullSketchArray,
@@ -19,6 +18,7 @@ import {
 import styled from "styled-components";
 import config from "../_config";
 import { boundaryAreaOverlap } from "../functions/boundaryAreaOverlap";
+import { squareMeterToKilometer } from "@seasketch/geoprocessing";
 
 const CONFIG = config;
 
@@ -84,31 +84,22 @@ const SizeCard = () => {
         return (
           <>
             <p>
-              Plans should be large enough to sustain focal species within their
-              boundaries during their adult and juvenile life history phases.
               This report summarizes the size and proportion of this plan within
-              the Bermuda EEZ, the nearshore (0-2,000m depth) and offshore
-              (2,000m+ depth).
+              the EEZ, the nearshore (0-12 nautical miles) and offshore (12-200
+              nautical miles).
             </p>
 
             <Collapse title="Learn more">
               <p>
                 The Exclusive Economic Zone EEZ extends from the shoreline out
                 to 200 nautical miles. The EEZ is further split up into two
-                distinct subregions, nearshore which extends from 0-2,000 meters
-                depth (6,562 feet) and offshore, which extends from 2,000 meters
-                depth and up.
-              </p>
-              <p>
-                Guidance on recommended size: Marine management areas must be
-                large enough to sustain focal species within their boundaries
-                during their adult and juvenile life history phases. Different
-                species move different distances as adults and juveniles, so
-                larger areas may include more species.
+                distinct subregions, nearshore which extends from the shoreline
+                out to 12 nautical miles and offshore, which extends from 12 out
+                to 200 nautical miles.
               </p>
               <p>
                 If MPA boundaries overlap with each other, the overlap is only
-                counted once when calculating the total size of the network.
+                counted once.
               </p>
             </Collapse>
 
@@ -120,10 +111,10 @@ const SizeCard = () => {
               </Collapse>
             )}
 
-            <LayerToggle
+            {/* <LayerToggle
               label="View Nearshore 0-2000m Boundary Layer"
               layerId="6164aebea04323106537eb5a"
-            />
+            /> */}
           </>
         );
       }}
@@ -149,7 +140,9 @@ const genSingleSizeTable = (data: ReportResult) => {
       Header: "Area Within Plan",
       accessor: (row) => {
         const value = aggMetrics[row.classId][METRIC_NAME][0].value;
-        return Number.format(Math.round(squareMeterToMile(value))) + " sq. mi.";
+        return (
+          Number.format(Math.round(squareMeterToKilometer(value))) + " sq. km."
+        );
       },
     },
     {
@@ -198,7 +191,8 @@ const genNetworkSizeTable = (data: ReportResult) => {
                 METRIC_NAME
               ][0].value;
             return (
-              Number.format(Math.round(squareMeterToMile(value))) + " sq. mi."
+              Number.format(Math.round(squareMeterToKilometer(value))) +
+              " sq. km."
             );
           },
         },
