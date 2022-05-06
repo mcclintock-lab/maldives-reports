@@ -8,6 +8,14 @@ import geoprocessingJson from "../geoprocessing.json";
 export const STUDY_REGION_AREA_SQ_METERS = 926927576206.1985;
 export const STUDY_REGION_AREA_SQ_KM = STUDY_REGION_AREA_SQ_METERS / 1000;
 
+export const placenames = {
+  noun: "Maldives",
+  nounPossessive: "Maldivian",
+};
+
+export const placenameNoun = "Maldives";
+export const placenameNounPossessive = "Maldivian";
+
 export const units = "metric";
 
 export const localDataUrl = `http://127.0.0.1:8080/`;
@@ -95,6 +103,7 @@ const metricGroups: Record<string, MetricGroup> = {
 export default {
   STUDY_REGION_AREA_SQ_METERS,
   units,
+  placenames,
   localDataUrl,
   dataBucketUrl,
   objectives,
