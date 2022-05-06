@@ -1,0 +1,90 @@
+{
+  "metrics": [
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60f1e8e2c96353649e94ab75",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2432935507.954768,
+      "extra": {
+        "sketchName": "maldives-big-male"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60f1e8e2c96353649e94ab75",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2432935507.95477,
+      "extra": {
+        "sketchName": "maldives-big-male"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60f1e8e2c96353649e94ab75",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-big-male"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60f1e8e2c96353649e94ab75",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0026247309610881106,
+      "extra": {
+        "sketchName": "maldives-big-male"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60f1e8e2c96353649e94ab75",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.02123989057660686,
+      "extra": {
+        "sketchName": "maldives-big-male"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60f1e8e2c96353649e94ab75",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-big-male"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60f1e8e2c96353649e94ab75",
+      "name": "maldives-big-male",
+      "updatedAt": "2021-07-16T20:15:30.791Z",
+      "createdAt": "2021-07-16T20:15:30.791Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.30724318350816,
+      4.144813390058183,
+      73.76729567374272,
+      4.730817171165568
+    ],
+    "geometry": null
+  }
+}

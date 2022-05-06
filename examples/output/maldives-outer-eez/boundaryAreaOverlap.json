@@ -1,0 +1,90 @@
+{
+  "metrics": [
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5302300168.327457,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 467203142.4497769,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4834822790.731192,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.00572029606674248,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.004078753255166274,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.005951415456836877,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd2b3531c2945fed86b3bd",
+      "name": "maldives-outer-eez",
+      "updatedAt": "2021-07-07T00:37:14.781Z",
+      "createdAt": "2021-07-01T02:40:53.781Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      72.78272662416416,
+      7.088942689915737,
+      73.95214775985163,
+      7.7375177798296235
+    ],
+    "geometry": null
+  }
+}

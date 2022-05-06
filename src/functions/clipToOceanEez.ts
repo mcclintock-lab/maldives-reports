@@ -2,13 +2,14 @@ import {
   ValidationError,
   PreprocessingHandler,
   VectorDataSource,
-  intersect,
-  difference,
   isPolygonFeature,
   Feature,
   Polygon,
   MultiPolygon,
+  clipMultiMerge,
+  clip,
 } from "@seasketch/geoprocessing";
+import kinks from "@turf/kinks";
 import area from "@turf/area";
 import bbox from "@turf/bbox";
 import { featureCollection as fc } from "@turf/helpers";
@@ -33,8 +34,8 @@ export async function clipLand(feature: Feature<Polygon | MultiPolygon>) {
     bbox(feature),
     "gid"
   );
-  const combined = combine(landFeatures).features[0] as Feature<MultiPolygon>;
-  return combined ? difference(feature, combined) : feature;
+  if (landFeatures.features.length === 0) return feature;
+  return clip(fc([feature, ...landFeatures.features]), "difference");
 }
 
 export async function clipOutsideEez(
@@ -42,16 +43,14 @@ export async function clipOutsideEez(
   eezFilterByNames: string[] = ["Maldives"]
 ) {
   let eezFeatures = await SubdividedEezLandUnionSource.fetch(bbox(feature));
+  if (eezFeatures.length === 0) return feature;
   // Optionally filter down to a single country/union EEZ boundary
   if (eezFilterByNames.length > 0) {
     eezFeatures = eezFeatures.filter((e) =>
       eezFilterByNames.includes(e.properties.UNION)
     );
-    if (eezFeatures.length === 0) return null;
   }
-  const combined = combine(fc(eezFeatures))
-    .features[0] as Feature<MultiPolygon>;
-  return intersect(feature, combined);
+  return clipMultiMerge(feature, fc(eezFeatures), "intersection");
 }
 
 /**
@@ -66,10 +65,9 @@ export async function clipToOceanEez(
     throw new ValidationError("Input must be a polygon");
   }
 
-  if (area(feature) > MAX_SIZE) {
-    throw new ValidationError(
-      "Please limit sketches to under 500,000 square km"
-    );
+  const kinkPoints = kinks(feature);
+  if (kinkPoints.features.length > 0) {
+    throw new ValidationError("Your sketch polygon crosses itself.");
   }
 
   let clipped = await clipLand(feature);

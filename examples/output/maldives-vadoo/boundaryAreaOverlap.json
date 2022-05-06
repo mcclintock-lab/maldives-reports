@@ -1,0 +1,90 @@
+{
+  "metrics": [
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 61799978.06648861,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 61799978.06648718,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0000666718518823535,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0005395230442718724,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60e4f6fa526687153637445f",
+      "name": "maldives-vadoo",
+      "updatedAt": "2021-07-07T00:36:10.894Z",
+      "createdAt": "2021-07-07T00:36:10.894Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.4062488826673,
+      4.08826727832588,
+      73.51576884116326,
+      4.150248163525812
+    ],
+    "geometry": null
+  }
+}

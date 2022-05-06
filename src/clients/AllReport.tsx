@@ -1,26 +1,24 @@
 import React, { useState } from "react";
-import { SegmentControl } from "@seasketch/geoprocessing/client";
-import Overview from "./Overview";
-import Biological from "./Biological";
-import Human from "./Human";
+import { SegmentControl, ReportPage } from "@seasketch/geoprocessing/client-ui";
+import Viability from "./Viability";
 
 const enableAllTabs = false;
-const AllReport = () => {
-  const [tab, setTab] = useState<string>("Overview");
+const AllReports = () => {
+  const [tab, setTab] = useState<string>("Viability");
   return (
     <>
       <div style={{ marginTop: 5 }}>
         <SegmentControl
           value={tab}
           onClick={(segment) => setTab(segment)}
-          segments={["Overview", "Biological", "Human"]}
+          segments={["Viability"]}
         />
       </div>
-      <Overview hidden={!enableAllTabs && tab !== "Overview"} />
-      <Biological hidden={!enableAllTabs && tab !== "Biological"} />
-      <Human hidden={!enableAllTabs && tab !== "Human"} />
+      <ReportPage hidden={!enableAllTabs && tab !== "Viability"}>
+        <Viability />
+      </ReportPage>
     </>
   );
 };
 
-export default AllReport;
+export default AllReports;

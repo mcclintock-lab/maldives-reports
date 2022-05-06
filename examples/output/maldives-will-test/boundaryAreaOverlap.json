@@ -1,0 +1,90 @@
+{
+  "metrics": [
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 8769.477847421336,
+      "extra": {
+        "sketchName": "maldives-will-test"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 8769.477847412722,
+      "extra": {
+        "sketchName": "maldives-will-test"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-will-test"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 9.46080154753162e-9,
+      "extra": {
+        "sketchName": "maldives-will-test"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 7.655885217015249e-8,
+      "extra": {
+        "sketchName": "maldives-will-test"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-will-test"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60e87958b28c6be67f4fb452",
+      "name": "maldives-will-test",
+      "updatedAt": "2021-07-09T16:29:12.287Z",
+      "createdAt": "2021-07-09T16:27:52.357Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.48588309075998,
+      3.644992545260805,
+      73.4872477681388,
+      3.645971017091626
+    ],
+    "geometry": null
+  }
+}

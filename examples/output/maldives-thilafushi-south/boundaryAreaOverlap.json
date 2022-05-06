@@ -1,0 +1,90 @@
+{
+  "metrics": [
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 6627091.221534153,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 6627091.22153424,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.00000714952429040684,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.000057855496755401856,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd1b1931c2945fed86b3ac",
+      "name": "maldives-thilafushi-south",
+      "updatedAt": "2021-07-01T02:41:38.964Z",
+      "createdAt": "2021-07-01T01:32:09.470Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.41680816199549,
+      4.167116783723612,
+      73.45405447150773,
+      4.188938830460695
+    ],
+    "geometry": null
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "metrics": [
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 312174761856.8144,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 15823237597.601343,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 296351651469.8919,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.33678441538497284,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.1381392289445562,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "offshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.36479347342331775,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60f9c6d9b853a31becb1951e",
+      "name": "maldives-too-big-many-holes",
+      "updatedAt": "2021-07-22T19:28:25.867Z",
+      "createdAt": "2021-07-22T19:28:25.867Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      70.20103056754229,
+      -1.8155515112791443,
+      76.74888213004043,
+      6.672429336516531
+    ],
+    "geometry": null
+  }
+}
