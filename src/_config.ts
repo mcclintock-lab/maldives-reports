@@ -1,4 +1,5 @@
 import {
+  BBox,
   DataClass,
   DataGroup,
   MetricGroup,
@@ -10,6 +11,12 @@ import geoprocessingJson from "../geoprocessing.json";
 /**
  * Area of ocean within eez (marine regions - osm land polygons). Calculated using turf.area function
  */
+export const STUDY_REGION_BBOX: BBox = [
+  69.2050797946308194,
+  -3.3098115678066815,
+  77.104915666131177,
+  8.0923125427971012,
+];
 export const STUDY_REGION_AREA_SQ_METERS = 926927576206.1985;
 export const STUDY_REGION_AREA_SQ_KM = STUDY_REGION_AREA_SQ_METERS / 1000;
 
@@ -85,12 +92,12 @@ const boundaryDataGroup: DataGroup = {
       display: "EEZ",
     },
     {
-      classId: "nearshore",
-      display: "Nearshore",
-    },
-    {
       classId: "offshore",
       display: "Offshore",
+    },
+    {
+      classId: "nearshore",
+      display: "Nearshore",
     },
   ],
   layerId: "",

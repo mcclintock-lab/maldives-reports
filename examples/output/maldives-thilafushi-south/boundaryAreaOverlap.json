@@ -12,28 +12,6 @@
       }
     },
     {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "nearshore",
-      "groupId": null,
-      "geographyId": null,
-      "value": 6627091.22153424,
-      "extra": {
-        "sketchName": "maldives-thilafushi-south"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "offshore",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-thilafushi-south"
-      }
-    },
-    {
       "metricId": "boundaryAreaOverlapPerc",
       "sketchId": "60dd1b1931c2945fed86b3ac",
       "classId": "eez",
@@ -45,12 +23,12 @@
       }
     },
     {
-      "metricId": "boundaryAreaOverlapPerc",
+      "metricId": "boundaryAreaOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "nearshore",
+      "classId": "offshore",
       "groupId": null,
       "geographyId": null,
-      "value": 0.000057855496755401856,
+      "value": 0,
       "extra": {
         "sketchName": "maldives-thilafushi-south"
       }
@@ -62,6 +40,28 @@
       "groupId": null,
       "geographyId": null,
       "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 6627091.22153424,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.000057855496755401856,
       "extra": {
         "sketchName": "maldives-thilafushi-south"
       }

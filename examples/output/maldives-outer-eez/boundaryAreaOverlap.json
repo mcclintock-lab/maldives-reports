@@ -12,12 +12,12 @@
       }
     },
     {
-      "metricId": "boundaryAreaOverlap",
+      "metricId": "boundaryAreaOverlapPerc",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "nearshore",
+      "classId": "eez",
       "groupId": null,
       "geographyId": null,
-      "value": 467203142.4497769,
+      "value": 0.00572029606674248,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -36,10 +36,21 @@
     {
       "metricId": "boundaryAreaOverlapPerc",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "eez",
+      "classId": "offshore",
       "groupId": null,
       "geographyId": null,
-      "value": 0.00572029606674248,
+      "value": 0.005951415456836877,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "nearshore",
+      "groupId": null,
+      "geographyId": null,
+      "value": 467203142.4497769,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -51,17 +62,6 @@
       "groupId": null,
       "geographyId": null,
       "value": 0.004078753255166274,
-      "extra": {
-        "sketchName": "maldives-outer-eez"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlapPerc",
-      "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "offshore",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0.005951415456836877,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }

@@ -13,7 +13,10 @@ import {
   sortMetrics,
 } from "@seasketch/geoprocessing";
 import { fgbFetchAll } from "@seasketch/geoprocessing/dataproviders";
-import config, { STUDY_REGION_AREA_SQ_METERS } from "../_config";
+import config, {
+  STUDY_REGION_AREA_SQ_METERS,
+  STUDY_REGION_BBOX,
+} from "../_config";
 import bbox from "@turf/bbox";
 
 const CONFIG = config;
@@ -24,9 +27,11 @@ export async function boundaryAreaOverlap(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>
 ): Promise<ReportResult> {
   const box = sketch.bbox || bbox(sketch);
+
+  // Fetch the whole nearshore boundary, because we need to calculate its total area
   const boundaryPolys = await fgbFetchAll<Feature<Polygon>>(
     `${CONFIG.dataBucketUrl}${METRIC.filename}`,
-    box
+    STUDY_REGION_BBOX
   );
 
   const metrics: Metric[] = (
@@ -77,7 +82,7 @@ export async function boundaryAreaOverlap(
   );
 
   return {
-    metrics: sortMetrics(rekeyMetrics(metrics)),
+    metrics: rekeyMetrics(metrics),
     sketch: toNullSketch(sketch, true),
   };
 }
