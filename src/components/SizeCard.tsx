@@ -86,8 +86,8 @@ const SizeCard = () => {
             <p>
               This report summarizes the size and proportion of this plan within
               the {config.placenames.nounPossessive || ""} Exclusive Economic
-              Zone (EEZ), nearshore (0-12 nautical miles), and offshore (12-200
-              nautical miles).
+              Zone (0-200 nautical miles), offshore subregion (12-200 nautical
+              miles), and nearshore subregion (0-12 nautical miles).
             </p>
 
             <Collapse title="Learn more">
@@ -113,7 +113,7 @@ const SizeCard = () => {
             )}
 
             <LayerToggle
-              label="View Nearshore 12nm Boundary Layer"
+              label="View 12nm Offshore/Nearshore Boundary Layer"
               layerId="6275646461e8a77c15a30f44"
             />
           </>
