@@ -1,0 +1,145 @@
+{
+  "metrics": [
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60e62e548fe1c7426c83edb4",
+      "name": "maldives-huraa",
+      "updatedAt": "2021-07-07T22:44:36.035Z",
+      "createdAt": "2021-07-07T22:44:36.035Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.60383112754029,
+      4.327161191666962,
+      73.61018259848755,
+      4.334521554125205
+    ],
+    "geometry": null
+  }
+}

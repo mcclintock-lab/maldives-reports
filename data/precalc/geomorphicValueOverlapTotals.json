@@ -1,7 +1,31 @@
 {
   "metrics": [
     {
-      "metricId": "singleGeomorphicValueOverlap",
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 770862
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 495048
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": null,
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 9915
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
       "sketchId": null,
       "classId": "Knolls",
       "groupId": null,
@@ -9,7 +33,7 @@
       "value": 631041
     },
     {
-      "metricId": "singleGeomorphicValueOverlap",
+      "metricId": "geomorphicValueOverlap",
       "sketchId": null,
       "classId": "AbyssalPlains",
       "groupId": null,
@@ -17,7 +41,7 @@
       "value": 547229
     },
     {
-      "metricId": "singleGeomorphicValueOverlap",
+      "metricId": "geomorphicValueOverlap",
       "sketchId": null,
       "classId": "Seamounts_30km",
       "groupId": null,
@@ -25,7 +49,7 @@
       "value": 248112
     },
     {
-      "metricId": "singleGeomorphicValueOverlap",
+      "metricId": "geomorphicValueOverlap",
       "sketchId": null,
       "classId": "Canyons",
       "groupId": null,
@@ -33,7 +57,7 @@
       "value": 20985
     },
     {
-      "metricId": "singleGeomorphicValueOverlap",
+      "metricId": "geomorphicValueOverlap",
       "sketchId": null,
       "classId": "Escarpments",
       "groupId": null,
@@ -41,7 +65,7 @@
       "value": 72977
     },
     {
-      "metricId": "singleGeomorphicValueOverlap",
+      "metricId": "geomorphicValueOverlap",
       "sketchId": null,
       "classId": "Plateaus",
       "groupId": null,
@@ -49,7 +73,7 @@
       "value": 892746
     },
     {
-      "metricId": "singleGeomorphicValueOverlap",
+      "metricId": "geomorphicValueOverlap",
       "sketchId": null,
       "classId": "Ridges",
       "groupId": null,
@@ -57,7 +81,7 @@
       "value": 89977
     },
     {
-      "metricId": "singleGeomorphicValueOverlap",
+      "metricId": "geomorphicValueOverlap",
       "sketchId": null,
       "classId": "Troughs",
       "groupId": null,

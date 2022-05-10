@@ -1,0 +1,714 @@
+{
+  "metrics": [
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "FeatureCollection",
+    "properties": {
+      "id": "609ef1d65b3d7a396cdbc944",
+      "name": "maldives-network-dupe",
+      "updatedAt": "2021-05-28T05:38:42.593Z",
+      "createdAt": "2021-05-14T21:55:34.020Z",
+      "sketchClassId": "5d0d437fa7c99269b81eff7f",
+      "isCollection": true,
+      "userAttributes": []
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "60e62e548fe1c7426c83edb4",
+          "name": "huraa",
+          "updatedAt": "2021-07-07T22:44:36.035Z",
+          "createdAt": "2021-07-07T22:44:36.035Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "1",
+        "bbox": [
+          73.60383112754029,
+          4.327161191666962,
+          73.61018259848755,
+          4.334521554125205
+        ],
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "60dd1aea31c2945fed86b3aa",
+          "name": "maldives-hulhumale-east",
+          "updatedAt": "2021-07-01T02:41:32.069Z",
+          "createdAt": "2021-07-01T01:31:22.086Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "1",
+        "bbox": [
+          73.54273139386859,
+          4.2049635898602,
+          73.5531931259844,
+          4.219354091025256
+        ],
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "60e62e548fe1c7426c83edb4",
+          "name": "huraa",
+          "updatedAt": "2021-07-07T22:44:36.035Z",
+          "createdAt": "2021-07-07T22:44:36.035Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "1",
+        "bbox": [
+          73.60383112754029,
+          4.327161191666962,
+          73.61018259848755,
+          4.334521554125205
+        ],
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "60dd1aea31c2945fed86b3aa",
+          "name": "maldives-hulhumale-east",
+          "updatedAt": "2021-07-01T02:41:32.069Z",
+          "createdAt": "2021-07-01T01:31:22.086Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "1",
+        "bbox": [
+          73.54273139386859,
+          4.2049635898602,
+          73.5531931259844,
+          4.219354091025256
+        ],
+        "geometry": null
+      }
+    ]
+  }
+}

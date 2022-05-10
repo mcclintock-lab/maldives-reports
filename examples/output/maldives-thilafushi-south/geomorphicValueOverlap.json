@@ -1,0 +1,145 @@
+{
+  "metrics": [
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd1b1931c2945fed86b3ac",
+      "name": "maldives-thilafushi-south",
+      "updatedAt": "2021-07-01T02:41:38.964Z",
+      "createdAt": "2021-07-01T01:32:09.470Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.41680816199549,
+      4.167116783723612,
+      73.45405447150773,
+      4.188938830460695
+    ],
+    "geometry": null
+  }
+}

@@ -13,6 +13,7 @@
     "src/functions/clipToOceanEez.ts"
   ],
   "geoprocessingFunctions": [
-    "src/functions/boundaryAreaOverlap.ts"
+    "src/functions/boundaryAreaOverlap.ts",
+    "src/functions/geomorphicValueOverlap.ts"
   ]
 }

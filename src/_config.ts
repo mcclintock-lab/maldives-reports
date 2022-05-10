@@ -126,7 +126,7 @@ const singleGeomorphicClasses: DataClass[] = [
     noDataValue: -3.39999995214436425e38,
     classId: "AbyssalPlains",
     display: "Abyssal Plains",
-    layerId: "",
+    layerId: "62729e4a96fa08ca41eecfe3",
     goalValue: 0.2,
   },
   {
@@ -135,7 +135,7 @@ const singleGeomorphicClasses: DataClass[] = [
     noDataValue: -3.39999995214436425e38,
     classId: "Seamounts_30km",
     display: "Seamounts 30km",
-    layerId: "",
+    layerId: "62729d6596fa08ca41eecf39",
     goalValue: 0.2,
   },
   {
@@ -144,7 +144,7 @@ const singleGeomorphicClasses: DataClass[] = [
     noDataValue: -3.39999995214436425e38,
     classId: "Canyons",
     display: "Canyons",
-    layerId: "",
+    layerId: "6272a1bb96fa08ca41eed21a",
     goalValue: 0.1,
   },
   {
@@ -153,7 +153,7 @@ const singleGeomorphicClasses: DataClass[] = [
     noDataValue: -3.39999995214436425e38,
     classId: "Escarpments",
     display: "Escarpments",
-    layerId: "",
+    layerId: "6272a1d396fa08ca41eed246",
     goalValue: 0.1,
   },
   {
@@ -162,7 +162,7 @@ const singleGeomorphicClasses: DataClass[] = [
     noDataValue: -3.39999995214436425e38,
     classId: "Plateaus",
     display: "Plateaus",
-    layerId: "",
+    layerId: "6272a23196fa08ca41eed2d3",
     goalValue: 0.15,
   },
   {
@@ -171,7 +171,7 @@ const singleGeomorphicClasses: DataClass[] = [
     noDataValue: -3.39999995214436425e38,
     classId: "Ridges",
     display: "Ridges",
-    layerId: "",
+    layerId: "6272a1e796fa08ca41eed26c",
     goalValue: 0.1,
   },
   {
@@ -180,13 +180,13 @@ const singleGeomorphicClasses: DataClass[] = [
     noDataValue: -3.39999995214436425e38,
     classId: "Troughs",
     display: "Troughs",
-    layerId: "",
+    layerId: "6272a21a96fa08ca41eed2a5",
     goalValue: 0.1,
   },
 ];
 
 const singleGeomorphicValueOverlap: MetricGroup = {
-  metricId: "singleGeomorphicValueOverlap",
+  metricId: "geomorphicValueOverlap",
   classes: singleGeomorphicClasses,
 };
 
@@ -194,21 +194,24 @@ const singleGeomorphicValueOverlap: MetricGroup = {
 const basinGeomorphicClasses: DataClass[] = [
   {
     numericClassId: 1,
-    classId: "Large Basin",
-    display: "Large Basin",
+    classId: "BasinLarge",
+    display: "Basin - Large",
     goalValue: 0.2,
+    layerId: "6272a11c96fa08ca41eed190",
   },
   {
     numericClassId: 2,
-    classId: "Major Basin",
-    display: "Major Basin",
+    classId: "BasinMajor",
+    display: "Basin - Major",
     goalValue: 0.2,
+    layerId: "6272a11c96fa08ca41eed190",
   },
   {
     numericClassId: 3,
-    classId: "Small Basin",
-    display: "Small Basin",
+    classId: "BasinSmall",
+    display: "Basin - Small",
     goalValue: 0.2,
+    layerId: "6272a11c96fa08ca41eed190",
   },
 ];
 
@@ -216,12 +219,18 @@ const basinGeomorphicDataGroup: DataGroup = {
   baseFilename: "basins",
   filename: `basins${cogFileSuffix}`,
   classes: basinGeomorphicClasses,
-  layerId: "",
+  layerId: "6272a11c96fa08ca41eed190",
 };
 
 const basinGeomorphicValueOverlap: MetricGroup = {
-  metricId: "basinGeomorphicValueOverlap",
+  metricId: "geomorphicValueOverlap",
   ...basinGeomorphicDataGroup,
+};
+
+/** Combined geomorphic metric group */
+const geomorphicValueOverlap: MetricGroup = {
+  metricId: "geomorphicValueOverlap",
+  classes: [...singleGeomorphicClasses, ...basinGeomorphicClasses],
 };
 
 /// EXPORT ////
@@ -230,6 +239,7 @@ const metricGroups: Record<string, MetricGroup> = {
   boundaryAreaOverlap,
   singleGeomorphicValueOverlap,
   basinGeomorphicValueOverlap,
+  geomorphicValueOverlap,
 };
 
 export default {

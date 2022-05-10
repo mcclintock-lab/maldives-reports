@@ -1,0 +1,145 @@
+{
+  "metrics": [
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 206092,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 215515,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 259537,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 581,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1809,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 19057,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 169543,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 419019,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 41608,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 66392,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 12309,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60f9c6d9b853a31becb1951e",
+      "name": "maldives-too-big-many-holes",
+      "updatedAt": "2021-07-22T19:28:25.867Z",
+      "createdAt": "2021-07-22T19:28:25.867Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      70.20103056754229,
+      -1.8155515112791443,
+      76.74888213004043,
+      6.672429336516531
+    ],
+    "geometry": null
+  }
+}

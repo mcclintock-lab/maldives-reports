@@ -1,0 +1,145 @@
+{
+  "metrics": [
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "AbyssalPlains",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "BasinLarge",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2181,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "BasinMajor",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "BasinSmall",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "Canyons",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1567,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "Escarpments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1467,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "Knolls",
+      "groupId": null,
+      "geographyId": null,
+      "value": 8190,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "Plateaus",
+      "groupId": null,
+      "geographyId": null,
+      "value": 20641,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "Ridges",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "Seamounts_30km",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3003,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "geomorphicValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "Troughs",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd2b3531c2945fed86b3bd",
+      "name": "maldives-outer-eez",
+      "updatedAt": "2021-07-07T00:37:14.781Z",
+      "createdAt": "2021-07-01T02:40:53.781Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      72.78272662416416,
+      7.088942689915737,
+      73.95214775985163,
+      7.7375177798296235
+    ],
+    "geometry": null
+  }
+}

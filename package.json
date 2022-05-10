@@ -51,7 +51,7 @@
     "web-streams-polyfill": "^3.0.3"
   },
   "devDependencies": {
-    "@seasketch/geoprocessing": "0.15.0",
+    "@seasketch/geoprocessing": "0.15.1-alpha.1",
     "@turf/boolean-disjoint": "6.3.0",
     "@turf/boolean-valid": "6.3.0",
     "http-server": "^0.12.3",
