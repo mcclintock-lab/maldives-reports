@@ -1,0 +1,20 @@
+{
+  "metrics": [
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": null,
+      "classId": "meanAnnualCatch",
+      "groupId": null,
+      "geographyId": null,
+      "value": 7369340.3840920925
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": null,
+      "classId": "tunaAtlasCatch",
+      "groupId": null,
+      "geographyId": null,
+      "value": 48582660.1073761
+    }
+  ]
+}

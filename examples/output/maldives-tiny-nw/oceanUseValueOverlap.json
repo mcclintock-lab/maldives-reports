@@ -1,0 +1,40 @@
+{
+  "metrics": [
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "meanAnnualCatch",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-tiny-nw"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "tunaAtlasCatch",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-tiny-nw"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60e87958b28c6be67f4fb452",
+      "name": "maldives-tiny-nw",
+      "updatedAt": "2021-07-09T16:29:12.287Z",
+      "createdAt": "2021-07-09T16:27:52.357Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "geometry": null
+  }
+}

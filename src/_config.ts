@@ -233,6 +233,36 @@ const geomorphicValueOverlap: MetricGroup = {
   classes: [...singleGeomorphicClasses, ...basinGeomorphicClasses],
 };
 
+//// FISHING IMPACT ////
+
+const oceanUseClasses: DataClass[] = [
+  {
+    baseFilename: "cost_Mean.annual.catch",
+    filename: `cost_Mean.annual.catch${cogFileSuffix}`,
+    classId: "meanAnnualCatch",
+    display: "Mean Average Annual Catch",
+    noDataValue: -3.39999995214436425e38,
+    layerId: "62740b5761e8a77c15a25518",
+  },
+  {
+    baseFilename: "cost_Tuna.atlas.catch",
+    filename: `cost_Tuna.atlas.catch${cogFileSuffix}`,
+    classId: "tunaAtlasCatch",
+    display: "Tuna Catch",
+    noDataValue: -3.39999995214436425e38,
+    layerId: "62740b1c61e8a77c15a254d2",
+  },
+];
+
+const oceanUseDataGroup: DataGroup = {
+  classes: oceanUseClasses,
+};
+
+const oceanUseValueOverlap: MetricGroup = {
+  metricId: "oceanUseValueOverlap",
+  ...oceanUseDataGroup,
+};
+
 /// EXPORT ////
 
 const metricGroups: Record<string, MetricGroup> = {
@@ -240,6 +270,7 @@ const metricGroups: Record<string, MetricGroup> = {
   singleGeomorphicValueOverlap,
   basinGeomorphicValueOverlap,
   geomorphicValueOverlap,
+  oceanUseValueOverlap,
 };
 
 export default {

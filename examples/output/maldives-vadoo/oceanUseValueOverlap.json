@@ -1,0 +1,46 @@
+{
+  "metrics": [
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "meanAnnualCatch",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "tunaAtlasCatch",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60e4f6fa526687153637445f",
+      "name": "maldives-vadoo",
+      "updatedAt": "2021-07-07T00:36:10.894Z",
+      "createdAt": "2021-07-07T00:36:10.894Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.4062488826673,
+      4.08826727832588,
+      73.51576884116326,
+      4.150248163525812
+    ],
+    "geometry": null
+  }
+}
