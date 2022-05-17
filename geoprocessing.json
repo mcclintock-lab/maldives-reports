@@ -15,6 +15,7 @@
   "geoprocessingFunctions": [
     "src/functions/boundaryAreaOverlap.ts",
     "src/functions/geomorphicValueOverlap.ts",
+    "src/functions/benthicSpeciesValueOverlap.ts",
     "src/functions/oceanUseValueOverlap.ts"
   ]
 }

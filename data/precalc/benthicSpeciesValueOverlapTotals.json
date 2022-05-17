@@ -1,0 +1,28 @@
+{
+  "metrics": [
+    {
+      "metricId": "benthicSpeciesValueOverlap",
+      "sketchId": null,
+      "classId": "Octocorals",
+      "groupId": null,
+      "geographyId": null,
+      "value": 416693
+    },
+    {
+      "metricId": "benthicSpeciesValueOverlap",
+      "sketchId": null,
+      "classId": "Antipatharia",
+      "groupId": null,
+      "geographyId": null,
+      "value": 113322
+    },
+    {
+      "metricId": "benthicSpeciesValueOverlap",
+      "sketchId": null,
+      "classId": "Cold Water Coral",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1618
+    }
+  ]
+}

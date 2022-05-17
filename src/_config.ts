@@ -12,9 +12,7 @@ import geoprocessingJson from "../geoprocessing.json";
  * Area of ocean within eez (marine regions - osm land polygons). Calculated using turf.area function
  */
 export const STUDY_REGION_BBOX: BBox = [
-  69.2050797946308194,
-  -3.3098115678066815,
-  77.104915666131177,
+  69.2050797946308194, -3.3098115678066815, 77.104915666131177,
   8.0923125427971012,
 ];
 export const STUDY_REGION_AREA_SQ_METERS = 926927576206.1985;
@@ -233,6 +231,43 @@ const geomorphicValueOverlap: MetricGroup = {
   classes: [...singleGeomorphicClasses, ...basinGeomorphicClasses],
 };
 
+//// BENTHIC SPECIES HABITAT ////
+
+const benthicSpecies: DataClass[] = [
+  {
+    baseFilename: "octocorals",
+    filename: `octocorals${cogFileSuffix}`,
+    noDataValue: -3.39999995214436425e38,
+    classId: "Octocorals",
+    display: "Octocorals",
+    layerId: "6272a97696fa08ca41eed6e7",
+    goalValue: 0.2,
+  },
+  {
+    baseFilename: "antipatharia",
+    filename: `antipatharia${cogFileSuffix}`,
+    noDataValue: -3.39999995214436425e38,
+    classId: "Antipatharia",
+    display: "Antipatharia",
+    layerId: "6272a2c696fa08ca41eed348",
+    goalValue: 0.2,
+  },
+  {
+    baseFilename: "cold_water_coral",
+    filename: `cold_water_coral${cogFileSuffix}`,
+    noDataValue: -3.39999995214436425e38,
+    classId: "Cold Water Coral",
+    display: "Cold Water Coral",
+    layerId: "6272a9ce96fa08ca41eed73a",
+    goalValue: 0.2,
+  },
+];
+
+const benthicSpeciesValueOverlap: MetricGroup = {
+  metricId: "benthicSpeciesValueOverlap",
+  classes: benthicSpecies,
+};
+
 //// FISHING IMPACT ////
 
 const oceanUseClasses: DataClass[] = [
@@ -269,6 +304,7 @@ const metricGroups: Record<string, MetricGroup> = {
   boundaryAreaOverlap,
   singleGeomorphicValueOverlap,
   basinGeomorphicValueOverlap,
+  benthicSpeciesValueOverlap,
   geomorphicValueOverlap,
   oceanUseValueOverlap,
 };

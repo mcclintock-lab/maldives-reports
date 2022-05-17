@@ -1,0 +1,57 @@
+{
+  "metrics": [
+    {
+      "metricId": "benthicSpeciesValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Antipatharia",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "benthicSpeciesValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Cold Water Coral",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "benthicSpeciesValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Octocorals",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd1aea31c2945fed86b3aa",
+      "name": "maldives-hulhumale-east",
+      "updatedAt": "2021-07-01T02:41:32.069Z",
+      "createdAt": "2021-07-01T01:31:22.086Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.54273139386859,
+      4.2049635898602,
+      73.5531931259844,
+      4.219354091025256
+    ],
+    "geometry": null
+  }
+}

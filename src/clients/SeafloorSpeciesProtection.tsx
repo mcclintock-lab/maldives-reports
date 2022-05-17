@@ -17,33 +17,34 @@ import {
 } from "@seasketch/geoprocessing/client-core";
 import config from "../_config";
 
-import geomorphicTotals from "../../data/precalc/geomorphicValueOverlapTotals.json";
-const geomorphicPrecalcTotals = geomorphicTotals as ReportResultBase;
+import benthicSpeciesTotals from "../../data/precalc/benthicSpeciesValueOverlapTotals.json";
+const benthicSpeciesPrecalcTotals = benthicSpeciesTotals as ReportResultBase;
 
-const METRIC = config.metricGroups.geomorphicValueOverlap;
-// const SINGLE_METRIC = config.metricGroups.singleGeomorphicValueOverlap;
+const METRIC = config.metricGroups.benthicSpeciesValueOverlap;
 
-const SeafloorHabitatProtection = () => {
+const SeafloorSpeciesProtection = () => {
   const [{ isCollection }] = useSketchProperties();
   return (
     <>
       <ResultsCard
-        title="Seafloor Habitat Protection"
-        functionName="geomorphicValueOverlap"
+        title="Seafloor Species Protection"
+        functionName="benthicSpeciesValueOverlap"
       >
         {(data: ReportResult) => {
           // Single sketch or collection top-level
           const parentMetrics = metricsWithSketchId(
-            toPercentMetric(data.metrics, geomorphicPrecalcTotals.metrics),
+            toPercentMetric(data.metrics, benthicSpeciesPrecalcTotals.metrics),
             [data.sketch.properties.id]
           );
 
+          console.log("METRIC", METRIC);
           return (
             <>
               <p>
-                Plans should ensure the representative coverage of offshore
-                seafloor habitat by geomorphic type. This report summarizes the
-                percentage of each habitat that overlaps with this plan.
+                Plans should ensure the representative coverage of habitat used
+                by each offshore seafloor species. This report summarizes the
+                percentage of the seafloor habitat for each species that
+                overlaps with this plan.
               </p>
 
               <Collapse title="Learn more">
@@ -58,7 +59,7 @@ const SeafloorHabitatProtection = () => {
                 dataGroup={METRIC}
                 columnConfig={[
                   {
-                    columnLabel: "Offshore Habitat",
+                    columnLabel: "Offshore Species",
                     type: "class",
                     width: 30,
                   },
@@ -113,7 +114,7 @@ const genSketchTable = (data: ReportResult) => {
   const childSketchIds = childSketches.map((sk) => sk.properties.id);
   const childSketchMetrics = toPercentMetric(
     metricsWithSketchId(data.metrics, childSketchIds),
-    geomorphicPrecalcTotals.metrics
+    benthicSpeciesPrecalcTotals.metrics
   );
   const sketchRows = flattenBySketchAllClass(
     childSketchMetrics,
@@ -124,4 +125,4 @@ const genSketchTable = (data: ReportResult) => {
   return <SketchClassTable rows={sketchRows} dataGroup={METRIC} formatPerc />;
 };
 
-export default SeafloorHabitatProtection;
+export default SeafloorSpeciesProtection;
