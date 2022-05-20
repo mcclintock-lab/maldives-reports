@@ -1,0 +1,68 @@
+{
+  "metrics": [
+    {
+      "metricId": "depthValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "photic",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "depthValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "mesophotic",
+      "groupId": null,
+      "geographyId": null,
+      "value": 260,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "depthValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "bathyal",
+      "groupId": null,
+      "geographyId": null,
+      "value": 22470,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "depthValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "abyssal",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd2b3531c2945fed86b3bd",
+      "name": "maldives-outer-eez",
+      "updatedAt": "2021-07-07T00:37:14.781Z",
+      "createdAt": "2021-07-01T02:40:53.781Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      72.78272662416416,
+      7.088942689915737,
+      73.95214775985163,
+      7.7375177798296235
+    ],
+    "geometry": null
+  }
+}

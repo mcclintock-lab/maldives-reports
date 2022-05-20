@@ -5,6 +5,7 @@ import {
   SketchClassTable,
   ClassTable,
   useSketchProperties,
+  LayerToggle,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   ReportResult,
@@ -17,32 +18,29 @@ import {
 } from "@seasketch/geoprocessing/client-core";
 import config from "../_config";
 
-import geomorphicTotals from "../../data/precalc/geomorphicValueOverlapTotals.json";
-const geomorphicPrecalcTotals = geomorphicTotals as ReportResultBase;
+import depthTotals from "../../data/precalc/depthValueOverlapTotals.json";
+const depthPrecalcTotals = depthTotals as ReportResultBase;
 
-const METRIC = config.metricGroups.geomorphicValueOverlap;
+const METRIC = config.metricGroups.depthValueOverlap;
 
-const SeafloorHabitatProtection = () => {
+const DepthClass = () => {
   const [{ isCollection }] = useSketchProperties();
   return (
     <>
-      <ResultsCard
-        title="Seafloor Habitat Protection"
-        functionName="geomorphicValueOverlap"
-      >
+      <ResultsCard title="Ocean Depth" functionName="depthValueOverlap">
         {(data: ReportResult) => {
           // Single sketch or collection top-level
           const parentMetrics = metricsWithSketchId(
-            toPercentMetric(data.metrics, geomorphicPrecalcTotals.metrics),
+            toPercentMetric(data.metrics, depthPrecalcTotals.metrics),
             [data.sketch.properties.id]
           );
 
           return (
             <>
               <p>
-                Plans should ensure the representative coverage of offshore
-                seafloor habitat by geomorphic type. This report summarizes the
-                percentage of each habitat that overlaps with this plan.
+                Plans should ensure the representative coverage of different
+                ocean depths. This report summarizes the percentage of each
+                depth class that overlaps with this plan.
               </p>
 
               <Collapse title="Learn more">
@@ -57,7 +55,7 @@ const SeafloorHabitatProtection = () => {
                 dataGroup={METRIC}
                 columnConfig={[
                   {
-                    columnLabel: "Offshore Habitat",
+                    columnLabel: "Depth Class",
                     type: "class",
                     width: 30,
                   },
@@ -70,7 +68,7 @@ const SeafloorHabitatProtection = () => {
                       showTitle: true,
                       targetLabelPosition: "bottom",
                       targetLabelStyle: "tight",
-                      barHeight: 15,
+                      barHeight: 11,
                     },
                     width: 40,
                     targetValueFormatter: (
@@ -90,11 +88,11 @@ const SeafloorHabitatProtection = () => {
                       }
                     },
                   },
-                  {
-                    type: "layerToggle",
-                    width: 15,
-                  },
                 ]}
+              />
+              <LayerToggle
+                label="View Depth Class Layer"
+                layerId={METRIC.layerId}
               />
               {isCollection && (
                 <Collapse title="Show by MPA">{genSketchTable(data)}</Collapse>
@@ -112,7 +110,7 @@ const genSketchTable = (data: ReportResult) => {
   const childSketchIds = childSketches.map((sk) => sk.properties.id);
   const childSketchMetrics = toPercentMetric(
     metricsWithSketchId(data.metrics, childSketchIds),
-    geomorphicPrecalcTotals.metrics
+    depthPrecalcTotals.metrics
   );
   const sketchRows = flattenBySketchAllClass(
     childSketchMetrics,
@@ -123,4 +121,4 @@ const genSketchTable = (data: ReportResult) => {
   return <SketchClassTable rows={sketchRows} dataGroup={METRIC} formatPerc />;
 };
 
-export default SeafloorHabitatProtection;
+export default DepthClass;

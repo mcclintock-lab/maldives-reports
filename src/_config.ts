@@ -105,6 +105,49 @@ const boundaryAreaOverlap: MetricGroup = {
   metricId: "boundaryAreaOverlap",
   ...boundaryDataGroup,
 };
+
+//// DEPTH CLASS ////
+
+// Multi-class raster (categorical)
+const depthClasses: DataClass[] = [
+  {
+    numericClassId: 1,
+    classId: "photic",
+    display: "Photic - 0-30m",
+    goalValue: 0.2,
+  },
+  {
+    numericClassId: 2,
+    classId: "mesophotic",
+    display: "Mesophotic - 30-150m",
+    goalValue: 0.2,
+  },
+  {
+    numericClassId: 3,
+    classId: "bathyal",
+    display: "Bathyal - 1,000-4,000m",
+    goalValue: 0.2,
+  },
+  {
+    numericClassId: 4,
+    classId: "abyssal",
+    display: "Abyssal - 4,000-6,000m",
+    goalValue: 0.2,
+  },
+];
+
+const depthDataGroup: DataGroup = {
+  baseFilename: "depth_zones",
+  filename: `depth_zones${cogFileSuffix}`,
+  classes: depthClasses,
+  layerId: "62729ec596fa08ca41eed03b",
+};
+
+const depthValueOverlap: MetricGroup = {
+  metricId: "depthValueOverlap",
+  ...depthDataGroup,
+};
+
 //// GEOMORPHIC ////
 
 // Single-class rasters
@@ -302,6 +345,7 @@ const oceanUseValueOverlap: MetricGroup = {
 
 const metricGroups: Record<string, MetricGroup> = {
   boundaryAreaOverlap,
+  depthValueOverlap,
   singleGeomorphicValueOverlap,
   basinGeomorphicValueOverlap,
   benthicSpeciesValueOverlap,

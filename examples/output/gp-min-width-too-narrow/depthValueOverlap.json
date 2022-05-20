@@ -1,0 +1,86 @@
+{
+  "metrics": [
+    {
+      "metricId": "depthValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "photic",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "depthValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "mesophotic",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "depthValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "bathyal",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "depthValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "abyssal",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "602c6ea614a9b6377b68e4ee",
+      "name": "gp-min-width-too-narrow",
+      "updatedAt": "2021-02-17T01:17:26.917Z",
+      "createdAt": "2021-02-17T01:17:26.917Z",
+      "sketchClassId": "51faebef8faa309b7c05de02",
+      "isCollection": false,
+      "userAttributes": [
+        {
+          "label": "Are you drawing this idea for another user?",
+          "fieldType": "ChoiceField",
+          "exportId": "informing",
+          "value": "No"
+        },
+        {
+          "label": "What is the name of that user?",
+          "fieldType": "TextField",
+          "exportId": "username",
+          "value": ""
+        },
+        {
+          "label": "Comments",
+          "fieldType": "TextArea",
+          "exportId": "COMMENTS",
+          "value": ""
+        }
+      ]
+    },
+    "bbox": [
+      -61.860420743470435,
+      17.630224251669677,
+      -61.86028102748031,
+      17.630455629697618
+    ],
+    "geometry": null
+  }
+}
