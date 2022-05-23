@@ -3,28 +3,6 @@
     {
       "metricId": "boundaryAreaOverlap",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 8769.477847421336,
-      "extra": {
-        "sketchName": "maldives-will-test"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlapPerc",
-      "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 9.46080154753162e-9,
-      "extra": {
-        "sketchName": "maldives-will-test"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "60e87958b28c6be67f4fb452",
       "classId": "offshore",
       "groupId": null,
       "geographyId": null,
@@ -62,6 +40,28 @@
       "groupId": null,
       "geographyId": null,
       "value": 7.655885217015249e-8,
+      "extra": {
+        "sketchName": "maldives-will-test"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 8769.477847421336,
+      "extra": {
+        "sketchName": "maldives-will-test"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 9.46080154753162e-9,
       "extra": {
         "sketchName": "maldives-will-test"
       }

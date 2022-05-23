@@ -3,28 +3,6 @@
     {
       "metricId": "boundaryAreaOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 312174761856.8144,
-      "extra": {
-        "sketchName": "maldives-too-big-many-holes"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlapPerc",
-      "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0.33678441538497284,
-      "extra": {
-        "sketchName": "maldives-too-big-many-holes"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "60f9c6d9b853a31becb1951e",
       "classId": "offshore",
       "groupId": null,
       "geographyId": null,
@@ -62,6 +40,28 @@
       "groupId": null,
       "geographyId": null,
       "value": 0.1381392289445562,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 312174761856.8144,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.33678441538497284,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }

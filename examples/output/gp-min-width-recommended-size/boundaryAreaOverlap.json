@@ -3,28 +3,6 @@
     {
       "metricId": "boundaryAreaOverlap",
       "sketchId": "603046cf82927a1e12698d58",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 10855865.489172341,
-      "extra": {
-        "sketchName": "gp-min-width-recommended-size"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlapPerc",
-      "sketchId": "603046cf82927a1e12698d58",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0.000011711665256097002,
-      "extra": {
-        "sketchName": "gp-min-width-recommended-size"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "603046cf82927a1e12698d58",
       "classId": "offshore",
       "groupId": null,
       "geographyId": null,
@@ -62,6 +40,28 @@
       "groupId": null,
       "geographyId": null,
       "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-recommended-size"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "603046cf82927a1e12698d58",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 10855865.489172341,
+      "extra": {
+        "sketchName": "gp-min-width-recommended-size"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "603046cf82927a1e12698d58",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.000011711665256097002,
       "extra": {
         "sketchName": "gp-min-width-recommended-size"
       }

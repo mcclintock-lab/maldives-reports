@@ -86,16 +86,17 @@ const boundaryDataGroup: DataGroup = {
   filename: "nearshore_boundary.fgb",
   classes: [
     {
-      classId: "eez",
-      display: "EEZ",
-    },
-    {
       classId: "offshore",
       display: "Offshore",
+      goalValue: 0.2,
     },
     {
       classId: "nearshore",
       display: "Nearshore",
+    },
+    {
+      classId: "eez",
+      display: "EEZ",
     },
   ],
   layerId: "",

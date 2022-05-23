@@ -3,74 +3,6 @@
     {
       "metricId": "boundaryAreaOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 314428.76295826805,
-      "extra": {
-        "sketchName": "huraa"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlapPerc",
-      "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 3.3921610601465393e-7,
-      "extra": {
-        "sketchName": "huraa"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1019111.6566109066,
-      "extra": {
-        "sketchName": "maldives-hulhumale-east"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlapPerc",
-      "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0.0000010994512222648574,
-      "extra": {
-        "sketchName": "maldives-hulhumale-east"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "609ef1d65b3d7a396cdbc944",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1333540.4195691403,
-      "extra": {
-        "sketchName": "maldives-network-test",
-        "isCollection": true
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlapPerc",
-      "sketchId": "609ef1d65b3d7a396cdbc944",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0.0000014386673282794742,
-      "extra": {
-        "sketchName": "maldives-network-test",
-        "isCollection": true
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "offshore",
       "groupId": null,
       "geographyId": null,
@@ -199,6 +131,74 @@
       "groupId": null,
       "geographyId": null,
       "value": 0.000011642007154945725,
+      "extra": {
+        "sketchName": "maldives-network-test",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 314428.76295826805,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3.3921610601465393e-7,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1019111.6566109066,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0000010994512222648574,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1333540.4195691403,
+      "extra": {
+        "sketchName": "maldives-network-test",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0000014386673282794742,
       "extra": {
         "sketchName": "maldives-network-test",
         "isCollection": true

@@ -5,8 +5,10 @@ import {
   keyBy,
   toNullSketchArray,
   nestMetrics,
+  valueFormatter,
 } from "@seasketch/geoprocessing/client-core";
 import {
+  ClassTable,
   Collapse,
   Column,
   LayerToggle,
@@ -23,8 +25,8 @@ import { squareMeterToKilometer } from "@seasketch/geoprocessing";
 const CONFIG = config;
 
 const METRIC = config.metricGroups.boundaryAreaOverlap;
-const METRIC_NAME = METRIC.metricId;
-const PERC_METRIC_NAME = `${METRIC.metricId}Perc`;
+const METRIC_ID = METRIC.metricId;
+const PERC_METRIC_ID = `${METRIC.metricId}Perc`;
 
 if (!CONFIG || !METRIC) throw new Error("Problem accessing report config");
 
@@ -140,7 +142,7 @@ const genSingleSizeTable = (data: ReportResult) => {
     {
       Header: "Area Within Plan",
       accessor: (row) => {
-        const value = aggMetrics[row.classId][METRIC_NAME][0].value;
+        const value = aggMetrics[row.classId][METRIC_ID][0].value;
         return (
           Number.format(Math.round(squareMeterToKilometer(value))) + " sq. km."
         );
@@ -149,16 +151,67 @@ const genSingleSizeTable = (data: ReportResult) => {
     {
       Header: "% Within Plan",
       accessor: (row) => {
-        const value = aggMetrics[row.classId][PERC_METRIC_NAME][0].value;
+        const value = aggMetrics[row.classId][PERC_METRIC_ID][0].value;
         return percentWithEdge(value);
       },
     },
   ];
 
   return (
-    <SingleTableStyled>
-      <Table columns={areaColumns} data={rows} />
-    </SingleTableStyled>
+    <>
+      <ClassTable
+        rows={singleMetrics}
+        dataGroup={METRIC}
+        columnConfig={[
+          {
+            columnLabel: "Region",
+            type: "class",
+            width: 20,
+          },
+          {
+            columnLabel: "Area Within Plan",
+            type: "metricValue",
+            metricId: METRIC_ID,
+            valueFormatter: (val: string | number) =>
+              Number.format(
+                Math.round(
+                  squareMeterToKilometer(
+                    typeof val === "string" ? parseInt(val) : val
+                  )
+                )
+              ),
+            valueLabel: "sq. km.",
+            width: 30,
+          },
+          {
+            columnLabel: "% Within Plan",
+            type: "metricChart",
+            metricId: PERC_METRIC_ID,
+            valueFormatter: "percent",
+            chartOptions: {
+              showTitle: true,
+              targetLabelPosition: "bottom",
+              targetLabelStyle: "tight",
+              barHeight: 11,
+            },
+            width: 40,
+            targetValueFormatter: (
+              value: number,
+              row: number,
+              numRows: number
+            ) => {
+              if (row === 0) {
+                return (value: number) =>
+                  `${valueFormatter(value / 100, "percent0dig")} Target`;
+              } else {
+                return (value: number) =>
+                  `${valueFormatter(value / 100, "percent0dig")}`;
+              }
+            },
+          },
+        ]}
+      />
+    </>
   );
 };
 
@@ -188,9 +241,8 @@ const genNetworkSizeTable = (data: ReportResult) => {
           Header: "Area" + " ".repeat(index),
           accessor: (row) => {
             const value =
-              aggMetrics[row.sketchId][curClass.classId as string][
-                METRIC_NAME
-              ][0].value;
+              aggMetrics[row.sketchId][curClass.classId as string][METRIC_ID][0]
+                .value;
             return (
               Number.format(Math.round(squareMeterToKilometer(value))) +
               " sq. km."
@@ -202,7 +254,7 @@ const genNetworkSizeTable = (data: ReportResult) => {
           accessor: (row) => {
             const value =
               aggMetrics[row.sketchId][curClass.classId as string][
-                PERC_METRIC_NAME
+                PERC_METRIC_ID
               ][0].value;
             return percentWithEdge(value);
           },

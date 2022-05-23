@@ -3,28 +3,6 @@
     {
       "metricId": "boundaryAreaOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 314428.76295826805,
-      "extra": {
-        "sketchName": "maldives-huraa"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlapPerc",
-      "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "eez",
-      "groupId": null,
-      "geographyId": null,
-      "value": 3.3921610601465393e-7,
-      "extra": {
-        "sketchName": "maldives-huraa"
-      }
-    },
-    {
-      "metricId": "boundaryAreaOverlap",
-      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "offshore",
       "groupId": null,
       "geographyId": null,
@@ -62,6 +40,28 @@
       "groupId": null,
       "geographyId": null,
       "value": 0.0000027450100907054653,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 314428.76295826805,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "boundaryAreaOverlapPerc",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "eez",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3.3921610601465393e-7,
       "extra": {
         "sketchName": "maldives-huraa"
       }
