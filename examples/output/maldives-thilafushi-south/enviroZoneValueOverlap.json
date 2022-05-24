@@ -1,0 +1,68 @@
+{
+  "metrics": [
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "1",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "2",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "3",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "4",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd1b1931c2945fed86b3ac",
+      "name": "maldives-thilafushi-south",
+      "updatedAt": "2021-07-01T02:41:38.964Z",
+      "createdAt": "2021-07-01T01:32:09.470Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.41680816199549,
+      4.167116783723612,
+      73.45405447150773,
+      4.188938830460695
+    ],
+    "geometry": null
+  }
+}

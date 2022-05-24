@@ -1,0 +1,68 @@
+{
+  "metrics": [
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "1",
+      "groupId": null,
+      "geographyId": null,
+      "value": 222074,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "2",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "3",
+      "groupId": null,
+      "geographyId": null,
+      "value": 280146,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "4",
+      "groupId": null,
+      "geographyId": null,
+      "value": 877376,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60f9c6d9b853a31becb1951e",
+      "name": "maldives-too-big-many-holes",
+      "updatedAt": "2021-07-22T19:28:25.867Z",
+      "createdAt": "2021-07-22T19:28:25.867Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      70.20103056754229,
+      -1.8155515112791443,
+      76.74888213004043,
+      6.672429336516531
+    ],
+    "geometry": null
+  }
+}

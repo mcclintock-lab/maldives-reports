@@ -149,6 +149,48 @@ const depthValueOverlap: MetricGroup = {
   ...depthDataGroup,
 };
 
+//// ENVIRONMENTAL REGIONS ////
+
+// Multi-class raster (categorical)
+const enviroZoneClasses: DataClass[] = [
+  {
+    numericClassId: 1,
+    classId: "1",
+    display: "Region 1",
+    goalValue: 0.2,
+  },
+  {
+    numericClassId: 2,
+    classId: "2",
+    display: "Region 2",
+    goalValue: 0.2,
+  },
+  {
+    numericClassId: 3,
+    classId: "3",
+    display: "Region 3",
+    goalValue: 0.2,
+  },
+  {
+    numericClassId: 4,
+    classId: "4",
+    display: "Region 4",
+    goalValue: 0.2,
+  },
+];
+
+const enviroZoneDataGroup: DataGroup = {
+  baseFilename: "enviro_zones",
+  filename: `enviro_zones${cogFileSuffix}`,
+  classes: enviroZoneClasses,
+  layerId: "6272a14696fa08ca41eed1c1",
+};
+
+const enviroZoneValueOverlap: MetricGroup = {
+  metricId: "enviroZoneValueOverlap",
+  ...enviroZoneDataGroup,
+};
+
 //// GEOMORPHIC ////
 
 // Single-class rasters
@@ -347,6 +389,7 @@ const oceanUseValueOverlap: MetricGroup = {
 const metricGroups: Record<string, MetricGroup> = {
   boundaryAreaOverlap,
   depthValueOverlap,
+  enviroZoneValueOverlap,
   singleGeomorphicValueOverlap,
   basinGeomorphicValueOverlap,
   benthicSpeciesValueOverlap,

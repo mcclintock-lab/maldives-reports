@@ -1,0 +1,36 @@
+{
+  "metrics": [
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": null,
+      "classId": "1",
+      "groupId": null,
+      "geographyId": null,
+      "value": 781994
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": null,
+      "classId": "2",
+      "groupId": null,
+      "geographyId": null,
+      "value": 630772
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": null,
+      "classId": "3",
+      "groupId": null,
+      "geographyId": null,
+      "value": 556342
+    },
+    {
+      "metricId": "enviroZoneValueOverlap",
+      "sketchId": null,
+      "classId": "4",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1796216
+    }
+  ]
+}
