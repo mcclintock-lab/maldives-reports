@@ -38,8 +38,8 @@ const DepthClass = () => {
           return (
             <>
               <p>
-                Plans should include a portion of each depth zone, and the
-                distinct ecological communities they sustain.
+                Each ocean depth zone sustains different ecological communities.
+                Plans should consider including a portion of each depth zone.
               </p>
 
               <Collapse title="Learn more">

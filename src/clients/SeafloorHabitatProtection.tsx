@@ -40,9 +40,9 @@ const SeafloorHabitatProtection = () => {
           return (
             <>
               <p>
-                Plans should include a portion of each type of offshore seafloor
-                feature, and the distinct ecological communities they sustain.
-                Some features are associated with being biodiversity hotspots.
+                Seafloor features in the offshore create habitats supporting
+                different ecological communities. Plans should consider
+                including a portion of each type of offshore seafloor feature.
               </p>
 
               <Collapse title="Learn more">

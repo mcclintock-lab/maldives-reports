@@ -86,10 +86,10 @@ const SizeCard = () => {
         return (
           <>
             <p>
-              Plans should be within the offshore region of the{" "}
+              Plans should be large enough to meet the size objective and stay
+              within the offshore boundary of the{" "}
               {config.placenames.nounPossessive || ""} Exclusive Economic Zone
-              (12-200 nautical miles), and large enough to meet planning
-              objectives.
+              (12-200 nautical miles from shore).
             </p>
 
             <Collapse title="Learn more">

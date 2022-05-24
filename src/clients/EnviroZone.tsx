@@ -41,7 +41,9 @@ const EnviroZone = () => {
           return (
             <>
               <p>
-                Plans should include a portion of each environmental region.
+                Four offshore ocean regions have been identified with distinct
+                environmental characteristics. Plans should consider including a
+                portion of each environmental region.
               </p>
 
               <Collapse title="Learn more">

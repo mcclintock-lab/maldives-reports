@@ -41,10 +41,10 @@ const SeafloorSpeciesProtection = () => {
           return (
             <>
               <p>
-                Plans should include a portion of the habitat for 3 specific
-                coral species found on the offshore seafloor, each of which
+                Three coral species are present on the offshore seafloor that
                 provide important habitat and nursery areas for many other
-                species.
+                species. Plans should consider including a portion of the
+                habitat for each of these coral species.
               </p>
 
               <Collapse title="Learn more">
