@@ -4,6 +4,6 @@ cdk.out
 .build
 .build-web
 .workspace.env
+data/src
 data/src/**
 data/dist/**
-
