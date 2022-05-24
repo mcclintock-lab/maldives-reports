@@ -132,10 +132,26 @@ const SizeCard = () => {
 
 const genSingleSizeTable = (data: ReportResult) => {
   const classesById = keyBy(METRIC.classes, (c) => c.classId);
-  const singleMetrics = data.metrics.filter(
+  let singleMetrics = data.metrics.filter(
     (m) => m.sketchId === data.sketch.properties.id
   );
-  const aggMetrics = nestMetrics(singleMetrics, ["classId", "metricId"]);
+  const nearshoreMetrics = singleMetrics.filter(
+    (m) => m.classId === "nearshore"
+  );
+  const nearshoreZeroMetrics = nearshoreMetrics.filter((m) => m.value === 0);
+  const nearshoreAllZero =
+    nearshoreMetrics.length > 0 &&
+    nearshoreMetrics.length === nearshoreZeroMetrics.length;
+  const singleMetricsMinusNearshore = singleMetrics.filter(
+    (m) => m.classId !== "nearshore"
+  );
+
+  const finalMetrics = nearshoreAllZero
+    ? singleMetricsMinusNearshore
+    : singleMetrics;
+
+  const aggMetrics = nestMetrics(finalMetrics, ["classId", "metricId"]);
+
   // Use sketch ID for each table row, index into aggMetrics
   const rows = Object.keys(aggMetrics).map((classId) => ({ classId }));
 
@@ -165,11 +181,11 @@ const genSingleSizeTable = (data: ReportResult) => {
   return (
     <>
       <ClassTable
-        rows={singleMetrics}
+        rows={finalMetrics}
         dataGroup={METRIC}
         columnConfig={[
           {
-            columnLabel: "Region",
+            columnLabel: "Boundary",
             type: "class",
             width: 20,
           },
