@@ -27,7 +27,7 @@ const SeafloorHabitatProtection = () => {
   return (
     <>
       <ResultsCard
-        title="Seafloor Habitat Protection"
+        title="Seafloor Habitat Protection - By Feature"
         functionName="geomorphicValueOverlap"
       >
         {(data: ReportResult) => {
@@ -40,16 +40,37 @@ const SeafloorHabitatProtection = () => {
           return (
             <>
               <p>
-                Plans should ensure the representative coverage of offshore
-                seafloor habitat by geomorphic type. This report summarizes the
-                percentage of each habitat that overlaps with this plan.
+                Plans should include a portion of each type of offshore seafloor
+                feature, and the distinct ecological communities they sustain.
+                Some features are associated with being biodiversity hotspots.
               </p>
 
               <Collapse title="Learn more">
-                <p>ℹ️ Overview:</p>
-                <p>🎯 Planning Objective:</p>
-                <p>🗺️ Source Data:</p>
-                <p>📈 Report:</p>
+                <p>
+                  ℹ️ Overview: seafloor features were identified based on
+                  geomorphology, which classifies features using depth, seabed
+                  slope, and other environmental characteristics. Plans should
+                  ensure the representative coverage of each seafloor feature
+                  type. This report summarizes the percentage of each habitat
+                  that overlaps with this plan.
+                </p>
+                <p>
+                  🎯 Planning Objective: include the recommended % of each
+                  feature type at minimum. The target % varies by feature type.
+                </p>
+                <p>
+                  🗺️ Source Data: Seamounts and knolls were identifed using
+                  Yesson et al., 2021. Other geomorphological features were
+                  identified using Harris et al., 2014.
+                </p>
+                <p>
+                  📈 Report: The percentage of each feature type within this
+                  plan is calculated by finding the overlap of each feature type
+                  with the plan, summing its area, then dividing it by the total
+                  area of each feature type found within the EEZ. If the plan
+                  includes multiple areas that overlap, the overlap is only
+                  counted once.
+                </p>
               </Collapse>
 
               <ClassTable

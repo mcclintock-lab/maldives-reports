@@ -38,16 +38,34 @@ const DepthClass = () => {
           return (
             <>
               <p>
-                Plans should ensure the representative coverage of different
-                ocean depths. This report summarizes the percentage of each
-                depth class that overlaps with this plan.
+                Plans should include a portion of each depth zone, and the
+                distinct ecological communities they sustain.
               </p>
 
               <Collapse title="Learn more">
-                <p>ℹ️ Overview:</p>
-                <p>🎯 Planning Objective:</p>
-                <p>🗺️ Source Data:</p>
-                <p>📈 Report:</p>
+                <p>
+                  ℹ️ Overview: Depth zones represent distinct environmental
+                  conditions and, therefore, ecological communities. Plans
+                  should ensure the representative coverage of each depth zone,
+                  and the distinct ecological communities they sustain.
+                </p>
+                <p>
+                  🎯 Planning Objective: include at least 20% of each depth zone
+                </p>
+                <p>
+                  🗺️ Source Data:{" "}
+                  <a href="https://www.gebco.net/" target="_blank">
+                    GEBCO
+                  </a>{" "}
+                  bathymetry data was classified into 4 depth zones
+                </p>
+                <p>
+                  📈 Report: The percentage of each depth zone within this plan
+                  is calculated by finding the overlap of each depth zone with
+                  the plan, summing its area, then dividing it by the total area
+                  of each depth zone within the EEZ. If the plan includes
+                  multiple areas that overlap, the overlap is only counted once.
+                </p>
               </Collapse>
 
               <ClassTable
@@ -55,7 +73,7 @@ const DepthClass = () => {
                 dataGroup={METRIC}
                 columnConfig={[
                   {
-                    columnLabel: "Depth Class",
+                    columnLabel: "Depth Zone",
                     type: "class",
                     width: 30,
                   },

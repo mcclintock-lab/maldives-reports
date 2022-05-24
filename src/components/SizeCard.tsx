@@ -86,10 +86,10 @@ const SizeCard = () => {
         return (
           <>
             <p>
-              This report summarizes the size and proportion of this plan within
-              the {config.placenames.nounPossessive || ""} Exclusive Economic
-              Zone (0-200 nautical miles), offshore subregion (12-200 nautical
-              miles), and nearshore subregion (0-12 nautical miles).
+              Plans should be within the offshore region of the{" "}
+              {config.placenames.nounPossessive || ""} Exclusive Economic Zone
+              (12-200 nautical miles), and large enough to meet planning
+              objectives.
             </p>
 
             <Collapse title="Learn more">
@@ -99,6 +99,11 @@ const SizeCard = () => {
                 distinct subregions, nearshore which extends from the shoreline
                 out to 12 nautical miles and offshore, which extends from 12 out
                 to 200 nautical miles.
+              </p>
+              <p>
+                {" "}
+                This report summarizes the size and proportion of this plan
+                within these 3 regions.
               </p>
               <p>
                 If MPA boundaries overlap with each other, the overlap is only

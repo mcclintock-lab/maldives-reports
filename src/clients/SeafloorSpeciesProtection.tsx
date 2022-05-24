@@ -27,7 +27,7 @@ const SeafloorSpeciesProtection = () => {
   return (
     <>
       <ResultsCard
-        title="Seafloor Species Protection"
+        title="Seafloor Habitat Protection - By Species"
         functionName="benthicSpeciesValueOverlap"
       >
         {(data: ReportResult) => {
@@ -41,17 +41,40 @@ const SeafloorSpeciesProtection = () => {
           return (
             <>
               <p>
-                Plans should ensure the representative coverage of habitat used
-                by each offshore seafloor species. This report summarizes the
-                percentage of the seafloor habitat for each species that
-                overlaps with this plan.
+                Plans should include a portion of the habitat for 3 specific
+                coral species found on the offshore seafloor, each of which
+                provide important habitat and nursery areas for many other
+                species.
               </p>
 
               <Collapse title="Learn more">
-                <p>ℹ️ Overview:</p>
-                <p>🎯 Planning Objective:</p>
-                <p>🗺️ Source Data:</p>
-                <p>📈 Report:</p>
+                <p>
+                  ℹ️ Overview: Plans should ensure the representative coverage
+                  of habitat used by each offshore seafloor species. This report
+                  summarizes the percentage of the seafloor habitat for each
+                  species that overlaps with this plan.
+                </p>
+                <p>
+                  🎯 Planning Objective: include at least 20% of the habitat for
+                  each species.
+                </p>
+                <p>
+                  🗺️ Source Data: The predicted presence of octocorals, which
+                  are habitats for invertebrates, groundfish, rockfish, and
+                  other fish species were modeled by Yesson et al., (2012). The
+                  global extent of antipatharia habitat suitability was modeled
+                  by Yesson et al., (2017). The predicted presence of cold-water
+                  corals, which are important habitat and nursery areas for many
+                  species, were modeled by Davies and Guinotte (2011).
+                </p>
+                <p>
+                  📈 Report: The percentage of each species' habitat within this
+                  plan is calculated by finding the overlap of each species'
+                  habitat with the plan, summing its area, then dividing it by
+                  the total area of each species' habitat found within the EEZ.
+                  If the plan includes multiple areas that overlap, the overlap
+                  is only counted once.
+                </p>
               </Collapse>
 
               <ClassTable

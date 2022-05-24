@@ -41,16 +41,39 @@ const EnviroZone = () => {
           return (
             <>
               <p>
-                Plans should ensure the representative coverage of different
-                ocean depths. This report summarizes the percentage of each
-                depth class that overlaps with this plan.
+                Plans should include a portion of each environmental region.
               </p>
 
               <Collapse title="Learn more">
-                <p>ℹ️ Overview:</p>
-                <p>🎯 Planning Objective:</p>
-                <p>🗺️ Source Data:</p>
-                <p>📈 Report:</p>
+                <p>
+                  ℹ️ Overview: Environmental regions represent distinct clusters
+                  of pelagic species. 4 regions have been identified based on 12
+                  oceanographic and biophysical variables. This report
+                  summarizes the percentage of each environmental region that
+                  overlaps with this plan.
+                </p>
+                <p>
+                  🎯 Planning Objective: include at least 20% of each
+                  environmental region.
+                </p>
+                <p>
+                  🗺️ Source Data: Environmental regions were generated using a
+                  clustering algorithm on 12 oceanographic and biophysical
+                  datasets from{" "}
+                  <a href="https://www.bio-oracle.org/" target="_blank">
+                    BioOracle
+                  </a>{" "}
+                  (Magris et al., 2020). These data are used as a proxy for
+                  assemblages of pelagic species.
+                </p>
+                <p>
+                  📈 Report: The percentage of each environmental region within
+                  this plan is calculated by finding the overlap of each marine
+                  region with the plan, summing its area, then dividing it by
+                  the total area of each environmental region found within the
+                  EEZ. If the plan includes multiple areas that overlap, the
+                  overlap is only counted once.
+                </p>
               </Collapse>
 
               <ClassTable
