@@ -354,7 +354,7 @@ const benthicSpeciesValueOverlap: MetricGroup = {
   classes: benthicSpecies,
 };
 
-//// FISHING IMPACT ////
+//// FISHING EFFORT ////
 
 const oceanUseClasses: DataClass[] = [
   {
@@ -376,6 +376,28 @@ const oceanUseValueOverlap: MetricGroup = {
   ...oceanUseDataGroup,
 };
 
+//// OUS ////
+
+const ousClasses: DataClass[] = [
+  {
+    baseFilename: "tuna_fish",
+    filename: `tuna_fish${cogFileSuffix}`,
+    classId: "tuna_fish",
+    display: "Commercial Tuna Fishing",
+    noDataValue: 0,
+    layerId: "628d12941dd50b3908080865",
+  },
+];
+
+const ousDataGroup: DataGroup = {
+  classes: ousClasses,
+};
+
+const ousValueOverlap: MetricGroup = {
+  metricId: "ousValueOverlap",
+  ...ousDataGroup,
+};
+
 /// EXPORT ////
 
 const metricGroups: Record<string, MetricGroup> = {
@@ -387,6 +409,7 @@ const metricGroups: Record<string, MetricGroup> = {
   benthicSpeciesValueOverlap,
   geomorphicValueOverlap,
   oceanUseValueOverlap,
+  ousValueOverlap,
 };
 
 export default {

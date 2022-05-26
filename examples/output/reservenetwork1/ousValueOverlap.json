@@ -1,0 +1,154 @@
+{
+  "metrics": [
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.1750065746018059,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.03789509032572447,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.6710706579941491,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627467021c322d157c04ee6d",
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.4396802380885231,
+      "extra": {
+        "sketchName": "left-reserve"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "6274671c1c322d157c04ee70",
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.018488754978095656,
+      "extra": {
+        "sketchName": "reserve south"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "FeatureCollection",
+    "properties": {
+      "id": "627453ac1c322d157c04ee2d",
+      "name": "reservenetwork1",
+      "updatedAt": "2022-05-06T17:23:26.974Z",
+      "createdAt": "2022-05-05T22:46:04.417Z",
+      "sketchClassId": "60df598a9c4e3e7b27873a59",
+      "isCollection": true,
+      "userAttributes": []
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "62744ee41c322d157c04ee26",
+          "name": "reserve1",
+          "updatedAt": "2022-05-06T17:21:10.648Z",
+          "createdAt": "2022-05-05T22:25:40.875Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "1",
+        "bbox": [
+          74.0717955568102,
+          5.314663593896455,
+          75.68457296874816,
+          6.682771829215904
+        ],
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "627453a41c322d157c04ee2c",
+          "name": "reserve2",
+          "updatedAt": "2022-05-06T17:20:43.361Z",
+          "createdAt": "2022-05-05T22:45:56.103Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "2",
+        "bbox": [
+          74.87333885219341,
+          1.4111398556858352,
+          76.8457857408781,
+          4.329976035532335
+        ],
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "627467021c322d157c04ee6d",
+          "name": "left-reserve",
+          "updatedAt": "2022-05-06T17:21:53.504Z",
+          "createdAt": "2022-05-06T00:08:34.420Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "3",
+        "bbox": [
+          69.62654775765336,
+          1.7167357500373979,
+          71.3834255078115,
+          7.663582428936802
+        ],
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "6274671c1c322d157c04ee70",
+          "name": "reserve south",
+          "updatedAt": "2022-05-06T17:23:26.976Z",
+          "createdAt": "2022-05-06T00:09:00.923Z",
+          "sketchClassId": "60dd08af31c2945fed86b387",
+          "isCollection": false,
+          "userAttributes": []
+        },
+        "id": "4",
+        "bbox": [
+          72.06457785156127,
+          -2.9435961856170216,
+          76.39319113281005,
+          1.0101338456578173
+        ],
+        "geometry": null
+      }
+    ]
+  }
+}

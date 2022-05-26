@@ -1,0 +1,12 @@
+{
+  "metrics": [
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": null,
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 32.83677490546126
+    }
+  ]
+}
