@@ -365,14 +365,6 @@ const oceanUseClasses: DataClass[] = [
     noDataValue: -3.39999995214436425e38,
     layerId: "62740b5761e8a77c15a25518",
   },
-  {
-    baseFilename: "cost_Tuna.atlas.catch",
-    filename: `cost_Tuna.atlas.catch${cogFileSuffix}`,
-    classId: "tunaAtlasCatch",
-    display: "Tuna Catch",
-    noDataValue: -3.39999995214436425e38,
-    layerId: "62740b1c61e8a77c15a254d2",
-  },
 ];
 
 const oceanUseDataGroup: DataGroup = {

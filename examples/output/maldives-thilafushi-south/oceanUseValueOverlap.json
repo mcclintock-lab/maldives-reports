@@ -10,17 +10,6 @@
       "extra": {
         "sketchName": "maldives-thilafushi-south"
       }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-thilafushi-south"
-      }
     }
   ],
   "sketch": {

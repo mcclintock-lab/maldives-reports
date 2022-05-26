@@ -27,10 +27,12 @@ export async function boundaryAreaOverlap(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>
 ): Promise<ReportResult> {
   const box = sketch.bbox || bbox(sketch);
+  const url = `${CONFIG.dataBucketUrl}${METRIC.filename}`;
+  console.log("url", url);
 
   // Fetch the whole nearshore boundary, because we need to calculate its total area
   const boundaryPolys = await fgbFetchAll<Feature<Polygon>>(
-    `${CONFIG.dataBucketUrl}${METRIC.filename}`,
+    url,
     STUDY_REGION_BBOX
   );
 

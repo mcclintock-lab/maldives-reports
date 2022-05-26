@@ -10,17 +10,6 @@
       "extra": {
         "sketchName": "maldives-hulhumale-east"
       }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-hulhumale-east"
-      }
     }
   ],
   "sketch": {

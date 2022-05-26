@@ -10,17 +10,6 @@
       "extra": {
         "sketchName": "maldives-vadoo"
       }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-vadoo"
-      }
     }
   ],
   "sketch": {

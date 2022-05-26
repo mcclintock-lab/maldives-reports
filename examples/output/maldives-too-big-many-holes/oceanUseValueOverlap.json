@@ -10,17 +10,6 @@
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 29407422.043310165,
-      "extra": {
-        "sketchName": "maldives-too-big-many-holes"
-      }
     }
   ],
   "sketch": {

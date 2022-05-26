@@ -55,62 +55,6 @@
       "extra": {
         "sketchName": "reserve south"
       }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "62744ee41c322d157c04ee26",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1507673.1196594238,
-      "extra": {
-        "sketchName": "reserve1"
-      }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "627453a41c322d157c04ee2c",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 716518.7775878906,
-      "extra": {
-        "sketchName": "reserve2"
-      }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 4027821.3077688217,
-      "extra": {
-        "sketchName": "reservenetwork1",
-        "isCollection": true
-      }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "627467021c322d157c04ee6d",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 779116.1270370483,
-      "extra": {
-        "sketchName": "left-reserve"
-      }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "6274671c1c322d157c04ee70",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1024513.2834844589,
-      "extra": {
-        "sketchName": "reserve south"
-      }
     }
   ],
   "sketch": {

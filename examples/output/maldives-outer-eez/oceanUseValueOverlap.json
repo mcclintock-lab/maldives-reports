@@ -10,17 +10,6 @@
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 556199.8291015625,
-      "extra": {
-        "sketchName": "maldives-outer-eez"
-      }
     }
   ],
   "sketch": {

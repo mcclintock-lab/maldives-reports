@@ -10,17 +10,6 @@
       "extra": {
         "sketchName": "gp-min-width-recommended-size"
       }
-    },
-    {
-      "metricId": "oceanUseValueOverlap",
-      "sketchId": "603046cf82927a1e12698d58",
-      "classId": "tunaAtlasCatch",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "gp-min-width-recommended-size"
-      }
     }
   ],
   "sketch": {

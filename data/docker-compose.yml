@@ -24,7 +24,7 @@ services:
     # within the workspace. 
     volumes:
       - "..:/project"
-      - "~/Box\ Sync/GIS/Waitt/Azores/Analytics/:/project/data/src"
+      - "~/data/:/project/data/src"
     # Switch to the data directory on startup
     working_dir: /project/data
     depends_on:
