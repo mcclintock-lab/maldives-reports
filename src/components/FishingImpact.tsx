@@ -25,7 +25,10 @@ const FishingImpact = () => {
   const [{ isCollection }] = useSketchProperties();
   return (
     <>
-      <ResultsCard title="Fishing Effort" functionName="oceanUseValueOverlap">
+      <ResultsCard
+        title="Fishing Impact - 2017-2020"
+        functionName="oceanUseValueOverlap"
+      >
         {(data: ReportResult) => {
           // Single sketch or collection top-level
           const parentMetrics = metricsWithSketchId(
@@ -36,33 +39,11 @@ const FishingImpact = () => {
           return (
             <>
               <p>
-                This report summarizes plan overlap with fishing activity. The
-                higher the percentage, the greater the potential impact to the
-                fishery if access or activities are restricted.
+                This report summarizes the proportion of fish catch from
+                2017-2020 that overlaps with this plan. Plans should consider
+                the potential impact to fisheries if access or activities are
+                restricted.
               </p>
-
-              <Collapse title="Learn more">
-                <p>
-                  ℹ️ Fishing Effort is used as a proxy for measuring the
-                  potential economic loss to fisheries caused by the creation of
-                  protected areas. This report can be used to minimize the
-                  potential impact of a plan on a fishery, as well as identify
-                  and reduce conflict between conservation objectives and
-                  fishing activities.
-                </p>
-                <p>
-                  🎯 Planning Objective: there is no specific objective/target
-                  for limiting the potential impact to fishing activities.
-                </p>
-                <p>🗺️ Source Data:</p>
-                <p>
-                  📈 Report: Percentages are calculated by summing the areas of
-                  fishing effort within the MPAs in this plan, and dividing it
-                  by the total area of fishing effort in the overall planning
-                  area. If the plan includes multiple areas that overlap, the
-                  overlap is only counted once.
-                </p>
-              </Collapse>
 
               <ClassTable
                 rows={parentMetrics}
@@ -71,34 +52,56 @@ const FishingImpact = () => {
                   {
                     columnLabel: "  ",
                     type: "class",
-                    width: 40,
+                    width: 45,
                   },
                   {
-                    type: "metricValue",
-                    metricId: METRIC.metricId,
-                    valueFormatter: "percent",
-                    columnLabel: "Within Plan",
-                    width: 15,
-                    colStyle: { textAlign: "right" },
-                  },
-                  {
+                    columnLabel: "% Catch Found Within Plan",
                     type: "metricChart",
                     metricId: METRIC.metricId,
                     valueFormatter: "percent",
                     chartOptions: {
-                      showTitle: false,
+                      showTitle: true,
                     },
-                    width: 30,
+                    width: 45,
                   },
                   {
+                    columnLabel: "Map",
                     type: "layerToggle",
-                    width: 15,
+                    width: 10,
                   },
                 ]}
               />
+
               {isCollection && (
                 <Collapse title="Show by MPA">{genSketchTable(data)}</Collapse>
               )}
+
+              <Collapse title="Learn more">
+                <p>
+                  ℹ️ Fish catch is used as a proxy for measuring the potential
+                  economic loss to fisheries caused by the creation of protected
+                  areas. This report can be used to minimize the potential
+                  impact of a plan fisheries, as well as identify and reduce
+                  conflict between conservation objectives and fishing
+                  activities. The higher the percentage, the greater the
+                  potential impact if access or activities are restricted.
+                </p>
+                <p>
+                  🎯 Planning Objective: there is no specific objective/target
+                  for limiting the potential impact to fishing activities.
+                </p>
+                <p>
+                  🗺️ Source Data: Maldives Marine Research Institute (MMRI) /
+                  MFRA
+                </p>
+                <p>
+                  📈 Report: Percentages are calculated by summing the areas of
+                  fishing effort within the MPAs in this plan, and dividing it
+                  by the total area of fishing effort in the overall planning
+                  area. If the plan includes multiple areas that overlap, the
+                  overlap is only counted once.
+                </p>
+              </Collapse>
             </>
           );
         }}

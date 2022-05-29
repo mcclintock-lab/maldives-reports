@@ -11,15 +11,15 @@ import {
   ClassTable,
   Collapse,
   Column,
-  LayerToggle,
   ReportTableStyled,
   ResultsCard,
   Table,
   useSketchProperties,
+  ToolbarCard,
+  DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import styled from "styled-components";
 import config from "../_config";
-import { boundaryAreaOverlap } from "../functions/boundaryAreaOverlap";
 import { squareMeterToKilometer } from "@seasketch/geoprocessing";
 
 const CONFIG = config;
@@ -31,16 +31,6 @@ const PERC_METRIC_ID = `${METRIC.metricId}Perc`;
 if (!CONFIG || !METRIC) throw new Error("Problem accessing report config");
 
 const Number = new Intl.NumberFormat("en", { style: "decimal" });
-
-const SingleTableStyled = styled.span`
-  table {
-    width: 90%;
-  }
-  td,
-  th {
-    text-align: right;
-  }
-`;
 
 const TableStyled = styled(ReportTableStyled)`
   font-size: 12px;
@@ -78,23 +68,35 @@ const TableStyled = styled(ReportTableStyled)`
 const SizeCard = () => {
   const [{ isCollection }] = useSketchProperties();
   return (
-    <ResultsCard title="Size" functionName="boundaryAreaOverlap">
+    <ResultsCard title="Size" functionName="boundaryAreaOverlap" useChildCard>
       {(data: ReportResult) => {
         if (Object.keys(data).length === 0)
           throw new Error("Protection results not found");
-
         return (
-          <>
+          <ToolbarCard
+            title="Size"
+            items={
+              <>
+                <DataDownload
+                  filename="sample"
+                  data={data.metrics}
+                  formats={["csv", "json"]}
+                  placement="left-end"
+                />
+              </>
+            }
+          >
             <p>
-              Plans should be large enough to meet the size objective and stay
-              within the offshore boundary of the{" "}
-              {config.placenames.nounPossessive || ""} Exclusive Economic Zone
-              (12-200 nautical miles from shore).
+              Plans must meet size objectives and stay within the offshore area
+              of the {config.placenames.nounPossessive || ""} EEZ (12-200
+              nautical miles from shore).
             </p>
+
+            {genSingleSizeTable(data)}
 
             <Collapse title="Learn more">
               <p>
-                The Exclusive Economic Zone EEZ extends from the shoreline out
+                The Exclusive Economic Zone (EEZ) extends from the shoreline out
                 to 200 nautical miles. The EEZ is further split up into two
                 distinct subregions, nearshore which extends from the shoreline
                 out to 12 nautical miles and offshore, which extends from 12 out
@@ -111,19 +113,12 @@ const SizeCard = () => {
               </p>
             </Collapse>
 
-            {genSingleSizeTable(data)}
-
             {isCollection && (
               <Collapse title="Show by MPA">
                 {genNetworkSizeTable(data)}
               </Collapse>
             )}
-
-            <LayerToggle
-              label="View 12nm Offshore/Nearshore Boundary Layer"
-              layerId="6275646461e8a77c15a30f44"
-            />
-          </>
+          </ToolbarCard>
         );
       }}
     </ResultsCard>
@@ -190,7 +185,7 @@ const genSingleSizeTable = (data: ReportResult) => {
             width: 20,
           },
           {
-            columnLabel: "Area Within Plan",
+            columnLabel: "Found Within Plan",
             type: "metricValue",
             metricId: METRIC_ID,
             valueFormatter: (val: string | number) =>
@@ -202,10 +197,10 @@ const genSingleSizeTable = (data: ReportResult) => {
                 )
               ),
             valueLabel: "sq. km.",
-            width: 30,
+            width: 25,
           },
           {
-            columnLabel: "% Within Plan",
+            columnLabel: " ",
             type: "metricChart",
             metricId: PERC_METRIC_ID,
             valueFormatter: "percent",
@@ -215,7 +210,7 @@ const genSingleSizeTable = (data: ReportResult) => {
               targetLabelStyle: "tight",
               barHeight: 11,
             },
-            width: 40,
+            width: 30,
             targetValueFormatter: (
               value: number,
               row: number,
@@ -229,6 +224,11 @@ const genSingleSizeTable = (data: ReportResult) => {
                   `${valueFormatter(value / 100, "percent0dig")}`;
               }
             },
+          },
+          {
+            type: "layerToggle",
+            width: 15,
+            columnLabel: "Map",
           },
         ]}
       />

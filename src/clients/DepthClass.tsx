@@ -6,6 +6,7 @@ import {
   ClassTable,
   useSketchProperties,
   LayerToggle,
+  ToolbarCard,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   ReportResult,
@@ -27,7 +28,11 @@ const DepthClass = () => {
   const [{ isCollection }] = useSketchProperties();
   return (
     <>
-      <ResultsCard title="Ocean Depth" functionName="depthValueOverlap">
+      <ResultsCard
+        title="Ocean Depth"
+        functionName="depthValueOverlap"
+        useChildCard
+      >
         {(data: ReportResult) => {
           // Single sketch or collection top-level
           const parentMetrics = metricsWithSketchId(
@@ -36,37 +41,17 @@ const DepthClass = () => {
           );
 
           return (
-            <>
+            <ToolbarCard
+              title="Ocean Depth"
+              items={
+                <LayerToggle label="Map" layerId={METRIC.layerId} simple />
+              }
+            >
               <p>
-                Each ocean depth zone sustains different ecological communities.
-                Plans should consider including a portion of each depth zone.
+                The ocean is divided into depth zones, each supporting different
+                ecological communities. Plans should consider including a
+                portion of each depth zone.
               </p>
-
-              <Collapse title="Learn more">
-                <p>
-                  ℹ️ Overview: Depth zones represent distinct environmental
-                  conditions and, therefore, ecological communities. Plans
-                  should ensure the representative coverage of each depth zone,
-                  and the distinct ecological communities they sustain.
-                </p>
-                <p>
-                  🎯 Planning Objective: include at least 20% of each depth zone
-                </p>
-                <p>
-                  🗺️ Source Data:{" "}
-                  <a href="https://www.gebco.net/" target="_blank">
-                    GEBCO
-                  </a>{" "}
-                  bathymetry data was classified into 4 depth zones
-                </p>
-                <p>
-                  📈 Report: The percentage of each depth zone within this plan
-                  is calculated by finding the overlap of each depth zone with
-                  the plan, summing its area, then dividing it by the total area
-                  of each depth zone within the EEZ. If the plan includes
-                  multiple areas that overlap, the overlap is only counted once.
-                </p>
-              </Collapse>
 
               <ClassTable
                 rows={parentMetrics}
@@ -78,7 +63,7 @@ const DepthClass = () => {
                     width: 30,
                   },
                   {
-                    columnLabel: "Found Within Plan",
+                    columnLabel: "% Found Within Plan",
                     type: "metricChart",
                     metricId: METRIC.metricId,
                     valueFormatter: "percent",
@@ -108,14 +93,37 @@ const DepthClass = () => {
                   },
                 ]}
               />
-              <LayerToggle
-                label="View Depth Class Layer"
-                layerId={METRIC.layerId}
-              />
+
               {isCollection && (
                 <Collapse title="Show by MPA">{genSketchTable(data)}</Collapse>
               )}
-            </>
+
+              <Collapse title="Learn more">
+                <p>
+                  ℹ️ Overview: Depth zones represent distinct environmental
+                  conditions and, therefore, ecological communities. Plans
+                  should ensure the representative coverage of each depth zone,
+                  and the distinct ecological communities they sustain.
+                </p>
+                <p>
+                  🎯 Planning Objective: include at least 20% of each depth zone
+                </p>
+                <p>
+                  🗺️ Source Data:{" "}
+                  <a href="https://www.gebco.net/" target="_blank">
+                    GEBCO
+                  </a>{" "}
+                  bathymetry data was classified into 4 depth zones
+                </p>
+                <p>
+                  📈 Report: The percentage of each depth zone within this plan
+                  is calculated by finding the overlap of each depth zone with
+                  the plan, summing its area, then dividing it by the total area
+                  of each depth zone within the EEZ. If the plan includes
+                  multiple areas that overlap, the overlap is only counted once.
+                </p>
+              </Collapse>
+            </ToolbarCard>
           );
         }}
       </ResultsCard>

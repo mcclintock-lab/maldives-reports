@@ -41,11 +41,61 @@ const SeafloorSpeciesProtection = () => {
           return (
             <>
               <p>
-                Three coral species are present on the offshore seafloor that
-                provide important habitat and nursery areas for many other
-                species. Plans should consider including a portion of the
-                habitat for each of these coral species.
+                Coral species found on the offshore seafloor provide habitat and
+                nursery areas for many other species. Plans should consider
+                including a portion of the habitat for each of these coral
+                species.
               </p>
+
+              <ClassTable
+                rows={parentMetrics}
+                dataGroup={METRIC}
+                columnConfig={[
+                  {
+                    columnLabel: "Species",
+                    type: "class",
+                    width: 30,
+                  },
+                  {
+                    columnLabel: "% Habitat Found Within Plan",
+                    type: "metricChart",
+                    metricId: METRIC.metricId,
+                    valueFormatter: "percent",
+                    chartOptions: {
+                      showTitle: true,
+                      targetLabelPosition: "bottom",
+                      targetLabelStyle: "tight",
+                      barHeight: 15,
+                    },
+                    width: 40,
+                    targetValueFormatter: (
+                      value: number,
+                      row: number,
+                      numRows: number
+                    ) => {
+                      if (row === 0) {
+                        return (value: number) =>
+                          `${valueFormatter(
+                            value / 100,
+                            "percent0dig"
+                          )} Target`;
+                      } else {
+                        return (value: number) =>
+                          `${valueFormatter(value / 100, "percent0dig")}`;
+                      }
+                    },
+                  },
+                  {
+                    columnLabel: "Map",
+                    type: "layerToggle",
+                    width: 15,
+                  },
+                ]}
+              />
+
+              {isCollection && (
+                <Collapse title="Show by MPA">{genSketchTable(data)}</Collapse>
+              )}
 
               <Collapse title="Learn more">
                 <p>
@@ -76,54 +126,6 @@ const SeafloorSpeciesProtection = () => {
                   is only counted once.
                 </p>
               </Collapse>
-
-              <ClassTable
-                rows={parentMetrics}
-                dataGroup={METRIC}
-                columnConfig={[
-                  {
-                    columnLabel: "Offshore Species",
-                    type: "class",
-                    width: 30,
-                  },
-                  {
-                    columnLabel: "Found Within Plan",
-                    type: "metricChart",
-                    metricId: METRIC.metricId,
-                    valueFormatter: "percent",
-                    chartOptions: {
-                      showTitle: true,
-                      targetLabelPosition: "bottom",
-                      targetLabelStyle: "tight",
-                      barHeight: 15,
-                    },
-                    width: 40,
-                    targetValueFormatter: (
-                      value: number,
-                      row: number,
-                      numRows: number
-                    ) => {
-                      if (row === 0) {
-                        return (value: number) =>
-                          `${valueFormatter(
-                            value / 100,
-                            "percent0dig"
-                          )} Target`;
-                      } else {
-                        return (value: number) =>
-                          `${valueFormatter(value / 100, "percent0dig")}`;
-                      }
-                    },
-                  },
-                  {
-                    type: "layerToggle",
-                    width: 15,
-                  },
-                ]}
-              />
-              {isCollection && (
-                <Collapse title="Show by MPA">{genSketchTable(data)}</Collapse>
-              )}
             </>
           );
         }}
