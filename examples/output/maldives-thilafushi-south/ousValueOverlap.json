@@ -3,7 +3,29 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "tuna_fish",
+      "classId": "all_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "handline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "poleandline_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 0,

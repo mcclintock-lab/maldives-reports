@@ -3,10 +3,26 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": null,
-      "classId": "tuna_fish",
+      "classId": "all_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 32.83677490546126
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": null,
+      "classId": "handline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 10.888929998924837
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": null,
+      "classId": "poleandline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 23.730929712144547
     }
   ]
 }

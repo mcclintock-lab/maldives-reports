@@ -3,7 +3,29 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "tuna_fish",
+      "classId": "all_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "handline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "poleandline_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 0,

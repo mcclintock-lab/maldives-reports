@@ -26,7 +26,7 @@ const FishingValue = () => {
   return (
     <>
       <ResultsCard
-        title="Fishing Impact - Ocean Use Survey"
+        title="Fishing Impact - 2022 Ocean Use Survey"
         functionName="ousValueOverlap"
       >
         {(data: ReportResult) => {

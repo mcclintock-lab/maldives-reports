@@ -3,7 +3,7 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "609ef1d65b3d7a396cdbc944",
-      "classId": "tuna_fish",
+      "classId": "all_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -15,7 +15,7 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "tuna_fish",
+      "classId": "all_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -26,7 +26,75 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "tuna_fish",
+      "classId": "all_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "handline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-test",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "handline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "handline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "poleandline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-test",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "poleandline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "poleandline_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 0,

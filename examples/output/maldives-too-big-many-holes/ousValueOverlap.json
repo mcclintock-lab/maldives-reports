@@ -3,10 +3,32 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "tuna_fish",
+      "classId": "all_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 8.475224710270965,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "handline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.7435932620127579,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "poleandline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 7.80293493766033,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }

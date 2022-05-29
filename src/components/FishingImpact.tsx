@@ -26,7 +26,7 @@ const FishingImpact = () => {
   return (
     <>
       <ResultsCard
-        title="Fishing Impact - 2017-2020"
+        title="Fishing Impact - 2017-2020 Catch"
         functionName="oceanUseValueOverlap"
       >
         {(data: ReportResult) => {

@@ -385,10 +385,26 @@ const ousClasses: DataClass[] = [
   {
     baseFilename: "tuna_fish",
     filename: `tuna_fish${cogFileSuffix}`,
-    classId: "tuna_fish",
-    display: "Commercial Tuna Fishing",
+    classId: "all_tuna",
+    display: "All Commercial Tuna",
     noDataValue: 0,
     layerId: "628d12941dd50b3908080865",
+  },
+  {
+    baseFilename: "Handline-tuna-withmap",
+    filename: `Handline-tuna-withmap${cogFileSuffix}`,
+    classId: "handline_tuna",
+    display: "Handline Commercial Tuna",
+    noDataValue: 0,
+    layerId: "628e71ff662193ee01074aff",
+  },
+  {
+    baseFilename: "Pole-and-Line-tune-withmap",
+    filename: `Pole-and-Line-tune-withmap${cogFileSuffix}`,
+    classId: "poleandline_tuna",
+    display: "Pole and Line Commercial Tuna",
+    noDataValue: 0,
+    layerId: "628e7236662193ee01074b4f",
   },
 ];
 
