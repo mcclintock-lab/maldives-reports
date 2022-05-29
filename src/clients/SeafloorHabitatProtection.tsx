@@ -40,10 +40,9 @@ const SeafloorHabitatProtection = () => {
           return (
             <>
               <p>
-                The seafloor has many different unique features, each creating
+                The seafloor has many unique physical features, each creating
                 habitats that support different ecological communities. Plans
-                should consider including a portion of each type of type of
-                offshore feature.
+                should consider including a portion of each offshore feature.
               </p>
 
               <ClassTable

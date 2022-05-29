@@ -45,11 +45,10 @@ const EnviroZone = () => {
             items={<LayerToggle label="Map" layerId={METRIC.layerId} simple />}
           >
             <p>
-              The offshore planning area is in the open ocean, known as the
-              pelagic zone, and has been divided into four subregions with
-              distinct environmental characteristics. Each region supports
-              different groups of pelagic species. Plans should consider
-              including a portion of each environmental region.
+              The offshore area was divided into four sub-regions of open ocean
+              (pelagic zone), each with distinct environmental characteristics
+              and supporting different groups of pelagic species. Plans should
+              consider including a portion of each region.
             </p>
 
             <ClassTable

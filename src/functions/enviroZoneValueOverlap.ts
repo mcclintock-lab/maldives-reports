@@ -44,7 +44,7 @@ export async function enviroZoneValueOverlap(
 export default new GeoprocessingHandler(enviroZoneValueOverlap, {
   title: "enviroZoneValueOverlap",
   description: "environmental region overlap metrics",
-  timeout: 240, // seconds
+  timeout: 180, // seconds
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

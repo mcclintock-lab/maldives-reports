@@ -94,6 +94,12 @@ const SizeCard = () => {
 
             {genSingleSizeTable(data)}
 
+            {isCollection && (
+              <Collapse title="Show by MPA">
+                {genNetworkSizeTable(data)}
+              </Collapse>
+            )}
+
             <Collapse title="Learn more">
               <p>
                 The Exclusive Economic Zone (EEZ) extends from the shoreline out
@@ -112,12 +118,6 @@ const SizeCard = () => {
                 counted once.
               </p>
             </Collapse>
-
-            {isCollection && (
-              <Collapse title="Show by MPA">
-                {genNetworkSizeTable(data)}
-              </Collapse>
-            )}
           </ToolbarCard>
         );
       }}
