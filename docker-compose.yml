@@ -20,6 +20,11 @@ services:
       PGUSER: "docker"
       PGPASSWORD: "docker"
       PGDATABASE: "gis"
+    volumes:
+      - .:/project:cached
+      - "~/Box\ Sync/GIS/Waitt/Maldives_Blue_Prosperity/Analytics/:/project/data/src"
+      - "$HOME/.aws/credentials:/root/.aws/credentials:ro"
+    working_dir: /project/data
     depends_on:
       - "db"
     command: ["bash"]
