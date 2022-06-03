@@ -47,8 +47,8 @@ const EnviroZone = () => {
             <p>
               The offshore area was divided into four sub-regions of open ocean
               (pelagic zone), each with distinct environmental characteristics
-              and supporting different groups of pelagic species. Plans should
-              consider including a portion of each region.
+              and supporting different groups of pelagic species. Offshore plans
+              should consider including a portion of each region.
             </p>
 
             <ClassTable

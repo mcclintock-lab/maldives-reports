@@ -39,10 +39,10 @@ const FishingValue = () => {
           return (
             <>
               <p>
-                This report summarizes the proportion of fishing area value that
-                overlaps with this plan, as reported in the Ocean Use Survey.
-                Plans should consider the potential impact to fisheries if
-                access or activities are restricted.
+                This report summarizes the proportion of offshore commercial
+                fishing value that overlaps with this offshore plan, as reported
+                in the Ocean Use Survey. Plans should consider the potential
+                impact to fisheries if access or activities are restricted.
               </p>
 
               <ClassTable
@@ -50,7 +50,7 @@ const FishingValue = () => {
                 dataGroup={METRIC}
                 columnConfig={[
                   {
-                    columnLabel: "Sector",
+                    columnLabel: "Sector/Gear Type",
                     type: "class",
                     width: 45,
                   },

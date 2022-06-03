@@ -87,9 +87,9 @@ const SizeCard = () => {
             }
           >
             <p>
-              Plans must meet size objectives and stay within the offshore area
-              of the {config.placenames.nounPossessive || ""} EEZ (12-200
-              nautical miles from shore).
+              Offshore plans must meet size objectives and stay within the
+              offshore area of the {config.placenames.nounPossessive || ""} EEZ
+              (12-200 nautical miles from shore).
             </p>
 
             {genSingleSizeTable(data)}

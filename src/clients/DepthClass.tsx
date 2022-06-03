@@ -48,9 +48,9 @@ const DepthClass = () => {
               }
             >
               <p>
-                The ocean is divided into depth zones, each supporting different
-                ecological communities. Plans should consider including a
-                portion of each depth zone.
+                The seabottom supports different ecological communities
+                depending on its depth. Offshore plans should consider including
+                areas at each depth zone.
               </p>
 
               <ClassTable

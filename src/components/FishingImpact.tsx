@@ -40,9 +40,9 @@ const FishingImpact = () => {
             <>
               <p>
                 This report summarizes the proportion of fish catch from
-                2017-2020 that overlaps with this plan. Plans should consider
-                the potential impact to fisheries if access or activities are
-                restricted.
+                2017-2020 that overlaps with this offshore plan. Plans should
+                consider the potential impact to fisheries if access or
+                activities are restricted.
               </p>
 
               <ClassTable

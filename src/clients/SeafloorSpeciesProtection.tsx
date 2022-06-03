@@ -42,9 +42,9 @@ const SeafloorSpeciesProtection = () => {
             <>
               <p>
                 Coral species found on the offshore seafloor provide habitat and
-                nursery areas for many other species. Plans should consider
-                including a portion of the habitat for each of these coral
-                species.
+                nursery areas for many other species. Offshore plans should
+                consider including a portion of the habitat for each of these
+                coral species.
               </p>
 
               <ClassTable
