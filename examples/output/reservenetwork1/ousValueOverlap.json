@@ -59,6 +59,62 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "driftingdropline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.00241021207773251,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "driftingdropline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "driftingdropline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.09924955267403668,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627467021c322d157c04ee6d",
+      "classId": "driftingdropline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.09683934059630417,
+      "extra": {
+        "sketchName": "left-reserve"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "6274671c1c322d157c04ee70",
+      "classId": "driftingdropline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "reserve south"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
       "classId": "handline_tuna",
       "groupId": null,
       "geographyId": null,
@@ -115,6 +171,62 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "longline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "longline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "longline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.002692865176562975,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627467021c322d157c04ee6d",
+      "classId": "longline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.002692865176562975,
+      "extra": {
+        "sketchName": "left-reserve"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "6274671c1c322d157c04ee70",
+      "classId": "longline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "reserve south"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
       "classId": "poleandline_tuna",
       "groupId": null,
       "geographyId": null,
@@ -164,6 +276,62 @@
       "groupId": null,
       "geographyId": null,
       "value": 0.012370664510060081,
+      "extra": {
+        "sketchName": "reserve south"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "trolling_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.00241021207773251,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "trolling_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "trolling_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.09924955267403668,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "627467021c322d157c04ee6d",
+      "classId": "trolling_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.09683934059630417,
+      "extra": {
+        "sketchName": "left-reserve"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "6274671c1c322d157c04ee70",
+      "classId": "trolling_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
       "extra": {
         "sketchName": "reserve south"
       }

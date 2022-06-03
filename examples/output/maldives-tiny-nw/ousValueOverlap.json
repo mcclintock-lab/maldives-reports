@@ -14,6 +14,17 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "driftingdropline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-tiny-nw"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
       "classId": "handline_tuna",
       "groupId": null,
       "geographyId": null,
@@ -25,10 +36,32 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "longline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-tiny-nw"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
       "classId": "poleandline_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 3.00335081249159e-8,
+      "extra": {
+        "sketchName": "maldives-tiny-nw"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "trolling_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
       "extra": {
         "sketchName": "maldives-tiny-nw"
       }

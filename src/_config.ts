@@ -391,12 +391,28 @@ const ousClasses: DataClass[] = [
     layerId: "628d12941dd50b3908080865",
   },
   {
+    baseFilename: "drifting-dropline-tuna",
+    filename: `drifting-dropline-tuna${cogFileSuffix}`,
+    classId: "driftingdropline_tuna",
+    display: "Drifting Dropline Commercial Tuna",
+    noDataValue: 0,
+    layerId: "628d132d1dd50b3908080941",
+  },
+  {
     baseFilename: "Handline-tuna-withmap",
     filename: `Handline-tuna-withmap${cogFileSuffix}`,
     classId: "handline_tuna",
     display: "Handline Commercial Tuna",
     noDataValue: 0,
-    layerId: "628e71ff662193ee01074aff",
+    layerId: "628d12bb1dd50b39080808a7",
+  },
+  {
+    baseFilename: "Longline-tuna",
+    filename: `Longline-tuna${cogFileSuffix}`,
+    classId: "longline_tuna",
+    display: "Longline Commercial Tuna",
+    noDataValue: 0,
+    layerId: "628d13741dd50b3908080998",
   },
   {
     baseFilename: "Pole-and-Line-tune-withmap",
@@ -404,7 +420,15 @@ const ousClasses: DataClass[] = [
     classId: "poleandline_tuna",
     display: "Pole and Line Commercial Tuna",
     noDataValue: 0,
-    layerId: "628e7236662193ee01074b4f",
+    layerId: "628d12e81dd50b39080808eb",
+  },
+  {
+    baseFilename: "Trolling-tuna",
+    filename: `Trolling-tuna${cogFileSuffix}`,
+    classId: "trolling_tuna",
+    display: "Trolling Tuna",
+    noDataValue: 0,
+    layerId: "628d13ac1dd50b39080809e7",
   },
 ];
 

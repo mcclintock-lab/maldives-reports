@@ -14,6 +14,17 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "driftingdropline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "handline_tuna",
       "groupId": null,
       "geographyId": null,
@@ -25,7 +36,29 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "longline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "poleandline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "trolling_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 0,

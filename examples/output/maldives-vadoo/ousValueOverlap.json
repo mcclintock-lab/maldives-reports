@@ -14,6 +14,17 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60e4f6fa526687153637445f",
+      "classId": "driftingdropline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
       "classId": "handline_tuna",
       "groupId": null,
       "geographyId": null,
@@ -25,7 +36,29 @@
     {
       "metricId": "ousValueOverlap",
       "sketchId": "60e4f6fa526687153637445f",
+      "classId": "longline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
       "classId": "poleandline_tuna",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "trolling_tuna",
       "groupId": null,
       "geographyId": null,
       "value": 0,
