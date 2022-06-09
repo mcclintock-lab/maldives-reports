@@ -1,7 +1,6 @@
 version: '3'
 services:
   db:
-    container_name: db-maldives-reports
     image: seasketch/geoprocessing-db
     # Port 54320 will be exposed on the host machine. For example, with
     # QGIS installed you can connect to the database on this port. Use
@@ -11,7 +10,6 @@ services:
     ports:
       - "54320:5432"
   workspace:
-    container_name: workspace-maldives-reports
     image: seasketch/geoprocessing-workspace
     # These env vars make it easy to connect to the database service
     # Use `psql` without arguments to connect from within the workspace
@@ -24,7 +22,7 @@ services:
       - .:/project:cached
       - "~/Box\ Sync/GIS/Waitt/Maldives_Blue_Prosperity/Analytics/:/project/data/src"
       - "$HOME/.aws/credentials:/root/.aws/credentials:ro"
-    working_dir: /project/data
+    working_dir: /project
     depends_on:
       - "db"
     command: ["bash"]
