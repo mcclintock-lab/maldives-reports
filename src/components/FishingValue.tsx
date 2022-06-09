@@ -119,10 +119,10 @@ const FishingValue = () => {
                 </ul>
                 <p>
                   📈 Report: Percentages are calculated by summing the areas of
-                  fishing effort within the MPAs in this plan, and dividing it
-                  by the total area of fishing effort in the overall planning
-                  area. If the plan includes multiple areas that overlap, the
-                  overlap is only counted once.
+                  fishing value within the MPAs in this plan, and dividing it by
+                  the total fishing value in the overall planning area. If the
+                  plan includes multiple areas that overlap, the overlap is only
+                  counted once.
                 </p>
               </Collapse>
             </>
