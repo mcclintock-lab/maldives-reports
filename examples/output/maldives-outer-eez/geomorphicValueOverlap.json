@@ -17,7 +17,7 @@
       "classId": "BasinLarge",
       "groupId": null,
       "geographyId": null,
-      "value": 2181,
+      "value": 2143,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -50,7 +50,7 @@
       "classId": "Canyons",
       "groupId": null,
       "geographyId": null,
-      "value": 1567,
+      "value": 1572,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -61,7 +61,7 @@
       "classId": "Escarpments",
       "groupId": null,
       "geographyId": null,
-      "value": 1467,
+      "value": 1455,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -72,7 +72,7 @@
       "classId": "Knolls",
       "groupId": null,
       "geographyId": null,
-      "value": 8190,
+      "value": 8101,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -83,7 +83,7 @@
       "classId": "Plateaus",
       "groupId": null,
       "geographyId": null,
-      "value": 20641,
+      "value": 20563,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -105,7 +105,7 @@
       "classId": "Seamounts_30km",
       "groupId": null,
       "geographyId": null,
-      "value": 3003,
+      "value": 2984,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }

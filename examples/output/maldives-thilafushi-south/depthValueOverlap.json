@@ -3,17 +3,6 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-thilafushi-south"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "60dd1b1931c2945fed86b3ac",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,

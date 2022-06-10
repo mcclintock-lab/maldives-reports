@@ -3,18 +3,10 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": null,
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 194
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": null,
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,
-      "value": 2549
+      "value": 2690
     },
     {
       "metricId": "depthValueOverlap",
@@ -22,7 +14,7 @@
       "classId": "bathyal",
       "groupId": null,
       "geographyId": null,
-      "value": 2302171
+      "value": 2301631
     },
     {
       "metricId": "depthValueOverlap",
@@ -30,7 +22,7 @@
       "classId": "abyssal",
       "groupId": null,
       "geographyId": null,
-      "value": 1475095
+      "value": 1475028
     }
   ]
 }

@@ -3,17 +3,6 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "62744ee41c322d157c04ee26",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "reserve1"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "62744ee41c322d157c04ee26",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,
@@ -28,7 +17,7 @@
       "classId": "bathyal",
       "groupId": null,
       "geographyId": null,
-      "value": 68979,
+      "value": 68973,
       "extra": {
         "sketchName": "reserve1"
       }
@@ -47,17 +36,6 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "627453a41c322d157c04ee2c",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "reserve2"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "627453a41c322d157c04ee2c",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,
@@ -72,7 +50,7 @@
       "classId": "bathyal",
       "groupId": null,
       "geographyId": null,
-      "value": 198761,
+      "value": 198633,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -83,20 +61,9 @@
       "classId": "abyssal",
       "groupId": null,
       "geographyId": null,
-      "value": 4287,
+      "value": 4376,
       "extra": {
         "sketchName": "reserve2"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "627467021c322d157c04ee6d",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "left-reserve"
       }
     },
     {
@@ -116,7 +83,7 @@
       "classId": "bathyal",
       "groupId": null,
       "geographyId": null,
-      "value": 146621,
+      "value": 147018,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -127,20 +94,9 @@
       "classId": "abyssal",
       "groupId": null,
       "geographyId": null,
-      "value": 343551,
+      "value": 343057,
       "extra": {
         "sketchName": "left-reserve"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "6274671c1c322d157c04ee70",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "reserve south"
       }
     },
     {
@@ -160,7 +116,7 @@
       "classId": "bathyal",
       "groupId": null,
       "geographyId": null,
-      "value": 116283,
+      "value": 116532,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -171,21 +127,9 @@
       "classId": "abyssal",
       "groupId": null,
       "geographyId": null,
-      "value": 235776,
+      "value": 235447,
       "extra": {
         "sketchName": "reserve south"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "reservenetwork1",
-        "isCollection": true
       }
     },
     {
@@ -206,7 +150,7 @@
       "classId": "bathyal",
       "groupId": null,
       "geographyId": null,
-      "value": 530644,
+      "value": 531156,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -218,7 +162,7 @@
       "classId": "abyssal",
       "groupId": null,
       "geographyId": null,
-      "value": 583614,
+      "value": 582880,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true

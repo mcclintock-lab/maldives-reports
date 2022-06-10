@@ -3,17 +3,6 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "huraa"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,
@@ -47,17 +36,6 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-hulhumale-east"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,
@@ -86,18 +64,6 @@
       "value": 0,
       "extra": {
         "sketchName": "maldives-hulhumale-east"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "609ef1d65b3d7a396cdbc944",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-network-test",
-        "isCollection": true
       }
     },
     {

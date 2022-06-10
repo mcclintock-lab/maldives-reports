@@ -28,7 +28,7 @@
       "classId": "3",
       "groupId": null,
       "geographyId": null,
-      "value": 68979,
+      "value": 68973,
       "extra": {
         "sketchName": "reserve1"
       }
@@ -50,7 +50,7 @@
       "classId": "1",
       "groupId": null,
       "geographyId": null,
-      "value": 143180,
+      "value": 143315,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -72,7 +72,7 @@
       "classId": "3",
       "groupId": null,
       "geographyId": null,
-      "value": 10966,
+      "value": 10916,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -83,7 +83,7 @@
       "classId": "4",
       "groupId": null,
       "geographyId": null,
-      "value": 48902,
+      "value": 48778,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -94,7 +94,7 @@
       "classId": "1",
       "groupId": null,
       "geographyId": null,
-      "value": 7057,
+      "value": 7051,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -105,7 +105,7 @@
       "classId": "2",
       "groupId": null,
       "geographyId": null,
-      "value": 298543,
+      "value": 298230,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -127,7 +127,7 @@
       "classId": "4",
       "groupId": null,
       "geographyId": null,
-      "value": 184572,
+      "value": 184794,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -138,7 +138,7 @@
       "classId": "1",
       "groupId": null,
       "geographyId": null,
-      "value": 77287,
+      "value": 77428,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -171,7 +171,7 @@
       "classId": "4",
       "groupId": null,
       "geographyId": null,
-      "value": 274772,
+      "value": 274551,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -182,7 +182,7 @@
       "classId": "1",
       "groupId": null,
       "geographyId": null,
-      "value": 227524,
+      "value": 227794,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -194,7 +194,7 @@
       "classId": "2",
       "groupId": null,
       "geographyId": null,
-      "value": 298543,
+      "value": 298230,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -206,7 +206,7 @@
       "classId": "3",
       "groupId": null,
       "geographyId": null,
-      "value": 79945,
+      "value": 79889,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -218,7 +218,7 @@
       "classId": "4",
       "groupId": null,
       "geographyId": null,
-      "value": 508246,
+      "value": 508123,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true

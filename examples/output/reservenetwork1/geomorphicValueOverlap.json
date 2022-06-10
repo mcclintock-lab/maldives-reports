@@ -6,7 +6,7 @@
       "classId": "AbyssalPlains",
       "groupId": null,
       "geographyId": null,
-      "value": 45383,
+      "value": 45207,
       "extra": {
         "sketchName": "reserve1"
       }
@@ -17,7 +17,7 @@
       "classId": "AbyssalPlains",
       "groupId": null,
       "geographyId": null,
-      "value": 21705,
+      "value": 21796,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -28,7 +28,7 @@
       "classId": "AbyssalPlains",
       "groupId": null,
       "geographyId": null,
-      "value": 202866,
+      "value": 202412,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -40,7 +40,7 @@
       "classId": "AbyssalPlains",
       "groupId": null,
       "geographyId": null,
-      "value": 99257,
+      "value": 98983,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -51,7 +51,7 @@
       "classId": "AbyssalPlains",
       "groupId": null,
       "geographyId": null,
-      "value": 36521,
+      "value": 36426,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -62,7 +62,7 @@
       "classId": "BasinLarge",
       "groupId": null,
       "geographyId": null,
-      "value": 58789,
+      "value": 58712,
       "extra": {
         "sketchName": "reserve1"
       }
@@ -84,7 +84,7 @@
       "classId": "BasinLarge",
       "groupId": null,
       "geographyId": null,
-      "value": 253964,
+      "value": 253732,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -96,7 +96,7 @@
       "classId": "BasinLarge",
       "groupId": null,
       "geographyId": null,
-      "value": 193760,
+      "value": 193591,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -107,7 +107,7 @@
       "classId": "BasinLarge",
       "groupId": null,
       "geographyId": null,
-      "value": 1415,
+      "value": 1429,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -129,7 +129,7 @@
       "classId": "BasinMajor",
       "groupId": null,
       "geographyId": null,
-      "value": 98,
+      "value": 107,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -140,7 +140,7 @@
       "classId": "BasinMajor",
       "groupId": null,
       "geographyId": null,
-      "value": 232622,
+      "value": 232265,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -163,7 +163,7 @@
       "classId": "BasinMajor",
       "groupId": null,
       "geographyId": null,
-      "value": 232524,
+      "value": 232158,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -196,7 +196,7 @@
       "classId": "BasinSmall",
       "groupId": null,
       "geographyId": null,
-      "value": 6854,
+      "value": 6873,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -208,7 +208,7 @@
       "classId": "BasinSmall",
       "groupId": null,
       "geographyId": null,
-      "value": 6854,
+      "value": 6873,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -308,7 +308,7 @@
       "classId": "Escarpments",
       "groupId": null,
       "geographyId": null,
-      "value": 16527,
+      "value": 16579,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -320,7 +320,7 @@
       "classId": "Escarpments",
       "groupId": null,
       "geographyId": null,
-      "value": 6705,
+      "value": 6724,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -331,7 +331,7 @@
       "classId": "Escarpments",
       "groupId": null,
       "geographyId": null,
-      "value": 9822,
+      "value": 9855,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -353,7 +353,7 @@
       "classId": "Knolls",
       "groupId": null,
       "geographyId": null,
-      "value": 6523,
+      "value": 6581,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -364,7 +364,7 @@
       "classId": "Knolls",
       "groupId": null,
       "geographyId": null,
-      "value": 170693,
+      "value": 170621,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -376,7 +376,7 @@
       "classId": "Knolls",
       "groupId": null,
       "geographyId": null,
-      "value": 119725,
+      "value": 119714,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -387,7 +387,7 @@
       "classId": "Knolls",
       "groupId": null,
       "geographyId": null,
-      "value": 41182,
+      "value": 41063,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -398,7 +398,7 @@
       "classId": "Plateaus",
       "groupId": null,
       "geographyId": null,
-      "value": 5667,
+      "value": 5690,
       "extra": {
         "sketchName": "reserve1"
       }
@@ -409,7 +409,7 @@
       "classId": "Plateaus",
       "groupId": null,
       "geographyId": null,
-      "value": 7755,
+      "value": 7652,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -420,7 +420,7 @@
       "classId": "Plateaus",
       "groupId": null,
       "geographyId": null,
-      "value": 119257,
+      "value": 119437,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -443,7 +443,7 @@
       "classId": "Plateaus",
       "groupId": null,
       "geographyId": null,
-      "value": 105835,
+      "value": 106095,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -465,7 +465,7 @@
       "classId": "Ridges",
       "groupId": null,
       "geographyId": null,
-      "value": 3441,
+      "value": 3466,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -476,7 +476,7 @@
       "classId": "Ridges",
       "groupId": null,
       "geographyId": null,
-      "value": 45106,
+      "value": 45249,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -499,7 +499,7 @@
       "classId": "Ridges",
       "groupId": null,
       "geographyId": null,
-      "value": 37203,
+      "value": 37321,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -532,7 +532,7 @@
       "classId": "Seamounts_30km",
       "groupId": null,
       "geographyId": null,
-      "value": 41130,
+      "value": 41271,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -544,7 +544,7 @@
       "classId": "Seamounts_30km",
       "groupId": null,
       "geographyId": null,
-      "value": 25096,
+      "value": 25156,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -555,7 +555,7 @@
       "classId": "Seamounts_30km",
       "groupId": null,
       "geographyId": null,
-      "value": 16034,
+      "value": 16115,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -588,7 +588,7 @@
       "classId": "Troughs",
       "groupId": null,
       "geographyId": null,
-      "value": 49156,
+      "value": 48928,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -611,7 +611,7 @@
       "classId": "Troughs",
       "groupId": null,
       "geographyId": null,
-      "value": 49156,
+      "value": 48928,
       "extra": {
         "sketchName": "reserve south"
       }

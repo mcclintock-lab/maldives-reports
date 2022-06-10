@@ -116,24 +116,18 @@ const boundaryAreaOverlap: MetricGroup = {
 const depthClasses: DataClass[] = [
   {
     numericClassId: 1,
-    classId: "photic",
-    display: "Photic - 0-30 meters",
-    goalValue: 0.2,
-  },
-  {
-    numericClassId: 2,
     classId: "mesophotic",
     display: "Mesophotic - 30-150 meters",
     goalValue: 0.2,
   },
   {
-    numericClassId: 3,
+    numericClassId: 2,
     classId: "bathyal",
     display: "Bathyal - 1,000-4,000 meters",
     goalValue: 0.2,
   },
   {
-    numericClassId: 4,
+    numericClassId: 3,
     classId: "abyssal",
     display: "Abyssal - 4,000-6,000 meters",
     goalValue: 0.2,

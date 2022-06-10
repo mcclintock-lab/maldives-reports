@@ -3,21 +3,10 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-outer-eez"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "60dd2b3531c2945fed86b3bd",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,
-      "value": 260,
+      "value": 267,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -28,7 +17,7 @@
       "classId": "bathyal",
       "groupId": null,
       "geographyId": null,
-      "value": 22470,
+      "value": 22351,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }

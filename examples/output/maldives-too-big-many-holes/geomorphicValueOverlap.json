@@ -6,7 +6,7 @@
       "classId": "AbyssalPlains",
       "groupId": null,
       "geographyId": null,
-      "value": 206092,
+      "value": 206035,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -17,7 +17,7 @@
       "classId": "BasinLarge",
       "groupId": null,
       "geographyId": null,
-      "value": 215515,
+      "value": 215359,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -28,7 +28,7 @@
       "classId": "BasinMajor",
       "groupId": null,
       "geographyId": null,
-      "value": 259537,
+      "value": 259337,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -50,7 +50,7 @@
       "classId": "Canyons",
       "groupId": null,
       "geographyId": null,
-      "value": 1809,
+      "value": 1707,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -61,7 +61,7 @@
       "classId": "Escarpments",
       "groupId": null,
       "geographyId": null,
-      "value": 19057,
+      "value": 19004,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -72,7 +72,7 @@
       "classId": "Knolls",
       "groupId": null,
       "geographyId": null,
-      "value": 169543,
+      "value": 169326,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -83,7 +83,7 @@
       "classId": "Plateaus",
       "groupId": null,
       "geographyId": null,
-      "value": 419019,
+      "value": 418813,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -94,7 +94,7 @@
       "classId": "Ridges",
       "groupId": null,
       "geographyId": null,
-      "value": 41608,
+      "value": 41649,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -105,7 +105,7 @@
       "classId": "Seamounts_30km",
       "groupId": null,
       "geographyId": null,
-      "value": 66392,
+      "value": 66195,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -116,7 +116,7 @@
       "classId": "Troughs",
       "groupId": null,
       "geographyId": null,
-      "value": 12309,
+      "value": 12242,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }

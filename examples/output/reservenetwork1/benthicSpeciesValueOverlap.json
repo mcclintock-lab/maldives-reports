@@ -6,7 +6,7 @@
       "classId": "Antipatharia",
       "groupId": null,
       "geographyId": null,
-      "value": 97,
+      "value": 98,
       "extra": {
         "sketchName": "reserve1"
       }
@@ -17,7 +17,7 @@
       "classId": "Antipatharia",
       "groupId": null,
       "geographyId": null,
-      "value": 808,
+      "value": 811,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -28,7 +28,7 @@
       "classId": "Antipatharia",
       "groupId": null,
       "geographyId": null,
-      "value": 3743,
+      "value": 3766,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -51,7 +51,7 @@
       "classId": "Antipatharia",
       "groupId": null,
       "geographyId": null,
-      "value": 2838,
+      "value": 2857,
       "extra": {
         "sketchName": "reserve south"
       }
@@ -140,7 +140,7 @@
       "classId": "Octocorals",
       "groupId": null,
       "geographyId": null,
-      "value": 3784,
+      "value": 3820,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -163,7 +163,7 @@
       "classId": "Octocorals",
       "groupId": null,
       "geographyId": null,
-      "value": 3784,
+      "value": 3820,
       "extra": {
         "sketchName": "reserve south"
       }

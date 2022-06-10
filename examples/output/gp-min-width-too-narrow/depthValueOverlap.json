@@ -3,17 +3,6 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "602c6ea614a9b6377b68e4ee",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "gp-min-width-too-narrow"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "602c6ea614a9b6377b68e4ee",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,

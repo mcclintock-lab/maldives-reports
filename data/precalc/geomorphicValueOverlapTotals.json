@@ -6,7 +6,7 @@
       "classId": "BasinLarge",
       "groupId": null,
       "geographyId": null,
-      "value": 770862
+      "value": 770965
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -14,7 +14,7 @@
       "classId": "BasinMajor",
       "groupId": null,
       "geographyId": null,
-      "value": 495048
+      "value": 494287
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -22,7 +22,7 @@
       "classId": "BasinSmall",
       "groupId": null,
       "geographyId": null,
-      "value": 9915
+      "value": 9954
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -30,7 +30,7 @@
       "classId": "Knolls",
       "groupId": null,
       "geographyId": null,
-      "value": 631041
+      "value": 630589
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -38,7 +38,7 @@
       "classId": "AbyssalPlains",
       "groupId": null,
       "geographyId": null,
-      "value": 547229
+      "value": 546351
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -46,7 +46,7 @@
       "classId": "Seamounts_30km",
       "groupId": null,
       "geographyId": null,
-      "value": 248112
+      "value": 248026
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -54,7 +54,7 @@
       "classId": "Canyons",
       "groupId": null,
       "geographyId": null,
-      "value": 20985
+      "value": 20829
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -62,7 +62,7 @@
       "classId": "Escarpments",
       "groupId": null,
       "geographyId": null,
-      "value": 72977
+      "value": 72926
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -70,7 +70,7 @@
       "classId": "Plateaus",
       "groupId": null,
       "geographyId": null,
-      "value": 892746
+      "value": 892634
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -78,7 +78,7 @@
       "classId": "Ridges",
       "groupId": null,
       "geographyId": null,
-      "value": 89977
+      "value": 90032
     },
     {
       "metricId": "geomorphicValueOverlap",
@@ -86,7 +86,7 @@
       "classId": "Troughs",
       "groupId": null,
       "geographyId": null,
-      "value": 55284
+      "value": 54889
     }
   ]
 }

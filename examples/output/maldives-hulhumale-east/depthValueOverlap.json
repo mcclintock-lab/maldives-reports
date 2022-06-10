@@ -3,17 +3,6 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-hulhumale-east"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,

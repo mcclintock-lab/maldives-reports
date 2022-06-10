@@ -3,17 +3,6 @@
     {
       "metricId": "depthValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "photic",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-too-big-many-holes"
-      }
-    },
-    {
-      "metricId": "depthValueOverlap",
-      "sketchId": "60f9c6d9b853a31becb1951e",
       "classId": "mesophotic",
       "groupId": null,
       "geographyId": null,
@@ -28,7 +17,7 @@
       "classId": "bathyal",
       "groupId": null,
       "geographyId": null,
-      "value": 970723,
+      "value": 970254,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
@@ -39,7 +28,7 @@
       "classId": "abyssal",
       "groupId": null,
       "geographyId": null,
-      "value": 408269,
+      "value": 408395,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }

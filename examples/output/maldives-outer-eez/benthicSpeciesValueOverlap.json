@@ -6,7 +6,7 @@
       "classId": "Antipatharia",
       "groupId": null,
       "geographyId": null,
-      "value": 13289,
+      "value": 13259,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -17,7 +17,7 @@
       "classId": "Cold Water Coral",
       "groupId": null,
       "geographyId": null,
-      "value": 168,
+      "value": 174,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
@@ -28,7 +28,7 @@
       "classId": "Octocorals",
       "groupId": null,
       "geographyId": null,
-      "value": 18249,
+      "value": 18237,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }

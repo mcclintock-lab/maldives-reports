@@ -6,7 +6,7 @@
       "classId": "1",
       "groupId": null,
       "geographyId": null,
-      "value": 781994
+      "value": 782991
     },
     {
       "metricId": "enviroZoneValueOverlap",
@@ -14,7 +14,7 @@
       "classId": "2",
       "groupId": null,
       "geographyId": null,
-      "value": 630772
+      "value": 630776
     },
     {
       "metricId": "enviroZoneValueOverlap",
@@ -22,7 +22,7 @@
       "classId": "3",
       "groupId": null,
       "geographyId": null,
-      "value": 556342
+      "value": 555419
     },
     {
       "metricId": "enviroZoneValueOverlap",
@@ -30,7 +30,7 @@
       "classId": "4",
       "groupId": null,
       "geographyId": null,
-      "value": 1796216
+      "value": 1795434
     }
   ]
 }

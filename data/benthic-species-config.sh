@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRC_PATH=src/Analytics/offshore_prioritization/inputs
+SRC_PATH=src/Data_Received/From_Jason/offshore-inputs/key-inputs
 DST_PATH=dist
 
 ## declare an array variable
