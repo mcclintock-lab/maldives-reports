@@ -3,10 +3,43 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
-      "value": 3055997.0327050686,
+      "value": 27836.758512037806,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1546.2186489847954,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 26275.943034355994,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 14.596609587955754,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }

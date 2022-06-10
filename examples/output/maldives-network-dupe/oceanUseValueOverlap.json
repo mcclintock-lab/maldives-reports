@@ -3,7 +3,7 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "609ef1d65b3d7a396cdbc944",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -15,7 +15,7 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -26,7 +26,7 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -37,7 +37,7 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -48,7 +48,175 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "609ef1d65b3d7a396cdbc944",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-network-dupe",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_trolling",
       "groupId": null,
       "geographyId": null,
       "value": 0,

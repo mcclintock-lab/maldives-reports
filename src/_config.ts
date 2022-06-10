@@ -355,12 +355,36 @@ const benthicSpeciesValueOverlap: MetricGroup = {
 
 const oceanUseClasses: DataClass[] = [
   {
-    baseFilename: "cost_Mean.annual.catch",
-    filename: `cost_Mean.annual.catch${cogFileSuffix}`,
-    classId: "meanAnnualCatch",
-    display: "Total Catch (average annual, all sectors)",
+    baseFilename: "catch_mean_annual_rescaled",
+    filename: `catch_mean_annual_rescaled${cogFileSuffix}`,
+    classId: "catch_all",
+    display: "All Gear Type",
     noDataValue: -3.39999995214436425e38,
     layerId: "62740b5761e8a77c15a25518",
+  },
+  {
+    baseFilename: "catch_HL_rescaled",
+    filename: `catch_HL_rescaled${cogFileSuffix}`,
+    classId: "catch_handline",
+    display: "Handline",
+    noDataValue: -3.39999995214436425e38,
+    layerId: "",
+  },
+  {
+    baseFilename: "catch_PL_rescaled",
+    filename: `catch_PL_rescaled${cogFileSuffix}`,
+    classId: "catch_pole_and_line",
+    display: "Pole and Line",
+    noDataValue: -3.39999995214436425e38,
+    layerId: "",
+  },
+  {
+    baseFilename: "catch_TR_rescaled",
+    filename: `catch_TR_rescaled${cogFileSuffix}`,
+    classId: "catch_trolling",
+    display: "Trolling",
+    noDataValue: -3.39999995214436425e38,
+    layerId: "",
   },
 ];
 

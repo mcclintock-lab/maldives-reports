@@ -3,10 +3,11 @@
 
 source ./oceanuse_config.sh
 
-for CLASS in "${CLASSES[@]}"
+for LAYER in "${LAYERS[@]}"
 do
-   echo "Converting "$CLASS" to COG, recalc min/max"
-   gdal_translate -r nearest -of COG -stats "${SRC_PATH}/${CLASS}.tif" "${DST_PATH}/${CLASS}_cog.tif"
+   echo "Converting "$LAYER" to COG, recalc min/max"
+   gdalwarp -t_srs "EPSG:4326" "${SRC_PATH}/${LAYER}.tif" "${DST_PATH}/${LAYER}_4326.tif"
+   gdal_translate -r nearest -of COG -stats "${DST_PATH}/${LAYER}_4326.tif" "${DST_PATH}/${LAYER}_cog.tif"
    echo ""
 done
 

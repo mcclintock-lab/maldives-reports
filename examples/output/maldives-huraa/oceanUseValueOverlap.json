@@ -3,7 +3,40 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "catch_trolling",
       "groupId": null,
       "geographyId": null,
       "value": 0,

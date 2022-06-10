@@ -3,7 +3,40 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-tiny-nw"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-tiny-nw"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-tiny-nw"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "catch_trolling",
       "groupId": null,
       "geographyId": null,
       "value": 0,

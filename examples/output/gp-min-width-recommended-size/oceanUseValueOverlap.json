@@ -3,7 +3,40 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "603046cf82927a1e12698d58",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-recommended-size"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "603046cf82927a1e12698d58",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-recommended-size"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "603046cf82927a1e12698d58",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-recommended-size"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "603046cf82927a1e12698d58",
+      "classId": "catch_trolling",
       "groupId": null,
       "geographyId": null,
       "value": 0,

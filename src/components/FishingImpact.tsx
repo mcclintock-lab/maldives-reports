@@ -26,7 +26,7 @@ const FishingImpact = () => {
   return (
     <>
       <ResultsCard
-        title="Fishing Impact - 2017-2020 Catch"
+        title="Fishing Impact - 2017-2020 Average Annual Catch"
         functionName="oceanUseValueOverlap"
       >
         {(data: ReportResult) => {
@@ -50,12 +50,12 @@ const FishingImpact = () => {
                 dataGroup={METRIC}
                 columnConfig={[
                   {
-                    columnLabel: "  ",
+                    columnLabel: "Gear Type",
                     type: "class",
                     width: 45,
                   },
                   {
-                    columnLabel: "% Catch Found Within Plan",
+                    columnLabel: "% Annual Catch Within Plan",
                     type: "metricChart",
                     metricId: METRIC.metricId,
                     valueFormatter: "percent",

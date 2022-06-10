@@ -3,10 +3,10 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "62744ee41c322d157c04ee26",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
-      "value": 86914.44884204865,
+      "value": 481.5255742110312,
       "extra": {
         "sketchName": "reserve1"
       }
@@ -14,10 +14,10 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "627453a41c322d157c04ee2c",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
-      "value": 12405.930191636086,
+      "value": 116.66062787594274,
       "extra": {
         "sketchName": "reserve2"
       }
@@ -25,10 +25,10 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
-      "value": 269060.6331715584,
+      "value": 2000.4510645121336,
       "extra": {
         "sketchName": "reservenetwork1",
         "isCollection": true
@@ -37,10 +37,10 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "627467021c322d157c04ee6d",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
-      "value": 149328.4841887951,
+      "value": 1298.0112257543951,
       "extra": {
         "sketchName": "left-reserve"
       }
@@ -48,10 +48,178 @@
     {
       "metricId": "oceanUseValueOverlap",
       "sketchId": "6274671c1c322d157c04ee70",
-      "classId": "meanAnnualCatch",
+      "classId": "catch_all",
       "groupId": null,
       "geographyId": null,
-      "value": 20411.76994907856,
+      "value": 104.25363667076454,
+      "extra": {
+        "sketchName": "reserve south"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 292.32391269877553,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 85.04603007575497,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1019.2082420669612,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627467021c322d157c04ee6d",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 602.9250066634268,
+      "extra": {
+        "sketchName": "left-reserve"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "6274671c1c322d157c04ee70",
+      "classId": "catch_handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 38.91329262900399,
+      "extra": {
+        "sketchName": "reserve south"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 188.9720540912822,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 31.506416266784072,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 980.6713296967791,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627467021c322d157c04ee6d",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 695.0091986773768,
+      "extra": {
+        "sketchName": "left-reserve"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "6274671c1c322d157c04ee70",
+      "classId": "catch_pole_and_line",
+      "groupId": null,
+      "geographyId": null,
+      "value": 65.18366066133603,
+      "extra": {
+        "sketchName": "reserve south"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "62744ee41c322d157c04ee26",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.2296159751713276,
+      "extra": {
+        "sketchName": "reserve1"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627453a41c322d157c04ee2c",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.10818264610134065,
+      "extra": {
+        "sketchName": "reserve2"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.571484079468064,
+      "extra": {
+        "sketchName": "reservenetwork1",
+        "isCollection": true
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "627467021c322d157c04ee6d",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.07700319413561374,
+      "extra": {
+        "sketchName": "left-reserve"
+      }
+    },
+    {
+      "metricId": "oceanUseValueOverlap",
+      "sketchId": "6274671c1c322d157c04ee70",
+      "classId": "catch_trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.15668226405978203,
       "extra": {
         "sketchName": "reserve south"
       }
