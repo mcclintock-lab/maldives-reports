@@ -48,5 +48,5 @@ export default new GeoprocessingHandler(depthValueOverlap, {
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
-  memory: 8192,
+  memory: 10240,
 });

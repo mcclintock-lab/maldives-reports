@@ -66,5 +66,5 @@ export default new GeoprocessingHandler(benthicSpeciesValueOverlap, {
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
-  memory: 8192,
+  memory: 10240,
 });

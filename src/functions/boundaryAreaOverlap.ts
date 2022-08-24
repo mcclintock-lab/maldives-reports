@@ -95,6 +95,6 @@ export default new GeoprocessingHandler(boundaryAreaOverlap, {
   timeout: 120, // seconds
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
-  memory: 8192,
+  memory: 10240,
   requiresProperties: [],
 });
