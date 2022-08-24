@@ -1,9 +1,11 @@
 #!/bin/bash
 # Run outside workspace
 
-./animals-2-publish.sh
-./bathy-2-publish.sh
-./fads-2-publish.sh
-./habitat-2-publish.sh
-./resorts-2-publish.sh
-./seaplanes-2-publish.sh
+./boundary-2-publish.sh
+./depth-2-publish.sh
+./single-geomorphic-2-publish.sh
+./benthic-species-2-publish.sh
+./oceanuse-2-publish.sh
+./basin-geomorphic-2-publish.sh
+./ous-2-publish.sh
+./enviroZone-2-publish.sh
