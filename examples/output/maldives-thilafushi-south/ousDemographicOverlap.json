@@ -1,0 +1,232 @@
+{
+  "metrics": [
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": null,
+      "groupId": null,
+      "geographyId": null,
+      "value": 65
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": null,
+      "groupId": null,
+      "geographyId": null,
+      "value": 15
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "artisanal fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 16
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "artisanal fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 7
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "recreational fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 10
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "recreational fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "nontuna fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 9
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "nontuna fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "bait fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 30
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "bait fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "K",
+      "groupId": null,
+      "geographyId": null,
+      "value": 53
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "K",
+      "groupId": null,
+      "geographyId": null,
+      "value": 14
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "V",
+      "groupId": null,
+      "geographyId": null,
+      "value": 12
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "V",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "Hulhumale",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "Hulhumale",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "Male'",
+      "groupId": null,
+      "geographyId": null,
+      "value": 15
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "Male'",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "Vilingili",
+      "groupId": null,
+      "geographyId": null,
+      "value": 10
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "Vilingili",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "Dhiffushi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "Dhiffushi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "Gaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 18
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "Gaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": null,
+      "classId": "Keyodhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 12
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": null,
+      "classId": "Keyodhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd1b1931c2945fed86b3ac",
+      "name": "maldives-thilafushi-south",
+      "updatedAt": "2021-07-01T02:41:38.964Z",
+      "createdAt": "2021-07-01T01:32:09.470Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.41680816199549,
+      4.167116783723612,
+      73.45405447150773,
+      4.188938830460695
+    ],
+    "geometry": null
+  }
+}
