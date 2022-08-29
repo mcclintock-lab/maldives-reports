@@ -12,7 +12,6 @@ import {
 } from "@seasketch/geoprocessing";
 
 export interface OusFeatureProperties {
-  fid: number;
   resp_id: string;
   weight: number;
   atoll: string;
@@ -31,14 +30,14 @@ export type OusFeatureCollection = FeatureCollection<
   OusFeatureProperties
 >;
 
-interface BaseCountStats {
+export interface BaseCountStats {
   respondents: number;
   people: number;
 }
 
-type ClassCountStats = Record<string, BaseCountStats>;
+export type ClassCountStats = Record<string, BaseCountStats>;
 
-interface OusStats extends BaseCountStats {
+export interface OusStats extends BaseCountStats {
   bySector: ClassCountStats;
   byAtoll: ClassCountStats;
   byIsland: ClassCountStats;
@@ -58,12 +57,24 @@ export async function overlapOusDemographic(
   /** ous shape polygons */
   shapes: OusFeatureCollection,
   /** optionally calculate stats for OUS shapes that overlap with sketch  */
-  sketch?: Sketch<Polygon> | SketchCollection<Polygon>
+  sketch?:
+    | Sketch<Polygon>
+    | SketchCollection<Polygon>
+    | Sketch<MultiPolygon>
+    | SketchCollection<MultiPolygon>
 ) {
   // combine into multipolygon
-  const combinedSketch = sketch
-    ? clip(featureCollection(toSketchArray(sketch)), "union")
-    : null;
+  const combinedSketch = (() => {
+    if (sketch) {
+      const sketches = toSketchArray(
+        sketch as Sketch<Polygon> | SketchCollection<Polygon>
+      );
+      const sketchColl = featureCollection(sketches);
+      return sketch ? clip(sketchColl, "union") : null;
+    } else {
+      return null;
+    }
+  })();
 
   // Track counting of respondent/sector level stats, only need to count once
   const respondentProcessed: Record<string, Record<string, boolean>> = {};
@@ -72,6 +83,13 @@ export async function overlapOusDemographic(
     (statsSoFar, shape) => {
       if (!shape.properties) {
         console.log(`Shape missing properties ${JSON.stringify(shape)}`);
+      }
+
+      if (!shape.properties.resp_id || shape.properties.resp_id === "") {
+        console.log(
+          `Missing respondent ID for ${JSON.stringify(shape)}, skipping`
+        );
+        return statsSoFar;
       }
 
       const isOverlapping = combinedSketch
@@ -144,16 +162,18 @@ export async function overlapOusDemographic(
     createMetric({
       metricId: "ousPeopleCount",
       value: countStats.people,
+      ...(sketch ? { sketchId: sketch.properties.id } : {}),
     }),
     createMetric({
       metricId: "ousRespondentCount",
       value: countStats.respondents,
+      ...(sketch ? { sketchId: sketch.properties.id } : {}),
     }),
   ];
 
-  const sectorMetrics = genOusClassMetrics(countStats.bySector);
-  const atollMetrics = genOusClassMetrics(countStats.byAtoll);
-  const islandMetrics = genOusClassMetrics(countStats.byIsland);
+  const sectorMetrics = genOusClassMetrics(countStats.bySector, sketch);
+  const atollMetrics = genOusClassMetrics(countStats.byAtoll, sketch);
+  const islandMetrics = genOusClassMetrics(countStats.byIsland, sketch);
 
   return {
     stats: countStats,
@@ -167,18 +187,28 @@ export async function overlapOusDemographic(
 }
 
 /** Generate metrics from OUS class stats */
-function genOusClassMetrics(classStats: ClassCountStats): Metric[] {
+function genOusClassMetrics<G extends Polygon | MultiPolygon>(
+  classStats: ClassCountStats,
+  /** optionally calculate stats for OUS shapes that overlap with sketch  */
+  sketch?:
+    | Sketch<Polygon>
+    | SketchCollection<Polygon>
+    | Sketch<MultiPolygon>
+    | SketchCollection<MultiPolygon>
+): Metric[] {
   return Object.keys(classStats)
     .map((curClass) => [
       createMetric({
         metricId: "ousPeopleCount",
         classId: curClass,
         value: classStats[curClass].people,
+        ...(sketch ? { sketchId: sketch.properties.id } : {}),
       }),
       createMetric({
         metricId: "ousRespondentCount",
         classId: curClass,
         value: classStats[curClass].respondents,
+        ...(sketch ? { sketchId: sketch.properties.id } : {}),
       }),
     ])
     .reduce<Metric[]>((soFar, classMetrics) => soFar.concat(classMetrics), []);

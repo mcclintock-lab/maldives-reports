@@ -47,7 +47,6 @@ import {
  */
 
 interface OusShapeProperties {
-  fid: number;
   resp_id: string;
   weight: number;
   atoll: string;
