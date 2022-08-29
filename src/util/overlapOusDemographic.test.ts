@@ -8,7 +8,6 @@ import {
   MultiPolygon,
   SketchCollection,
   Sketch,
-  genSampleSketch,
 } from "@seasketch/geoprocessing";
 import {
   BaseCountStats,

@@ -11,6 +11,12 @@ import {
   toSketchArray,
 } from "@seasketch/geoprocessing";
 
+// ToDo: migrate to importVectorDatasource as special class
+// use zod to verify on import
+// use aggregateProperties to generate cumulative stats for -
+// specify classes as one per respondent (one-to-one, atoll/island), and one or more per respondent (one-to-many, sector)
+// specify cumulative properties (number_of_ppl, part_full_time), and cumulative method (count, sum)
+
 export interface OusFeatureProperties {
   resp_id: string;
   weight: number;
