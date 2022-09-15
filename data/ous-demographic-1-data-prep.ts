@@ -7,7 +7,7 @@ import { FeatureCollection, MultiPolygon } from "@seasketch/geoprocessing";
 // remove extraneous fields or those uniquely identifying people
 
 const shapeFc = fs.readJSONSync(
-  "./data/src/Data_Products/OUS/Shapefiles/fishing-shapes-final/all_merged_joined.geojson"
+  "./data/src/Data_Products/OUS/Shapefiles/fishing-shapes-final/with-gear/all_merged_joined.geojson"
 ) as FeatureCollection<MultiPolygon, OusFeatureProperties>;
 
 // sort by respondent_id (string)

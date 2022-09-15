@@ -26,7 +26,7 @@ const FishingImpact = () => {
   return (
     <>
       <ResultsCard
-        title="Fishing Impact - 2017-2020 Average Annual Catch"
+        title="Fish Caught - 2017-2020 Average Annual Catch"
         functionName="oceanUseValueOverlap"
       >
         {(data: ReportResult) => {
@@ -39,10 +39,10 @@ const FishingImpact = () => {
           return (
             <>
               <p>
-                This report summarizes the proportion of fish catch from
-                2017-2020 that overlaps with this offshore plan. Plans should
-                consider the potential impact to fisheries if access or
-                activities are restricted.
+                This report summarizes the percentage of fish caught from
+                2017-2020 within this offshore plan. Plans should consider the
+                potential impact to fisheries if access or activities are
+                restricted.
               </p>
 
               <ClassTable

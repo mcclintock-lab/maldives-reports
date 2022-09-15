@@ -2,39 +2,23 @@
   "metrics": [
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "ousPeopleCount_all",
       "groupId": null,
       "geographyId": null,
       "value": 58
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "ousRespondentCount_all",
       "groupId": null,
       "geographyId": null,
       "value": 17
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": "artisanal fishing",
-      "groupId": null,
-      "geographyId": null,
-      "value": 12
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": "artisanal fishing",
-      "groupId": null,
-      "geographyId": null,
-      "value": 10
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "nontuna fishing",
       "groupId": null,
       "geographyId": null,
@@ -42,7 +26,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "nontuna fishing",
       "groupId": null,
       "geographyId": null,
@@ -50,7 +34,23 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "artisanal fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 12
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "artisanal fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 10
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "recreational fishing",
       "groupId": null,
       "geographyId": null,
@@ -58,7 +58,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "recreational fishing",
       "groupId": null,
       "geographyId": null,
@@ -66,7 +66,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "bait fishing",
       "groupId": null,
       "geographyId": null,
@@ -74,7 +74,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "bait fishing",
       "groupId": null,
       "geographyId": null,
@@ -82,7 +82,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "K",
       "groupId": null,
       "geographyId": null,
@@ -90,7 +90,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "K",
       "groupId": null,
       "geographyId": null,
@@ -98,7 +98,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "V",
       "groupId": null,
       "geographyId": null,
@@ -106,7 +106,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "V",
       "groupId": null,
       "geographyId": null,
@@ -114,23 +114,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": "Hulhumale",
-      "groupId": null,
-      "geographyId": null,
-      "value": 3
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": "Hulhumale",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "Male'",
       "groupId": null,
       "geographyId": null,
@@ -138,7 +122,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "Male'",
       "groupId": null,
       "geographyId": null,
@@ -146,23 +130,23 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": "Dhiffushi",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Hulhumale",
       "groupId": null,
       "geographyId": null,
-      "value": 5
+      "value": 3
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": "Dhiffushi",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Hulhumale",
       "groupId": null,
       "geographyId": null,
-      "value": 1
+      "value": 2
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "Himmafushi",
       "groupId": null,
       "geographyId": null,
@@ -170,7 +154,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "Himmafushi",
       "groupId": null,
       "geographyId": null,
@@ -178,7 +162,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "Vilingili",
       "groupId": null,
       "geographyId": null,
@@ -186,7 +170,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "Vilingili",
       "groupId": null,
       "geographyId": null,
@@ -194,23 +178,23 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": "Gaafaru",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Dhiffushi",
       "groupId": null,
       "geographyId": null,
-      "value": 18
+      "value": 5
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": "Gaafaru",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Dhiffushi",
       "groupId": null,
       "geographyId": null,
       "value": 1
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "Keyodhoo",
       "groupId": null,
       "geographyId": null,
@@ -218,11 +202,187 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60dd1aea31c2945fed86b3aa",
       "classId": "Keyodhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Gaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 18
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Gaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 15
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 10
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Dropline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Dropline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Jigging",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Jigging",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Big Game",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Big Game",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Sports Fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Sports Fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Reef Fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Reef Fishing",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Weighted Handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Weighted Handline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Hand picking",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Hand picking",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Other",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Other",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Nets",
+      "groupId": null,
+      "geographyId": null,
+      "value": 30
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "Nets",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
     }
   ],
   "sketch": {

@@ -4,8 +4,10 @@
   "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4326" } },
   "features": [
   { "type": "Feature", "properties": {
+    "fid": 1,
     "resp_id": "2hg7feo3ewz9",
     "weight": 100,
+    "gear": "Nets   Jigging",
     "atoll": "Lh",
     "island": "Kurendhoo",
     "sector": "artisanal fishing",
@@ -16,8 +18,10 @@
     "ss_full_info_2022-07-13_part_full_time": null
   }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 72.5, 3.0 ], [ 72.5, 2.5 ], [ 72.0, 2.5 ], [ 72.0, 3.0 ], [ 72.5, 3.0 ] ] ] } },
   { "type": "Feature", "properties": {
+    "fid": 2,
     "resp_id": "3ibw8r2vav89",
     "weight": 50,
+    "gear": "Nets",
     "atoll": "HA",
     "island": "Filladhoo",
     "sector": "bait fishing",
@@ -28,8 +32,10 @@
     "ss_full_info_2022-07-13_part_full_time": null
   }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 73.0, 3.0 ], [ 73.0, 2.75 ], [ 72.0, 2.75 ], [ 72.0, 3.0 ], [ 73.0, 3.0 ] ] ] } },
   { "type": "Feature", "properties": {
+    "fid": 3,
     "resp_id": "3ibw8r2vav89",
     "weight": 50,
+    "gear": "Nets",
     "atoll": "HA",
     "island": "Filladhoo",
     "sector": "bait fishing",
@@ -40,8 +46,10 @@
     "ss_full_info_2022-07-13_part_full_time": null
   }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 73.5, 2.75 ], [ 73.5, 2.25 ], [ 73.0, 2.25 ], [ 73.0, 2.75 ], [ 73.5, 2.75 ] ] ] } },
   { "type": "Feature", "properties": {
+    "fid": 4,
     "resp_id": "3ibw8r2vav89",
     "weight": 50,
+    "gear": "Longline",
     "atoll": "HA",
     "island": "Filladhoo",
     "sector": "tuna fishing",
@@ -52,9 +60,10 @@
     "ss_full_info_2022-07-13_part_full_time": null
   }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 72.5, 2.5 ], [ 73.5, 2.5 ], [ 73.5, 2.25 ], [ 72.5, 2.25 ], [ 72.5, 2.5 ] ] ] } },
   { "type": "Feature", "properties": {
-    "fid": 14378,
+    "fid": 5,
     "resp_id": "3ibw8r2vav89",
     "weight": 50,
+    "gear": "Longline",
     "atoll": "HA",
     "island": "Filladhoo",
     "sector": "tuna fishing",

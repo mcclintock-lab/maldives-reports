@@ -18,7 +18,6 @@ async function main() {
   const metrics: Metric[] = await Promise.all(
     METRIC.classes.map(async (curClass) => {
       const url = `${config.localDataUrl}${curClass.filename}`;
-      console.log("url", url);
       const raster = await loadCogWindow(url, {
         noDataValue: curClass.noDataValue,
       }); // Load whole raster

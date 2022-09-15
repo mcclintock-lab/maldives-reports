@@ -31,11 +31,12 @@ describe("overlapOusDemographic", () => {
           properties: {
             resp_id: "",
             weight: 100,
+            gear: "Hand held nets  Hand picking",
             atoll: "Lh",
             island: "Kurendhoo",
             sector: "artisanal fishing",
             "ss_full_info_2022-07-13_date": "date",
-            "ss_full_info_2022-07-13_number_of_ppl": 1,
+            "ss_full_info_2022-07-13_number_of_ppl": "1",
             "ss_full_info_2022-07-13_age": "25",
             "ss_full_info_2022-07-13_gender": "male",
             "ss_full_info_2022-07-13_part_full_time": "part time",
@@ -62,12 +63,13 @@ describe("overlapOusDemographic", () => {
       bySector: {},
       byAtoll: {},
       byIsland: {},
+      byGear: {},
     });
     expect(results.metrics).toEqual([
       {
         metricId: "ousPeopleCount",
         value: 0,
-        classId: null,
+        classId: "ousPeopleCount_all",
         groupId: null,
         geographyId: null,
         sketchId: null,
@@ -75,12 +77,141 @@ describe("overlapOusDemographic", () => {
       {
         metricId: "ousRespondentCount",
         value: 0,
-        classId: null,
+        classId: "ousRespondentCount_all",
         groupId: null,
         geographyId: null,
         sketchId: null,
       },
     ]);
+  });
+
+  describe("overlapOusDemographic", () => {
+    test("overlapOusDemographic - null properties", async () => {
+      const noRespShapes: OusFeatureCollection = {
+        type: "FeatureCollection",
+        features: [
+          {
+            type: "Feature",
+            properties: {
+              resp_id: "abc123",
+              weight: 100,
+              gear: null,
+              atoll: null,
+              island: null,
+              sector: null,
+              "ss_full_info_2022-07-13_date": "date",
+              "ss_full_info_2022-07-13_number_of_ppl": 1,
+              "ss_full_info_2022-07-13_age": "25",
+              "ss_full_info_2022-07-13_gender": "male",
+              "ss_full_info_2022-07-13_part_full_time": "part time",
+            },
+            geometry: {
+              type: "Polygon",
+              coordinates: [
+                [
+                  [72.5, 3.0],
+                  [72.5, 2.5],
+                  [72.0, 2.5],
+                  [72.0, 3.0],
+                  [72.5, 3.0],
+                ],
+              ],
+            },
+          },
+        ],
+      };
+      const results = await overlapOusDemographic(noRespShapes);
+      expect(results.stats).toEqual({
+        respondents: 1,
+        people: 1,
+        bySector: { "unknown-sector": { respondents: 1, people: 1 } },
+        byAtoll: { "unknown-atoll": { respondents: 1, people: 1 } },
+        byIsland: { "unknown-island": { respondents: 1, people: 1 } },
+        byGear: { "unknown-gear": { respondents: 1, people: 1 } },
+      });
+      expect(results.metrics).toEqual([
+        {
+          metricId: "ousPeopleCount",
+          value: 1,
+          classId: "ousPeopleCount_all",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousRespondentCount",
+          value: 1,
+          classId: "ousRespondentCount_all",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousPeopleCount",
+          value: 1,
+          classId: "unknown-sector",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousRespondentCount",
+          value: 1,
+          classId: "unknown-sector",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousPeopleCount",
+          value: 1,
+          classId: "unknown-atoll",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousRespondentCount",
+          value: 1,
+          classId: "unknown-atoll",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousPeopleCount",
+          value: 1,
+          classId: "unknown-island",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousRespondentCount",
+          value: 1,
+          classId: "unknown-island",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousPeopleCount",
+          value: 1,
+          classId: "unknown-gear",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+        {
+          metricId: "ousRespondentCount",
+          value: 1,
+          classId: "unknown-gear",
+          groupId: null,
+          geographyId: null,
+          sketchId: null,
+        },
+      ]);
+    });
   });
 
   test("overlapOusDemographic - precalc overall stats", async () => {
@@ -122,6 +253,7 @@ describe("overlapOusDemographic", () => {
     expect(Object.keys(results.stats.bySector)).toEqual(["artisanal fishing"]);
     expect(Object.keys(results.stats.byAtoll)).toEqual(["Lh"]);
     expect(Object.keys(results.stats.byIsland)).toEqual(["Kurendhoo"]);
+    expect(Object.keys(results.stats.byGear)).toEqual(["Nets", "Jigging"]);
     results.metrics.forEach((m) => {
       expect(m.value).toBeGreaterThan(0);
       expect(m.sketchId).toBeTruthy();
@@ -144,6 +276,11 @@ describe("overlapOusDemographic", () => {
     expect(Object.keys(results.stats.byIsland)).toEqual([
       "Kurendhoo",
       "Filladhoo",
+    ]);
+    expect(Object.keys(results.stats.byGear)).toEqual([
+      "Nets",
+      "Jigging",
+      "Longline",
     ]);
     results.metrics.forEach((m) => {
       expect(m.value).toBeGreaterThan(0);

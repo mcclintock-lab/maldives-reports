@@ -2,23 +2,23 @@
   "metrics": [
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "ousPeopleCount_all",
       "groupId": null,
       "geographyId": null,
       "value": 39
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "ousRespondentCount_all",
       "groupId": null,
       "geographyId": null,
       "value": 4
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "nontuna fishing",
       "groupId": null,
       "geographyId": null,
@@ -26,7 +26,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "nontuna fishing",
       "groupId": null,
       "geographyId": null,
@@ -34,7 +34,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "bait fishing",
       "groupId": null,
       "geographyId": null,
@@ -42,7 +42,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "bait fishing",
       "groupId": null,
       "geographyId": null,
@@ -50,7 +50,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "K",
       "groupId": null,
       "geographyId": null,
@@ -58,7 +58,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "K",
       "groupId": null,
       "geographyId": null,
@@ -66,7 +66,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "V",
       "groupId": null,
       "geographyId": null,
@@ -74,7 +74,7 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "V",
       "groupId": null,
       "geographyId": null,
@@ -82,55 +82,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": "Male'",
-      "groupId": null,
-      "geographyId": null,
-      "value": 4
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": "Male'",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": "Gaafaru",
-      "groupId": null,
-      "geographyId": null,
-      "value": 18
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": "Gaafaru",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": null,
-      "classId": "Keyodhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 12
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": null,
-      "classId": "Keyodhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "Dhiffushi",
       "groupId": null,
       "geographyId": null,
@@ -138,11 +90,123 @@
     },
     {
       "metricId": "ousRespondentCount",
-      "sketchId": null,
+      "sketchId": "60e62e548fe1c7426c83edb4",
       "classId": "Dhiffushi",
       "groupId": null,
       "geographyId": null,
       "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Male'",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Male'",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Keyodhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 12
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Keyodhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Gaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 18
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Gaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Hand picking",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Hand picking",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Trolling",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Dropline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Dropline",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Nets",
+      "groupId": null,
+      "geographyId": null,
+      "value": 30
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "Nets",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
     }
   ],
   "sketch": {

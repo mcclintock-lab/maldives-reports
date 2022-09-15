@@ -24,7 +24,6 @@ export async function ousDemographicOverlap(
 ): Promise<ReportResult> {
   const box = sketch.bbox || bbox(sketch);
   const url = `${CONFIG.dataBucketUrl}ousShapes.fgb`;
-  console.log("url", url);
 
   // Fetch the whole nearshore boundary, because we need to calculate its total area
   const shapes = await fgbFetchAll<OusFeature>(url, STUDY_REGION_BBOX);
@@ -42,7 +41,7 @@ export async function ousDemographicOverlap(
 export default new GeoprocessingHandler(ousDemographicOverlap, {
   title: "ousDemographicOverlap",
   description: "Calculates ous overlap metrics",
-  timeout: 120, // seconds
+  timeout: 240, // seconds
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   memory: 10240,

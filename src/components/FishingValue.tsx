@@ -26,7 +26,7 @@ const FishingValue = () => {
   return (
     <>
       <ResultsCard
-        title="Fishing Impact - 2022 Ocean Use Survey"
+        title="Fishing Area Value - 2022 Ocean Use Survey"
         functionName="ousValueOverlap"
       >
         {(data: ReportResult) => {
@@ -39,7 +39,7 @@ const FishingValue = () => {
           return (
             <>
               <p>
-                This report summarizes the proportion of offshore commercial
+                This report summarizes the percentage of offshore commercial
                 fishing value that overlaps with this offshore plan, as reported
                 in the Ocean Use Survey. Plans should consider the potential
                 impact to fisheries if access or activities are restricted.
@@ -78,20 +78,20 @@ const FishingValue = () => {
 
               <Collapse title="Learn more">
                 <p>
-                  ℹ️ Overview: to capture the value each commercial fishing
-                  sector places on different areas of the EEZ, an Ocean Use
-                  Survey was conducted. Individuals identified the sectors they
-                  participate in, and were asked to draw the areas they use
-                  relative to that sector and assign a value of importance.
-                  Individual responses were then combined to produce aggregate
-                  heatmaps by sector. This allows the value of areas to be
-                  quantified, summed, and compared to one another as more or
-                  less valuable.
+                  ℹ️ Overview: to capture the <b>value</b> fishers place on
+                  different areas of the EEZ, an Ocean Use Survey was conducted.
+                  Individuals identified the sectors they participate in and
+                  gear types they use. They were then asked to draw the areas
+                  they use relative to that sector and assign a{" "}
+                  <b>value of importance</b>. Individual responses were then
+                  combined to produce aggregate heatmaps of <b></b> by sector.
+                  This allows the value of areas to be quantified, summed, and
+                  compared to one another.
                 </p>
                 <p>
-                  Fishing value is then used as a proxy for measuring the
-                  potential economic loss to fisheries caused by the creation of
-                  protected areas. This report can be used to minimize the
+                  Fishing value is used as a proxy for measuring the potential
+                  economic loss to fisheries caused by the creation of protected
+                  areas. This report can be used to identify and minimize the
                   potential impact of a plan on a fishery, as well as identify
                   and reduce conflict between conservation objectives and
                   fishing activities. The higher the percentage of value within

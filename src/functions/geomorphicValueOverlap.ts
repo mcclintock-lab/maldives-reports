@@ -26,7 +26,6 @@ export async function geomorphicValueOverlap(
 
   // Categorical raster - multi-class
   const catUrl = `${config.dataBucketUrl}${BASIN_METRIC.filename}`;
-  console.log(catUrl);
   const catRaster = await loadCogWindow(catUrl, { windowBox: box });
   const catMetrics: Metric[] = (
     await overlapRasterClass(

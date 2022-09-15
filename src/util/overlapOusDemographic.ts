@@ -6,12 +6,14 @@ import {
   Feature,
   Metric,
   MultiPolygon,
+  Nullable,
   Sketch,
   SketchCollection,
   toSketchArray,
 } from "@seasketch/geoprocessing";
 
 // ToDo: migrate to importVectorDatasource as special class
+// config driven structure rather than formal typescript types?
 // use zod to verify on import
 // use aggregateProperties to generate cumulative stats for -
 // specify classes as one per respondent (one-to-one, atoll/island), and one or more per respondent (one-to-many, sector)
@@ -20,14 +22,16 @@ import {
 export interface OusFeatureProperties {
   resp_id: string;
   weight: number;
-  atoll: string;
-  island: string;
-  sector: string;
+  atoll?: Nullable<string>;
+  island?: Nullable<string>;
+  sector?: Nullable<string>;
+  gear?: Nullable<string>;
   "ss_full_info_2022-07-13_date": string;
-  "ss_full_info_2022-07-13_number_of_ppl": number;
+  "ss_full_info_2022-07-13_number_of_ppl": string | number;
   "ss_full_info_2022-07-13_age": string;
   "ss_full_info_2022-07-13_gender": string;
   "ss_full_info_2022-07-13_part_full_time": string;
+  "ss_full_info_2022-07-13_practice"?: boolean;
 }
 
 export type OusFeature = Feature<MultiPolygon | Polygon, OusFeatureProperties>;
@@ -47,6 +51,7 @@ export interface OusStats extends BaseCountStats {
   bySector: ClassCountStats;
   byAtoll: ClassCountStats;
   byIsland: ClassCountStats;
+  byGear: ClassCountStats;
 }
 
 /**
@@ -55,6 +60,7 @@ export interface OusStats extends BaseCountStats {
   Weight - includes 0-100 normalized and also unnormalized up to 4500
   Atoll/Island - one assigned atoll and island value per respondent
   Sector - one or more per respondent
+  Gear - one or more per shape (list where each element separated by 3 spaces)
 
   Pros - accuracy
   Cons - slow
@@ -104,16 +110,47 @@ export async function overlapOusDemographic(
       if (sketch && !isOverlapping) return statsSoFar;
 
       const resp_id = shape.properties.resp_id;
-      const respAtoll = shape.properties.atoll;
-      const respIsland = shape.properties.island;
-      const curSector = shape.properties.sector;
-      const curPeople =
-        shape.properties["ss_full_info_2022-07-13_number_of_ppl"] === null
-          ? 1
-          : shape.properties["ss_full_info_2022-07-13_number_of_ppl"];
+      const respAtoll = shape.properties.atoll
+        ? shape.properties.atoll
+        : "unknown-atoll";
+      const respIsland = shape.properties.island
+        ? shape.properties.island
+        : "unknown-island";
+      const curSector = shape.properties.sector
+        ? shape.properties.sector
+        : "unknown-sector";
+      const curGears = shape.properties.gear
+        ? shape.properties.gear.split(/\s{2,}/)
+        : ["unknown-gear"];
+
+      const curPeople = (() => {
+        const peopleVal =
+          shape.properties["ss_full_info_2022-07-13_number_of_ppl"];
+        if (peopleVal !== null && peopleVal !== undefined) {
+          if (typeof peopleVal === "string") {
+            return parseFloat(peopleVal);
+          } else {
+            return peopleVal;
+          }
+        } else {
+          return 1;
+        }
+      })();
 
       // Mutates
       let newStats: OusStats = { ...statsSoFar };
+
+      // Increment each gear type present
+      curGears.forEach((curGear) => {
+        newStats.byGear[curGear] = {
+          respondents: newStats.byGear[curGear]
+            ? newStats.byGear[curGear].respondents + 1
+            : 1,
+          people: newStats.byGear[curGear]
+            ? newStats.byGear[curGear].people + curPeople
+            : curPeople,
+        };
+      });
 
       if (!respondentProcessed[resp_id]) {
         // Increment respondent level total stats
@@ -160,6 +197,7 @@ export async function overlapOusDemographic(
       bySector: {},
       byAtoll: {},
       byIsland: {},
+      byGear: {},
     }
   );
 
@@ -167,11 +205,13 @@ export async function overlapOusDemographic(
   const overallMetrics = [
     createMetric({
       metricId: "ousPeopleCount",
+      classId: "ousPeopleCount_all",
       value: countStats.people,
       ...(sketch ? { sketchId: sketch.properties.id } : {}),
     }),
     createMetric({
       metricId: "ousRespondentCount",
+      classId: "ousRespondentCount_all",
       value: countStats.respondents,
       ...(sketch ? { sketchId: sketch.properties.id } : {}),
     }),
@@ -180,6 +220,7 @@ export async function overlapOusDemographic(
   const sectorMetrics = genOusClassMetrics(countStats.bySector, sketch);
   const atollMetrics = genOusClassMetrics(countStats.byAtoll, sketch);
   const islandMetrics = genOusClassMetrics(countStats.byIsland, sketch);
+  const gearMetrics = genOusClassMetrics(countStats.byGear, sketch);
 
   return {
     stats: countStats,
@@ -188,6 +229,7 @@ export async function overlapOusDemographic(
       ...sectorMetrics,
       ...atollMetrics,
       ...islandMetrics,
+      ...gearMetrics,
     ],
   };
 }
