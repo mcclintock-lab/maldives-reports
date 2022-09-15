@@ -1,9 +1,11 @@
-import { featureCollection, intersect } from "@turf/turf";
-import { FeatureCollection, Polygon } from "@turf/turf";
+import { featureCollection } from "@turf/helpers";
+import intersect from "@turf/intersect";
 import {
   clip,
   createMetric,
   Feature,
+  Polygon,
+  FeatureCollection,
   Metric,
   MultiPolygon,
   Nullable,
