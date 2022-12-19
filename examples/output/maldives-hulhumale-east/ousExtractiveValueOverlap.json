@@ -1,9 +1,9 @@
 {
   "metrics": [
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "all_tuna",
+      "classId": "aquacultu",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -12,53 +12,64 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "driftingdropline_tuna",
+      "classId": "artisanal",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.0005798599454465148,
       "extra": {
         "sketchName": "maldives-hulhumale-east"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "handline_tuna",
+      "classId": "bait_fish",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.000010183990212908611,
       "extra": {
         "sketchName": "maldives-hulhumale-east"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "longline_tuna",
+      "classId": "boat_char",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.00012105992123423448,
       "extra": {
         "sketchName": "maldives-hulhumale-east"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "poleandline_tuna",
+      "classId": "non_fishi",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.0005352749342364405,
       "extra": {
         "sketchName": "maldives-hulhumale-east"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1aea31c2945fed86b3aa",
-      "classId": "trolling_tuna",
+      "classId": "recreatio",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0009706621831355733,
+      "extra": {
+        "sketchName": "maldives-hulhumale-east"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "60dd1aea31c2945fed86b3aa",
+      "classId": "tuna_fish",
       "groupId": null,
       "geographyId": null,
       "value": 0,

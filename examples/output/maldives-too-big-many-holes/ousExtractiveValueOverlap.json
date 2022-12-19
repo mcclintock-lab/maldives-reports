@@ -1,67 +1,78 @@
 {
   "metrics": [
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "all_tuna",
+      "classId": "aquacultu",
       "groupId": null,
       "geographyId": null,
-      "value": 8.475224710270965,
+      "value": 0.019524547880791943,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "driftingdropline_tuna",
+      "classId": "artisanal",
       "groupId": null,
       "geographyId": null,
-      "value": 0.07942693952279933,
+      "value": 1.5765820265828268,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "handline_tuna",
+      "classId": "bait_fish",
       "groupId": null,
       "geographyId": null,
-      "value": 0.7435932620127579,
+      "value": 11.597900812483495,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "longline_tuna",
+      "classId": "boat_char",
       "groupId": null,
       "geographyId": null,
-      "value": 0.000503919457180757,
+      "value": 0.6729002525455692,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "poleandline_tuna",
+      "classId": "non_fishi",
       "groupId": null,
       "geographyId": null,
-      "value": 7.80293493766033,
+      "value": 1.041495031353321,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60f9c6d9b853a31becb1951e",
-      "classId": "trolling_tuna",
+      "classId": "recreatio",
       "groupId": null,
       "geographyId": null,
-      "value": 0.07942693952279933,
+      "value": 3.578304074461279,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 12.016118389381063,
       "extra": {
         "sketchName": "maldives-too-big-many-holes"
       }

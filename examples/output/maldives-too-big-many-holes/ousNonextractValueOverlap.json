@@ -1,0 +1,156 @@
+{
+  "metrics": [
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "accomodat",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.5089859906464511,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "community",
+      "groupId": null,
+      "geographyId": null,
+      "value": 65.97543595144714,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "construct",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.3450960217087413,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "cultural_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.9995503257960081,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "guesthous",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.3823916251235602,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "maritime_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.6708987571908551,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "other_are",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.4296305802417919,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "research_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.39808622728006904,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "resorts",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.10975158056930923,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "safety_an",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.5599981968411498,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "shipping_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0862769709793838,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60f9c6d9b853a31becb1951e",
+      "classId": "utilities",
+      "groupId": null,
+      "geographyId": null,
+      "value": 28.849150232737884,
+      "extra": {
+        "sketchName": "maldives-too-big-many-holes"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60f9c6d9b853a31becb1951e",
+      "name": "maldives-too-big-many-holes",
+      "updatedAt": "2021-07-22T19:28:25.867Z",
+      "createdAt": "2021-07-22T19:28:25.867Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      70.20103056754229,
+      -1.8155515112791443,
+      76.74888213004043,
+      6.672429336516531
+    ],
+    "geometry": null
+  }
+}

@@ -14,7 +14,7 @@ import {
   rekeyMetrics,
 } from "@seasketch/geoprocessing";
 
-const METRIC = config.metricGroups.ousValueOverlap;
+const METRIC = config.metricGroups.ousExtractiveValueOverlap;
 const DEST_PATH = `${__dirname}/precalc/${METRIC.metricId}Totals.json`;
 
 async function main() {

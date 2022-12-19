@@ -1,67 +1,78 @@
 {
   "metrics": [
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "all_tuna",
+      "classId": "aquacultu",
       "groupId": null,
       "geographyId": null,
-      "value": 1.062746700314074,
+      "value": 0,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "driftingdropline_tuna",
+      "classId": "artisanal",
       "groupId": null,
       "geographyId": null,
-      "value": 0.12028709338633181,
+      "value": 0.02741688837613765,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "handline_tuna",
+      "classId": "bait_fish",
       "groupId": null,
       "geographyId": null,
-      "value": 0.6813269371640716,
+      "value": 0,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "longline_tuna",
+      "classId": "boat_char",
       "groupId": null,
       "geographyId": null,
-      "value": 0.011401357445947724,
+      "value": 0,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "poleandline_tuna",
+      "classId": "non_fishi",
       "groupId": null,
       "geographyId": null,
-      "value": 0.43677151828408345,
+      "value": 0,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd2b3531c2945fed86b3bd",
-      "classId": "trolling_tuna",
+      "classId": "recreatio",
       "groupId": null,
       "geographyId": null,
-      "value": 0.12028709338633181,
+      "value": 0.03779076558214456,
+      "extra": {
+        "sketchName": "maldives-outer-eez"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "60dd2b3531c2945fed86b3bd",
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1.1900848474939352,
       "extra": {
         "sketchName": "maldives-outer-eez"
       }

@@ -1,0 +1,156 @@
+{
+  "metrics": [
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "accomodat",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.012527925099220738,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "community",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.01893291262956609,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "construct",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.010066609655041248,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "cultural_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "guesthous",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.002013919551288046,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "maritime_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.009896614370518364,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "other_are",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "research_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.052997383957269495,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "resorts",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.009721727674445901,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "safety_an",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "shipping_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.11453088885173202,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "utilities",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60e4f6fa526687153637445f",
+      "name": "maldives-vadoo",
+      "updatedAt": "2021-07-07T00:36:10.894Z",
+      "createdAt": "2021-07-07T00:36:10.894Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.4062488826673,
+      4.08826727832588,
+      73.51576884116326,
+      4.150248163525812
+    ],
+    "geometry": null
+  }
+}

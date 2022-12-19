@@ -1,0 +1,100 @@
+{
+  "metrics": [
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "accomodat",
+      "groupId": null,
+      "geographyId": null,
+      "value": 19.47517244304392
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "community",
+      "groupId": null,
+      "geographyId": null,
+      "value": 744.6530332937969
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "construct",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5.757006382813415
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "cultural_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 98.14187523612782
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "guesthous",
+      "groupId": null,
+      "geographyId": null,
+      "value": 10.04686468458611
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "maritime_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1.5177448402262144
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "other_are",
+      "groupId": null,
+      "geographyId": null,
+      "value": 9.425871711359719
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "research_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 12.09494965672632
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "resorts",
+      "groupId": null,
+      "geographyId": null,
+      "value": 9.048012348879878
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "safety_an",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.5599981968411498
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "shipping_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.25394456621026507
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": null,
+      "classId": "utilities",
+      "groupId": null,
+      "geographyId": null,
+      "value": 68.3835644882638
+    }
+  ]
+}

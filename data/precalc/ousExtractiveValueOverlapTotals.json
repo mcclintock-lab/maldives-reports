@@ -1,0 +1,60 @@
+{
+  "metrics": [
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": null,
+      "classId": "aquacultu",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1.0022773386830295
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": null,
+      "classId": "artisanal",
+      "groupId": null,
+      "geographyId": null,
+      "value": 28.457929877654962
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": null,
+      "classId": "bait_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 51.43134716440838
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": null,
+      "classId": "boat_char",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3.2742043504171345
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": null,
+      "classId": "non_fishi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 21.178668621485514
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": null,
+      "classId": "recreatio",
+      "groupId": null,
+      "geographyId": null,
+      "value": 47.82205340235793
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": null,
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 53.75720941681818
+    }
+  ]
+}

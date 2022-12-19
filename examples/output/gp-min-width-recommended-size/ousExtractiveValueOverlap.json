@@ -1,9 +1,9 @@
 {
   "metrics": [
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "603046cf82927a1e12698d58",
-      "classId": "all_tuna",
+      "classId": "aquacultu",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -12,9 +12,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "603046cf82927a1e12698d58",
-      "classId": "driftingdropline_tuna",
+      "classId": "artisanal",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -23,9 +23,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "603046cf82927a1e12698d58",
-      "classId": "handline_tuna",
+      "classId": "bait_fish",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -34,9 +34,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "603046cf82927a1e12698d58",
-      "classId": "longline_tuna",
+      "classId": "boat_char",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -45,9 +45,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "603046cf82927a1e12698d58",
-      "classId": "poleandline_tuna",
+      "classId": "non_fishi",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -56,9 +56,20 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "603046cf82927a1e12698d58",
-      "classId": "trolling_tuna",
+      "classId": "recreatio",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-recommended-size"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "603046cf82927a1e12698d58",
+      "classId": "tuna_fish",
       "groupId": null,
       "geographyId": null,
       "value": 0,

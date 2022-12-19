@@ -1,9 +1,9 @@
 {
   "metrics": [
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "all_tuna",
+      "classId": "aquacultu",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -12,56 +12,67 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "driftingdropline_tuna",
+      "classId": "artisanal",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.04120864186467088,
       "extra": {
         "sketchName": "maldives-vadoo"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "handline_tuna",
+      "classId": "bait_fish",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.04477360475894443,
       "extra": {
         "sketchName": "maldives-vadoo"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "longline_tuna",
+      "classId": "boat_char",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.0039980845881970595,
       "extra": {
         "sketchName": "maldives-vadoo"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "poleandline_tuna",
+      "classId": "non_fishi",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.016096329036400903,
       "extra": {
         "sketchName": "maldives-vadoo"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "trolling_tuna",
+      "classId": "recreatio",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.03227499620903984,
+      "extra": {
+        "sketchName": "maldives-vadoo"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "tuna_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.000014792317890588436,
       "extra": {
         "sketchName": "maldives-vadoo"
       }

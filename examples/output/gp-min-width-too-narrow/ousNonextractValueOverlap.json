@@ -1,9 +1,9 @@
 {
   "metrics": [
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousNonextractValueOverlap",
       "sketchId": "602c6ea614a9b6377b68e4ee",
-      "classId": "all_tuna",
+      "classId": "accomodat",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -12,9 +12,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousNonextractValueOverlap",
       "sketchId": "602c6ea614a9b6377b68e4ee",
-      "classId": "driftingdropline_tuna",
+      "classId": "community",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -23,9 +23,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousNonextractValueOverlap",
       "sketchId": "602c6ea614a9b6377b68e4ee",
-      "classId": "handline_tuna",
+      "classId": "construct",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -34,9 +34,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousNonextractValueOverlap",
       "sketchId": "602c6ea614a9b6377b68e4ee",
-      "classId": "longline_tuna",
+      "classId": "cultural_",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -45,9 +45,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousNonextractValueOverlap",
       "sketchId": "602c6ea614a9b6377b68e4ee",
-      "classId": "poleandline_tuna",
+      "classId": "guesthous",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -56,9 +56,75 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousNonextractValueOverlap",
       "sketchId": "602c6ea614a9b6377b68e4ee",
-      "classId": "trolling_tuna",
+      "classId": "maritime_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "other_are",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "research_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "resorts",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "safety_an",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "shipping_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "gp-min-width-too-narrow"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "602c6ea614a9b6377b68e4ee",
+      "classId": "utilities",
       "groupId": null,
       "geographyId": null,
       "value": 0,

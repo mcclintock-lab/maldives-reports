@@ -1,0 +1,156 @@
+{
+  "metrics": [
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "accomodat",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.00030299402254740926,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "community",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.006635344627284212,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "construct",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "cultural_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "guesthous",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.0001769427138624824,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "maritime_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "other_are",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "research_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.000038676945049331835,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "resorts",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.00011479307900685853,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "safety_an",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "shipping_",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousNonextractValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "utilities",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "60dd1b1931c2945fed86b3ac",
+      "name": "maldives-thilafushi-south",
+      "updatedAt": "2021-07-01T02:41:38.964Z",
+      "createdAt": "2021-07-01T01:32:09.470Z",
+      "sketchClassId": "60dd08af31c2945fed86b387",
+      "isCollection": false,
+      "userAttributes": []
+    },
+    "id": "1",
+    "bbox": [
+      73.41680816199549,
+      4.167116783723612,
+      73.45405447150773,
+      4.188938830460695
+    ],
+    "geometry": null
+  }
+}

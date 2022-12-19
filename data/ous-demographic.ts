@@ -9,8 +9,11 @@ import {
 } from "@seasketch/geoprocessing";
 
 /**
+  This was a proof-of-concept, runnable with ts-node, that demontrated demographic stat calculation
+  and speculated about ways to do intersections with sketches (polygon or h3)
+  See util/overlapOusDemographic.ts where it has been integrated into a geoprocessing function.
 
-  Weight - includes 0-100 normalized and also unnormalized up to 4500
+  Weight - includes 0-100, and greater than 100 if multiple people.  Multiplication of people * weight was done in a previous step
   Atoll/Island - one assigned atoll and island value per respondent
   Sector - one or more per respondent
 

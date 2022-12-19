@@ -1,9 +1,9 @@
 {
   "metrics": [
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "all_tuna",
+      "classId": "aquacultu",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -12,9 +12,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "driftingdropline_tuna",
+      "classId": "artisanal",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -23,9 +23,42 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "handline_tuna",
+      "classId": "bait_fish",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.000003511720763071935,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "boat_char",
+      "groupId": null,
+      "geographyId": null,
+      "value": 8.320089150970489e-7,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "non_fishi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.00039486122614107444,
+      "extra": {
+        "sketchName": "maldives-huraa"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "60e62e548fe1c7426c83edb4",
+      "classId": "recreatio",
       "groupId": null,
       "geographyId": null,
       "value": 0,
@@ -34,31 +67,9 @@
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "longline_tuna",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-huraa"
-      }
-    },
-    {
-      "metricId": "ousValueOverlap",
-      "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "poleandline_tuna",
-      "groupId": null,
-      "geographyId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "maldives-huraa"
-      }
-    },
-    {
-      "metricId": "ousValueOverlap",
-      "sketchId": "60e62e548fe1c7426c83edb4",
-      "classId": "trolling_tuna",
+      "classId": "tuna_fish",
       "groupId": null,
       "geographyId": null,
       "value": 0,

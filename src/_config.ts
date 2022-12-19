@@ -399,64 +399,203 @@ const oceanUseValueOverlap: MetricGroup = {
 
 //// OUS ////
 
-const ousClasses: DataClass[] = [
+const ousMapping = {
+  accomodat: "Accommodations and tourism",
+  aquacultu: "Aquaculture / mariculture",
+  artisanal: "Artisanal / subsistence fishing",
+  bait_fish: "Bait fishing",
+  boat_char: "Boat charters",
+  community: "Community recreational use",
+  construct: "Construction / infrastructure",
+  cultural_: "Cultural use",
+  guesthous: "Guest Houses",
+  maritime_: "Maritime transportation",
+  non_fishi: "Commercial fishing (non-tuna)",
+  other_are: "Other activities",
+  recreatio: "Recreational fishing",
+  research_: "Research / conservation",
+  research_small: "Small scale research",
+  resorts: "Resorts",
+  safety_an: "Safety and defense",
+  shipping_: "Shipping",
+  tuna_fish: "Commercial tuna fishing",
+  utilities: "Utilities",
+};
+
+const ousExtractiveClasses: DataClass[] = [
+  {
+    baseFilename: "aquacultu",
+    filename: `aquacultu${cogFileSuffix}`,
+    classId: "aquacultu",
+    display: "Aquaculture / mariculture",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "artisanal",
+    filename: `artisanal${cogFileSuffix}`,
+    classId: "artisanal",
+    display: "Artisanal / subsistence fishing",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "bait_fish",
+    filename: `bait_fish${cogFileSuffix}`,
+    classId: "bait_fish",
+    display: "Bait fishing",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "boat_char",
+    filename: `boat_char${cogFileSuffix}`,
+    classId: "boat_char",
+    display: "Boat charters",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "non_fishi",
+    filename: `non_fishi${cogFileSuffix}`,
+    classId: "non_fishi",
+    display: "Commercial fishing (non-tuna)",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "recreatio",
+    filename: `recreatio${cogFileSuffix}`,
+    classId: "recreatio",
+    display: "Recreational fishing",
+    noDataValue: 0,
+    layerId: "",
+  },
   {
     baseFilename: "tuna_fish",
     filename: `tuna_fish${cogFileSuffix}`,
-    classId: "all_tuna",
-    display: "Tuna - All Gear Types",
+    classId: "tuna_fish",
+    display: "Commercial tuna fishing",
     noDataValue: 0,
-    layerId: "628d12941dd50b3908080865",
-  },
-  {
-    baseFilename: "drifting-dropline-tuna",
-    filename: `drifting-dropline-tuna${cogFileSuffix}`,
-    classId: "driftingdropline_tuna",
-    display: "Tuna - Drifting Dropline",
-    noDataValue: 0,
-    layerId: "628d132d1dd50b3908080941",
-  },
-  {
-    baseFilename: "Handline-tuna-withmap",
-    filename: `Handline-tuna-withmap${cogFileSuffix}`,
-    classId: "handline_tuna",
-    display: "Tuna - Handline",
-    noDataValue: 0,
-    layerId: "628d12bb1dd50b39080808a7",
-  },
-  {
-    baseFilename: "Longline-tuna",
-    filename: `Longline-tuna${cogFileSuffix}`,
-    classId: "longline_tuna",
-    display: "Tuna - Longline",
-    noDataValue: 0,
-    layerId: "628d13741dd50b3908080998",
-  },
-  {
-    baseFilename: "Pole-and-Line-tune-withmap",
-    filename: `Pole-and-Line-tune-withmap${cogFileSuffix}`,
-    classId: "poleandline_tuna",
-    display: "Tuna - Pole and Line",
-    noDataValue: 0,
-    layerId: "628d12e81dd50b39080808eb",
-  },
-  {
-    baseFilename: "Trolling-tuna",
-    filename: `Trolling-tuna${cogFileSuffix}`,
-    classId: "trolling_tuna",
-    display: "Tuna - Trolling",
-    noDataValue: 0,
-    layerId: "628d13ac1dd50b39080809e7",
+    layerId: "",
   },
 ];
 
-const ousDataGroup: DataGroup = {
-  classes: ousClasses,
+const ousExtractiveDataGroup: DataGroup = {
+  classes: ousExtractiveClasses,
 };
 
-const ousValueOverlap: MetricGroup = {
-  metricId: "ousValueOverlap",
-  ...ousDataGroup,
+const ousExtractiveValueOverlap: MetricGroup = {
+  metricId: "ousExtractiveValueOverlap",
+  ...ousExtractiveDataGroup,
+};
+
+const ousNonextractClasses: DataClass[] = [
+  {
+    baseFilename: "accomodat",
+    filename: `accomodat${cogFileSuffix}`,
+    classId: "accomodat",
+    display: "Accommodations and tourism",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "community",
+    filename: `community${cogFileSuffix}`,
+    classId: "community",
+    display: "Community recreational use",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "construct",
+    filename: `construct${cogFileSuffix}`,
+    classId: "construct",
+    display: "Construction / infrastructure",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "cultural_",
+    filename: `cultural_${cogFileSuffix}`,
+    classId: "cultural_",
+    display: "Cultural use",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "guesthous",
+    filename: `guesthous${cogFileSuffix}`,
+    classId: "guesthous",
+    display: "Guesthouses",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "maritime_",
+    filename: `maritime_${cogFileSuffix}`,
+    classId: "maritime_",
+    display: "Maritime transportation",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "other_are",
+    filename: `other_are${cogFileSuffix}`,
+    classId: "other_are",
+    display: "Other activities",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "research_",
+    filename: `research_${cogFileSuffix}`,
+    classId: "research_",
+    display: "Research / conservation",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "resorts",
+    filename: `resorts${cogFileSuffix}`,
+    classId: "resorts",
+    display: "Resorts",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "safety_an",
+    filename: `safety_an${cogFileSuffix}`,
+    classId: "safety_an",
+    display: "Safety and defense",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "shipping_",
+    filename: `shipping_${cogFileSuffix}`,
+    classId: "shipping_",
+    display: "Shipping",
+    noDataValue: 0,
+    layerId: "",
+  },
+  {
+    baseFilename: "utilities",
+    filename: `utilities${cogFileSuffix}`,
+    classId: "utilities",
+    display: "Utilities",
+    noDataValue: 0,
+    layerId: "",
+  },
+];
+
+const ousNonextractDataGroup: DataGroup = {
+  classes: ousNonextractClasses,
+};
+
+const ousNonextractValueOverlap: MetricGroup = {
+  metricId: "ousNonextractValueOverlap",
+  ...ousNonextractDataGroup,
 };
 
 //// OCEAN USE DEMOGRAPHIC ////
@@ -816,7 +955,8 @@ const metricGroups: Record<string, MetricGroup> = {
   benthicSpeciesValueOverlap,
   geomorphicValueOverlap,
   oceanUseValueOverlap,
-  ousValueOverlap,
+  ousExtractiveValueOverlap,
+  ousNonextractValueOverlap,
   ousOverallDemographicOverlap,
   ousSectorDemographicOverlap,
   ousAtollDemographicOverlap,

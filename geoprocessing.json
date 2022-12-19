@@ -18,7 +18,8 @@
     "src/functions/geomorphicValueOverlap.ts",
     "src/functions/benthicSpeciesValueOverlap.ts",
     "src/functions/oceanUseValueOverlap.ts",
-    "src/functions/ousValueOverlap.ts",
+    "src/functions/ousExtractiveValueOverlap.ts",
+    "src/functions/ousNonextractValueOverlap.ts",
     "src/functions/enviroZoneValueOverlap.ts",
     "src/functions/ousDemographicOverlap.ts"
   ]

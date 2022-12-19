@@ -14,9 +14,9 @@ import { loadCogWindow } from "@seasketch/geoprocessing/dataproviders";
 import bbox from "@turf/bbox";
 import config from "../_config";
 
-const METRIC = config.metricGroups.ousValueOverlap;
+const METRIC = config.metricGroups.ousExtractiveValueOverlap;
 
-export async function ousValueOverlap(
+export async function ousExtractiveValueOverlap(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>
 ): Promise<ReportResult> {
   const box = sketch.bbox || bbox(sketch);
@@ -56,10 +56,10 @@ export async function ousValueOverlap(
   };
 }
 
-export default new GeoprocessingHandler(ousValueOverlap, {
-  title: "ousValueOverlap",
-  description: "ocean use metrics",
-  timeout: 120, // seconds
+export default new GeoprocessingHandler(ousExtractiveValueOverlap, {
+  title: "ousExtractiveValueOverlap",
+  description: "ocean use metrics - extractive",
+  timeout: 180, // seconds
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

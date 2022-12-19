@@ -1,64 +1,75 @@
 {
   "metrics": [
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "all_tuna",
+      "classId": "aquacultu",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.0019124159443890676,
       "extra": {
         "sketchName": "maldives-thilafushi-south"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "driftingdropline_tuna",
+      "classId": "artisanal",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.013548220812481304,
       "extra": {
         "sketchName": "maldives-thilafushi-south"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "handline_tuna",
+      "classId": "bait_fish",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.0000429484198249952,
       "extra": {
         "sketchName": "maldives-thilafushi-south"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "longline_tuna",
+      "classId": "boat_char",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.000015966647275433843,
       "extra": {
         "sketchName": "maldives-thilafushi-south"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "poleandline_tuna",
+      "classId": "non_fishi",
       "groupId": null,
       "geographyId": null,
-      "value": 0,
+      "value": 0.005653904481278005,
       "extra": {
         "sketchName": "maldives-thilafushi-south"
       }
     },
     {
-      "metricId": "ousValueOverlap",
+      "metricId": "ousExtractiveValueOverlap",
       "sketchId": "60dd1b1931c2945fed86b3ac",
-      "classId": "trolling_tuna",
+      "classId": "recreatio",
+      "groupId": null,
+      "geographyId": null,
+      "value": 0.02626402977705311,
+      "extra": {
+        "sketchName": "maldives-thilafushi-south"
+      }
+    },
+    {
+      "metricId": "ousExtractiveValueOverlap",
+      "sketchId": "60dd1b1931c2945fed86b3ac",
+      "classId": "tuna_fish",
       "groupId": null,
       "geographyId": null,
       "value": 0,
