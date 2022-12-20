@@ -28,12 +28,7 @@ export interface OusFeatureProperties {
   island?: Nullable<string>;
   sector?: Nullable<string>;
   gear?: Nullable<string>;
-  "ss_full_info_2022-07-13_date": string;
-  "ss_full_info_2022-07-13_number_of_ppl": string | number;
-  "ss_full_info_2022-07-13_age": string;
-  "ss_full_info_2022-07-13_gender": string;
-  "ss_full_info_2022-07-13_part_full_time": string;
-  "ss_full_info_2022-07-13_practice"?: boolean;
+  number_of_ppl: string | number;
 }
 
 export type OusFeature = Feature<MultiPolygon | Polygon, OusFeatureProperties>;
@@ -116,7 +111,7 @@ export async function overlapOusDemographic(
         ? shape.properties.atoll
         : "unknown-atoll";
       const respIsland = shape.properties.island
-        ? shape.properties.island
+        ? `${shape.properties.atoll} - ${shape.properties.island}`
         : "unknown-island";
       const curSector = shape.properties.sector
         ? shape.properties.sector
@@ -126,8 +121,7 @@ export async function overlapOusDemographic(
         : ["unknown-gear"];
 
       const curPeople = (() => {
-        const peopleVal =
-          shape.properties["ss_full_info_2022-07-13_number_of_ppl"];
+        const peopleVal = shape.properties["number_of_ppl"];
         if (peopleVal !== null && peopleVal !== undefined) {
           if (typeof peopleVal === "string") {
             return parseFloat(peopleVal);

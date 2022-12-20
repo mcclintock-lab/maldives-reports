@@ -9,15 +9,13 @@ import {
   rekeyMetrics,
   DataClass,
 } from "@seasketch/geoprocessing";
-import ousShapes from "../data/dist/ousShapes.json";
+import ousShapes from "./dist/ous_all_report_ready.json";
 
 const shapes = ousShapes as OusFeatureCollection;
 
 const DEST_PATH = `${__dirname}/precalc/ousDemographicTotals.json`;
 
 async function main() {
-  const url = `${config.localDataUrl}ousShapes.json`;
-
   const overlapResult = await overlapOusDemographic(shapes);
 
   const result: ReportResultBase = {
