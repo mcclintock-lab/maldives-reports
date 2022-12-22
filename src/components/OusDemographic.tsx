@@ -177,9 +177,9 @@ const OusDemographics = () => {
                 <b>{singlePeopleCountFormatted}</b> of the{" "}
                 <b>{singlePeopletotalCountFormatted}</b> people represented by
                 this survey, use the ocean within this plan. This is{" "}
-                <b>{singlePeopleCountPercFormatted}</b>. They come from{" "}
-                <b>{numIslandsFormatted} islands</b> within{" "}
-                <b>{numAtollsFormatted} atolls</b> acros{" "}
+                <b>{singlePeopleCountPercFormatted}</b> of the total people.
+                They come from <b>{numIslandsFormatted} islands</b> within{" "}
+                <b>{numAtollsFormatted} atolls</b> across{" "}
                 <b>
                   {numSectorsFormatted} sector
                   {numSectors > 1 ? "s" : ""}
