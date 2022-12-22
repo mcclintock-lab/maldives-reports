@@ -56,11 +56,14 @@ export interface OusStats extends BaseCountStats {
 
   Weight - includes 0-100 normalized and also unnormalized up to 4500
   Atoll/Island - one assigned atoll and island value per respondent
-  Sector - one or more per respondent
-  Gear - one or more per shape (list where each element separated by 3 spaces)
+  Sector - one per respondent, except for bait fishing, which is only/also asked if tuna fishing is selected by respondent
+  Gear - one or more per shape (list where each element separated by 3 spaces), answered by respondent per shape
+  Number of people - answered once per respondent, gets joined in from respondents csv to each shape.  This means it's answered effectively once per sector, except for bait fishing.
 
-  Pros - accuracy
-  Cons - slow
+  What this means we can do with the data:
+  * number of respondents (unique respondent_id's) is not equal to number of people surveyed.  Someone could respond to the survey multiples times, for a different sector each time
+    * The names of the people and their atoll/island can be used to better uniquely identify people but also not perfect.  This report doesn't attempt to use names
+  * number_of_ppl is therefore also an approximation.
  */
 export async function overlapOusDemographic(
   /** ous shape polygons */
@@ -101,6 +104,7 @@ export async function overlapOusDemographic(
         return statsSoFar;
       }
 
+      // Can replace with pre-calculating h3 cell overlap for each shape, using all_touched option, Then get h3 cell overlap for sketch and check for match
       const isOverlapping = combinedSketch
         ? !!intersect(shape, combinedSketch)
         : false; // booleanOverlap seemed to miss some so using intersect
@@ -120,6 +124,8 @@ export async function overlapOusDemographic(
         ? shape.properties.gear.split(/\s{2,}/)
         : ["unknown-gear"];
 
+      // Number of people is gathered once per sector
+      // So you can only know the total number of people for each sector, not overall
       const curPeople = (() => {
         const peopleVal = shape.properties["number_of_ppl"];
         if (peopleVal !== null && peopleVal !== undefined) {
@@ -136,20 +142,8 @@ export async function overlapOusDemographic(
       // Mutates
       let newStats: OusStats = { ...statsSoFar };
 
-      // Increment each gear type present
-      curGears.forEach((curGear) => {
-        newStats.byGear[curGear] = {
-          respondents: newStats.byGear[curGear]
-            ? newStats.byGear[curGear].respondents + 1
-            : 1,
-          people: newStats.byGear[curGear]
-            ? newStats.byGear[curGear].people + curPeople
-            : curPeople,
-        };
-      });
-
+      // Once per respondent counts - island / atoll
       if (!respondentProcessed[resp_id]) {
-        // Increment respondent level total stats
         newStats.people = newStats.people + curPeople;
         newStats.respondents = newStats.respondents + 1;
 
@@ -172,8 +166,23 @@ export async function overlapOusDemographic(
         respondentProcessed[resp_id] = {};
       }
 
+      // Once per respondent and gear type counts
+      curGears.forEach((curGear) => {
+        if (!respondentProcessed[resp_id][curGear]) {
+          newStats.byGear[curGear] = {
+            respondents: newStats.byGear[curGear]
+              ? newStats.byGear[curGear].respondents + 1
+              : 1,
+            people: newStats.byGear[curGear]
+              ? newStats.byGear[curGear].people + curPeople
+              : curPeople,
+          };
+          respondentProcessed[resp_id][curGear] = true;
+        }
+      });
+
+      // Once per respondent and sector counts
       if (!respondentProcessed[resp_id][curSector]) {
-        // Increment sector level total stats
         newStats.bySector[curSector] = {
           respondents: newStats.bySector[curSector]
             ? newStats.bySector[curSector].respondents + 1

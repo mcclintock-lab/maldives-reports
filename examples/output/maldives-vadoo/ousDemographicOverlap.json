@@ -6,7 +6,7 @@
       "classId": "ousPeopleCount_all",
       "groupId": null,
       "geographyId": null,
-      "value": 238
+      "value": 316
     },
     {
       "metricId": "ousRespondentCount",
@@ -14,7 +14,23 @@
       "classId": "ousRespondentCount_all",
       "groupId": null,
       "geographyId": null,
-      "value": 38
+      "value": 56
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "research conservation",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "research conservation",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3
     },
     {
       "metricId": "ousPeopleCount",
@@ -83,6 +99,102 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
+      "classId": "accomodation establishments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 44
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "accomodation establishments",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "Maritime Transportation Area",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "Maritime Transportation Area",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "construction and infrastructure Area",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "construction and infrastructure Area",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "community use",
+      "groupId": null,
+      "geographyId": null,
+      "value": 19
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "community use",
+      "groupId": null,
+      "geographyId": null,
+      "value": 7
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "Shipping Area",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "Shipping Area",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "boat charter area",
+      "groupId": null,
+      "geographyId": null,
+      "value": 13
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "boat charter area",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
       "classId": "tuna fishing",
       "groupId": null,
       "geographyId": null,
@@ -102,7 +214,7 @@
       "classId": "K",
       "groupId": null,
       "geographyId": null,
-      "value": 119
+      "value": 197
     },
     {
       "metricId": "ousRespondentCount",
@@ -110,7 +222,7 @@
       "classId": "K",
       "groupId": null,
       "geographyId": null,
-      "value": 28
+      "value": 46
     },
     {
       "metricId": "ousPeopleCount",
@@ -227,103 +339,23 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Gaafaru",
+      "classId": "K - Male'",
       "groupId": null,
       "geographyId": null,
-      "value": 18
+      "value": 82
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Gaafaru",
+      "classId": "K - Male'",
       "groupId": null,
       "geographyId": null,
-      "value": 1
+      "value": 28
     },
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Keyodhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 12
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Keyodhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Maamigili",
-      "groupId": null,
-      "geographyId": null,
-      "value": 12
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Maamigili",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Male'",
-      "groupId": null,
-      "geographyId": null,
-      "value": 39
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Male'",
-      "groupId": null,
-      "geographyId": null,
-      "value": 16
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Goidhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Goidhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Mahibadhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 16
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Mahibadhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Himandhoo",
+      "classId": "K - Hulhumale",
       "groupId": null,
       "geographyId": null,
       "value": 11
@@ -331,7 +363,23 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Himandhoo",
+      "classId": "K - Hulhumale",
+      "groupId": null,
+      "geographyId": null,
+      "value": 5
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Gaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 18
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Gaafaru",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -339,55 +387,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Rasdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 26
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Rasdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Gulhi",
-      "groupId": null,
-      "geographyId": null,
-      "value": 9
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Gulhi",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Thulusdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 27
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Thulusdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Guraidhoo",
+      "classId": "V - Keyodhoo",
       "groupId": null,
       "geographyId": null,
       "value": 12
@@ -395,47 +395,63 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Guraidhoo",
+      "classId": "V - Keyodhoo",
       "groupId": null,
       "geographyId": null,
-      "value": 2
+      "value": 1
     },
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Hulhumale",
+      "classId": "ADh - Maamigili",
       "groupId": null,
       "geographyId": null,
-      "value": 7
+      "value": 12
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Hulhumale",
+      "classId": "ADh - Maamigili",
       "groupId": null,
       "geographyId": null,
-      "value": 3
+      "value": 1
     },
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Vilingili",
+      "classId": "B - Goidhoo",
       "groupId": null,
       "geographyId": null,
-      "value": 7
+      "value": 1
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Vilingili",
+      "classId": "B - Goidhoo",
       "groupId": null,
       "geographyId": null,
-      "value": 3
+      "value": 1
     },
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Neykurendhoo",
+      "classId": "K - En'boodhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 20
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - En'boodhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "ADh - Mahibadhoo",
       "groupId": null,
       "geographyId": null,
       "value": 16
@@ -443,7 +459,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Neykurendhoo",
+      "classId": "ADh - Mahibadhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -451,7 +467,103 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Maduvvari",
+      "classId": "AA - Himandhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 11
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "AA - Himandhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "AA - Rasdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 26
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "AA - Rasdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Gulhi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 11
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Gulhi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Thulusdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 27
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Thulusdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Guraidhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 12
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Guraidhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - The Crossroads Maldives",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - The Crossroads Maldives",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "K - Vilingili",
       "groupId": null,
       "geographyId": null,
       "value": 15
@@ -459,7 +571,23 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Maduvvari",
+      "classId": "K - Vilingili",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "HDh - Neykurendhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 16
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "HDh - Neykurendhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -467,7 +595,23 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Nilandhoo",
+      "classId": "M - Maduvvari",
+      "groupId": null,
+      "geographyId": null,
+      "value": 15
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "M - Maduvvari",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "F - Nilandhoo",
       "groupId": null,
       "geographyId": null,
       "value": 10
@@ -475,10 +619,26 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e4f6fa526687153637445f",
-      "classId": "Nilandhoo",
+      "classId": "F - Nilandhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "unknown-gear",
+      "groupId": null,
+      "geographyId": null,
+      "value": 316
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e4f6fa526687153637445f",
+      "classId": "unknown-gear",
+      "groupId": null,
+      "geographyId": null,
+      "value": 56
     },
     {
       "metricId": "ousPeopleCount",
@@ -502,7 +662,7 @@
       "classId": "Trolling",
       "groupId": null,
       "geographyId": null,
-      "value": 26
+      "value": 14
     },
     {
       "metricId": "ousRespondentCount",
@@ -510,7 +670,7 @@
       "classId": "Trolling",
       "groupId": null,
       "geographyId": null,
-      "value": 10
+      "value": 7
     },
     {
       "metricId": "ousPeopleCount",
@@ -534,7 +694,7 @@
       "classId": "Handline",
       "groupId": null,
       "geographyId": null,
-      "value": 89
+      "value": 52
     },
     {
       "metricId": "ousRespondentCount",
@@ -542,7 +702,7 @@
       "classId": "Handline",
       "groupId": null,
       "geographyId": null,
-      "value": 33
+      "value": 17
     },
     {
       "metricId": "ousPeopleCount",
@@ -566,7 +726,7 @@
       "classId": "Weighted Handline",
       "groupId": null,
       "geographyId": null,
-      "value": 66
+      "value": 29
     },
     {
       "metricId": "ousRespondentCount",
@@ -574,7 +734,7 @@
       "classId": "Weighted Handline",
       "groupId": null,
       "geographyId": null,
-      "value": 31
+      "value": 15
     },
     {
       "metricId": "ousPeopleCount",
@@ -582,7 +742,7 @@
       "classId": "Reef Fishing",
       "groupId": null,
       "geographyId": null,
-      "value": 118
+      "value": 25
     },
     {
       "metricId": "ousRespondentCount",
@@ -590,7 +750,7 @@
       "classId": "Reef Fishing",
       "groupId": null,
       "geographyId": null,
-      "value": 19
+      "value": 5
     },
     {
       "metricId": "ousPeopleCount",
@@ -598,7 +758,7 @@
       "classId": "Big Game",
       "groupId": null,
       "geographyId": null,
-      "value": 87
+      "value": 17
     },
     {
       "metricId": "ousRespondentCount",
@@ -606,7 +766,7 @@
       "classId": "Big Game",
       "groupId": null,
       "geographyId": null,
-      "value": 10
+      "value": 3
     },
     {
       "metricId": "ousPeopleCount",
@@ -614,7 +774,7 @@
       "classId": "Sports Fishing",
       "groupId": null,
       "geographyId": null,
-      "value": 87
+      "value": 17
     },
     {
       "metricId": "ousRespondentCount",
@@ -622,7 +782,7 @@
       "classId": "Sports Fishing",
       "groupId": null,
       "geographyId": null,
-      "value": 10
+      "value": 3
     },
     {
       "metricId": "ousPeopleCount",
@@ -630,7 +790,7 @@
       "classId": "Jigging",
       "groupId": null,
       "geographyId": null,
-      "value": 20
+      "value": 15
     },
     {
       "metricId": "ousRespondentCount",
@@ -638,7 +798,7 @@
       "classId": "Jigging",
       "groupId": null,
       "geographyId": null,
-      "value": 10
+      "value": 8
     },
     {
       "metricId": "ousPeopleCount",
@@ -646,7 +806,7 @@
       "classId": "Spearfishing",
       "groupId": null,
       "geographyId": null,
-      "value": 21
+      "value": 13
     },
     {
       "metricId": "ousRespondentCount",
@@ -654,7 +814,7 @@
       "classId": "Spearfishing",
       "groupId": null,
       "geographyId": null,
-      "value": 7
+      "value": 4
     },
     {
       "metricId": "ousPeopleCount",

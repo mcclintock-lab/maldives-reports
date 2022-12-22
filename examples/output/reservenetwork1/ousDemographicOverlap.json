@@ -6,7 +6,7 @@
       "classId": "ousPeopleCount_all",
       "groupId": null,
       "geographyId": null,
-      "value": 718
+      "value": 757
     },
     {
       "metricId": "ousRespondentCount",
@@ -22,7 +22,7 @@
       "classId": "tuna fishing",
       "groupId": null,
       "geographyId": null,
-      "value": 717
+      "value": 756
     },
     {
       "metricId": "ousRespondentCount",
@@ -35,7 +35,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "bait fishing",
+      "classId": "research conservation",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -43,7 +43,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "bait fishing",
+      "classId": "research conservation",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -70,7 +70,7 @@
       "classId": "GA",
       "groupId": null,
       "geographyId": null,
-      "value": 29
+      "value": 68
     },
     {
       "metricId": "ousRespondentCount",
@@ -150,7 +150,7 @@
       "classId": "K",
       "groupId": null,
       "geographyId": null,
-      "value": 27
+      "value": 28
     },
     {
       "metricId": "ousRespondentCount",
@@ -158,7 +158,7 @@
       "classId": "K",
       "groupId": null,
       "geographyId": null,
-      "value": 2
+      "value": 3
     },
     {
       "metricId": "ousPeopleCount",
@@ -243,22 +243,6 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "unknown-atoll",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "unknown-atoll",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
       "classId": "AA",
       "groupId": null,
       "geographyId": null,
@@ -323,7 +307,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Neykurendhoo",
+      "classId": "HDh - Neykurendhoo",
       "groupId": null,
       "geographyId": null,
       "value": 16
@@ -331,7 +315,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Neykurendhoo",
+      "classId": "HDh - Neykurendhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -339,327 +323,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Viligili",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Viligili",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Kinolhas",
-      "groupId": null,
-      "geographyId": null,
-      "value": 14
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Kinolhas",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Maduvvari",
-      "groupId": null,
-      "geographyId": null,
-      "value": 15
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Maduvvari",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Maradhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 7
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Maradhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Thinadhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 17
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Thinadhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Thulusdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 27
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Thulusdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Naalaafushi",
-      "groupId": null,
-      "geographyId": null,
-      "value": 13
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Naalaafushi",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Mulah",
-      "groupId": null,
-      "geographyId": null,
-      "value": 21
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Mulah",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Rasmaadhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 14
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Rasmaadhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Mahibadhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 48
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Mahibadhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 3
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Ihavandhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 60
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Ihavandhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 3
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Magoodhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 52
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Magoodhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 4
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Biledhhdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 13
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Biledhhdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Vaikaradhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Vaikaradhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Dhidhdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 15
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Dhidhdhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Ken'dhikulhudhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 14
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Ken'dhikulhudhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Makunudhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 18
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Makunudhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Hinnavaru",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Hinnavaru",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Lhohi",
-      "groupId": null,
-      "geographyId": null,
-      "value": 18
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Lhohi",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Rasgetheemu",
-      "groupId": null,
-      "geographyId": null,
-      "value": 19
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Rasgetheemu",
-      "groupId": null,
-      "geographyId": null,
-      "value": 2
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Miladhoo",
+      "classId": "GA - Viligili",
       "groupId": null,
       "geographyId": null,
       "value": 41
@@ -667,23 +331,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Miladhoo",
-      "groupId": null,
-      "geographyId": null,
-      "value": 3
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Naifaru",
-      "groupId": null,
-      "geographyId": null,
-      "value": 34
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Naifaru",
+      "classId": "GA - Viligili",
       "groupId": null,
       "geographyId": null,
       "value": 2
@@ -691,15 +339,15 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Muraidhoo",
+      "classId": "R - Kinolhas",
       "groupId": null,
       "geographyId": null,
-      "value": 22
+      "value": 14
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Muraidhoo",
+      "classId": "R - Kinolhas",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -707,15 +355,15 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "unknown-island",
+      "classId": "M - Maduvvari",
       "groupId": null,
       "geographyId": null,
-      "value": 1
+      "value": 15
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "unknown-island",
+      "classId": "M - Maduvvari",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -723,7 +371,39 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Gemanafushi",
+      "classId": "Addu City - Maradhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 7
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "Addu City - Maradhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "GDh - Thinadhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 17
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "GDh - Thinadhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "K - Thulusdhoo",
       "groupId": null,
       "geographyId": null,
       "value": 27
@@ -731,23 +411,23 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Gemanafushi",
+      "classId": "K - Thulusdhoo",
       "groupId": null,
       "geographyId": null,
-      "value": 1
+      "value": 2
     },
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Dhuvaafaru",
+      "classId": "K - Hulhumale",
       "groupId": null,
       "geographyId": null,
-      "value": 20
+      "value": 1
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Dhuvaafaru",
+      "classId": "K - Hulhumale",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -755,15 +435,15 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Mathiveri",
+      "classId": "M - Naalaafushi",
       "groupId": null,
       "geographyId": null,
-      "value": 15
+      "value": 13
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Mathiveri",
+      "classId": "M - Naalaafushi",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -771,15 +451,15 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Thulhaadhoo",
+      "classId": "M - Mulah",
       "groupId": null,
       "geographyId": null,
-      "value": 15
+      "value": 21
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Thulhaadhoo",
+      "classId": "M - Mulah",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -787,7 +467,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Dhonfanu",
+      "classId": "R - Rasmaadhoo",
       "groupId": null,
       "geographyId": null,
       "value": 14
@@ -795,7 +475,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Dhonfanu",
+      "classId": "R - Rasmaadhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -803,7 +483,103 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Kudarikilu",
+      "classId": "ADh - Mahibadhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 48
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "ADh - Mahibadhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HA - Ihavandhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 60
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HA - Ihavandhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "N - Magoodhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 52
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "N - Magoodhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 4
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "F - Biledhhdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 13
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "F - Biledhhdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HDh - Vaikaradhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HDh - Vaikaradhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HA - Dhidhdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 15
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HA - Dhidhdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "N - Ken'dhikulhudhoo",
       "groupId": null,
       "geographyId": null,
       "value": 14
@@ -811,7 +587,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Kudarikilu",
+      "classId": "N - Ken'dhikulhudhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -819,7 +595,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Holhudhoo",
+      "classId": "HDh - Makunudhoo",
       "groupId": null,
       "geographyId": null,
       "value": 18
@@ -827,23 +603,23 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Holhudhoo",
+      "classId": "HDh - Makunudhoo",
       "groupId": null,
       "geographyId": null,
-      "value": 1
+      "value": 2
     },
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Foakaidhoo",
+      "classId": "Lh - Hinnavaru",
       "groupId": null,
       "geographyId": null,
-      "value": 10
+      "value": 1
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Foakaidhoo",
+      "classId": "Lh - Hinnavaru",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -851,7 +627,119 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Hoarafushi",
+      "classId": "N - Lhohi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 18
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "N - Lhohi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "R - Rasgetheemu",
+      "groupId": null,
+      "geographyId": null,
+      "value": 19
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "R - Rasgetheemu",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "N - Miladhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 41
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "N - Miladhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 3
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "Lh - Naifaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 34
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "Lh - Naifaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HA - Muraidhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 22
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HA - Muraidhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "GA - Gemanafushi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 27
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "GA - Gemanafushi",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "R - Dhuvaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 20
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "R - Dhuvaafaru",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "AA - Mathiveri",
       "groupId": null,
       "geographyId": null,
       "value": 15
@@ -859,7 +747,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Hoarafushi",
+      "classId": "AA - Mathiveri",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -867,7 +755,23 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Thuraakunu",
+      "classId": "B - Thulhaadhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 15
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "B - Thulhaadhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "B - Dhonfanu",
       "groupId": null,
       "geographyId": null,
       "value": 14
@@ -875,7 +779,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Thuraakunu",
+      "classId": "B - Dhonfanu",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -883,15 +787,15 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Maalhendhoo",
+      "classId": "B - Kudarikilu",
       "groupId": null,
       "geographyId": null,
-      "value": 13
+      "value": 14
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Maalhendhoo",
+      "classId": "B - Kudarikilu",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -899,7 +803,23 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Goidhoo",
+      "classId": "N - Holhudhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 18
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "N - Holhudhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "Sh - Foakaidhoo",
       "groupId": null,
       "geographyId": null,
       "value": 10
@@ -907,7 +827,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Goidhoo",
+      "classId": "Sh - Foakaidhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -915,15 +835,15 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Ban'didhoo",
+      "classId": "HA - Hoarafushi",
       "groupId": null,
       "geographyId": null,
-      "value": 16
+      "value": 15
     },
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Ban'didhoo",
+      "classId": "HA - Hoarafushi",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -931,7 +851,23 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Rasdhoo",
+      "classId": "HA - Thuraakunu",
+      "groupId": null,
+      "geographyId": null,
+      "value": 14
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "HA - Thuraakunu",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "N - Maalhendhoo",
       "groupId": null,
       "geographyId": null,
       "value": 13
@@ -939,7 +875,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Rasdhoo",
+      "classId": "N - Maalhendhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -947,10 +883,74 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "B - Goidhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 10
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "B - Goidhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "Dh - Ban'didhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 16
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "Dh - Ban'didhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "AA - Rasdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 13
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "AA - Rasdhoo",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "unknown-gear",
+      "groupId": null,
+      "geographyId": null,
+      "value": 757
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
+      "classId": "unknown-gear",
+      "groupId": null,
+      "geographyId": null,
+      "value": 55
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "627453ac1c322d157c04ee2d",
       "classId": "Handline",
       "groupId": null,
       "geographyId": null,
-      "value": 1228
+      "value": 532
     },
     {
       "metricId": "ousRespondentCount",
@@ -958,7 +958,7 @@
       "classId": "Handline",
       "groupId": null,
       "geographyId": null,
-      "value": 85
+      "value": 38
     },
     {
       "metricId": "ousPeopleCount",
@@ -966,7 +966,7 @@
       "classId": "Pole and Line",
       "groupId": null,
       "geographyId": null,
-      "value": 472
+      "value": 294
     },
     {
       "metricId": "ousRespondentCount",
@@ -974,7 +974,7 @@
       "classId": "Pole and Line",
       "groupId": null,
       "geographyId": null,
-      "value": 39
+      "value": 22
     },
     {
       "metricId": "ousPeopleCount",
@@ -1007,22 +1007,6 @@
       "groupId": null,
       "geographyId": null,
       "value": 5
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Nets",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "627453ac1c322d157c04ee2d",
-      "classId": "Nets",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
     },
     {
       "metricId": "ousPeopleCount",

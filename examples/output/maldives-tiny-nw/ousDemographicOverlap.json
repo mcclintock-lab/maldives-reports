@@ -6,7 +6,7 @@
       "classId": "ousPeopleCount_all",
       "groupId": null,
       "geographyId": null,
-      "value": 121
+      "value": 122
     },
     {
       "metricId": "ousRespondentCount",
@@ -14,7 +14,23 @@
       "classId": "ousRespondentCount_all",
       "groupId": null,
       "geographyId": null,
-      "value": 10
+      "value": 11
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "research conservation",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "research conservation",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
     },
     {
       "metricId": "ousPeopleCount",
@@ -83,6 +99,22 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "K",
+      "groupId": null,
+      "geographyId": null,
+      "value": 19
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "K",
+      "groupId": null,
+      "geographyId": null,
+      "value": 2
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e87958b28c6be67f4fb452",
       "classId": "N",
       "groupId": null,
       "geographyId": null,
@@ -115,22 +147,6 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "K",
-      "groupId": null,
-      "geographyId": null,
-      "value": 18
-    },
-    {
-      "metricId": "ousRespondentCount",
-      "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "K",
-      "groupId": null,
-      "geographyId": null,
-      "value": 1
-    },
-    {
-      "metricId": "ousPeopleCount",
-      "sketchId": "60e87958b28c6be67f4fb452",
       "classId": "GA",
       "groupId": null,
       "geographyId": null,
@@ -147,7 +163,23 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Magoodhoo",
+      "classId": "K - Hulhumale",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "K - Hulhumale",
+      "groupId": null,
+      "geographyId": null,
+      "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "N - Magoodhoo",
       "groupId": null,
       "geographyId": null,
       "value": 39
@@ -155,7 +187,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Magoodhoo",
+      "classId": "N - Magoodhoo",
       "groupId": null,
       "geographyId": null,
       "value": 3
@@ -163,7 +195,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Vashafaru",
+      "classId": "HA - Vashafaru",
       "groupId": null,
       "geographyId": null,
       "value": 5
@@ -171,7 +203,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Vashafaru",
+      "classId": "HA - Vashafaru",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -179,7 +211,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Thuraakunu",
+      "classId": "HA - Thuraakunu",
       "groupId": null,
       "geographyId": null,
       "value": 19
@@ -187,7 +219,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Thuraakunu",
+      "classId": "HA - Thuraakunu",
       "groupId": null,
       "geographyId": null,
       "value": 2
@@ -195,7 +227,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Miladhoo",
+      "classId": "N - Miladhoo",
       "groupId": null,
       "geographyId": null,
       "value": 12
@@ -203,7 +235,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Miladhoo",
+      "classId": "N - Miladhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -211,7 +243,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Ihavandhoo",
+      "classId": "HA - Ihavandhoo",
       "groupId": null,
       "geographyId": null,
       "value": 5
@@ -219,7 +251,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Ihavandhoo",
+      "classId": "HA - Ihavandhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -227,7 +259,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Gaafaru",
+      "classId": "K - Gaafaru",
       "groupId": null,
       "geographyId": null,
       "value": 18
@@ -235,7 +267,7 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Gaafaru",
+      "classId": "K - Gaafaru",
       "groupId": null,
       "geographyId": null,
       "value": 1
@@ -243,7 +275,7 @@
     {
       "metricId": "ousPeopleCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Maamendhoo",
+      "classId": "GA - Maamendhoo",
       "groupId": null,
       "geographyId": null,
       "value": 23
@@ -251,10 +283,26 @@
     {
       "metricId": "ousRespondentCount",
       "sketchId": "60e87958b28c6be67f4fb452",
-      "classId": "Maamendhoo",
+      "classId": "GA - Maamendhoo",
       "groupId": null,
       "geographyId": null,
       "value": 1
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "unknown-gear",
+      "groupId": null,
+      "geographyId": null,
+      "value": 122
+    },
+    {
+      "metricId": "ousRespondentCount",
+      "sketchId": "60e87958b28c6be67f4fb452",
+      "classId": "unknown-gear",
+      "groupId": null,
+      "geographyId": null,
+      "value": 11
     },
     {
       "metricId": "ousPeopleCount",

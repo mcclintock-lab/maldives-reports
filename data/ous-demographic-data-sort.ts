@@ -15,6 +15,6 @@ const sortedShapes = shapeFc.features.sort((a, b) =>
   a.properties.resp_id.localeCompare(b.properties.resp_id)
 );
 fs.writeFileSync(
-  "./data/dist/ous_all_report_ready.json",
+  "./data/src/Analytics/ous_all_report_ready_sorted.geojson",
   JSON.stringify({ ...shapeFc, features: sortedShapes })
 );

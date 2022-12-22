@@ -35,49 +35,58 @@ const OusDemographics = () => {
   return (
     <>
       <ResultsCard
-        title="Fisher Demographics - 2022 Ocean Use Survey"
+        title="Ocean Use Demographics"
         functionName="ousDemographicOverlap"
       >
         {(data: ReportResult) => {
           // Filter down to people count metrics for top-level sketch
 
-          const singleMetrics = data.metrics.filter(
+          const singlePeopleCountMetrics = data.metrics.filter(
             (m) =>
               m.sketchId === data.sketch.properties.id &&
               m.metricId &&
               m.metricId === "ousPeopleCount"
           );
 
-          const singleTotalMetrics = precalcTotals.metrics.filter(
+          const singlePeopleTotalCountMetrics = precalcTotals.metrics.filter(
             (m) => m.metricId === "ousPeopleCount"
           );
 
-          const sketchPeopleCountMetric = singleMetrics.find(
+          const singlePeopleTotalCountMetric = precalcTotals.metrics.find(
             (m) => m.classId === "ousPeopleCount_all"
           );
-          if (!sketchPeopleCountMetric)
-            throw new Error("Expected to find sketch people count metric");
-          const sketchPeopleCountFormatted = Number.format(
-            sketchPeopleCountMetric.value as number
+          if (!singlePeopleTotalCountMetric)
+            throw new Error("Expected to find total people count metric");
+          const singlePeopletotalCountFormatted = Number.format(
+            singlePeopleTotalCountMetric.value as number
           );
 
-          const sketchPeopleCountPercMetric = toPercentMetric(
-            [sketchPeopleCountMetric],
-            singleTotalMetrics
+          const singlePeopleCountMetric = singlePeopleCountMetrics.find(
+            (m) => m.classId === "ousPeopleCount_all"
+          );
+          if (!singlePeopleCountMetric)
+            throw new Error("Expected to find sketch people count metric");
+          const singlePeopleCountFormatted = Number.format(
+            singlePeopleCountMetric.value as number
+          );
+
+          const singlePeopleCountPercMetric = toPercentMetric(
+            [singlePeopleCountMetric],
+            singlePeopleTotalCountMetrics
           )[0];
-          if (!sketchPeopleCountPercMetric)
+          if (!singlePeopleCountPercMetric)
             throw new Error(
               "Expected to find sketch people count total metric"
             );
-          const sketchPeopleCountPercFormatted = percentWithEdge(
-            sketchPeopleCountPercMetric.value
+          const singlePeopleCountPercFormatted = percentWithEdge(
+            singlePeopleCountPercMetric.value
           );
 
           const singleFullMetrics = [
-            ...singleMetrics,
+            ...singlePeopleCountMetrics,
             ...toPercentMetric(
-              singleMetrics,
-              singleTotalMetrics,
+              singlePeopleCountMetrics,
+              singlePeopleTotalCountMetrics,
               PERC_METRIC_ID
             ),
           ];
@@ -86,7 +95,7 @@ const OusDemographics = () => {
           const sectorClassIds = sectorMetricGroup.classes.map(
             (curClass) => curClass.classId
           );
-          const sectorTotalMetrics = singleTotalMetrics
+          const sectorTotalMetrics = singlePeopleTotalCountMetrics
             .filter((m) => m.classId && sectorClassIds.includes(m.classId))
             .map((m) => ({ ...m, metricId: TOTAL_METRIC_ID }));
           const sectorMetrics = singleFullMetrics
@@ -101,7 +110,7 @@ const OusDemographics = () => {
           const atollClassIds = atollMetricGroup.classes.map(
             (curClass) => curClass.classId
           );
-          const atollTotalMetrics = singleTotalMetrics
+          const atollTotalMetrics = singlePeopleTotalCountMetrics
             .filter((m) => m.classId && atollClassIds.includes(m.classId))
             .map((m) => ({ ...m, metricId: TOTAL_METRIC_ID }));
           const atollMetrics = singleFullMetrics
@@ -116,7 +125,7 @@ const OusDemographics = () => {
           const islandClassIds = islandMetricGroup.classes.map(
             (curClass) => curClass.classId
           );
-          const islandTotalMetrics = singleTotalMetrics
+          const islandTotalMetrics = singlePeopleTotalCountMetrics
             .filter((m) => m.classId && islandClassIds.includes(m.classId))
             .map((m) => ({ ...m, metricId: TOTAL_METRIC_ID }));
           const islandMetrics = singleFullMetrics
@@ -132,7 +141,7 @@ const OusDemographics = () => {
           const gearClassIds = gearMetricGroup.classes.map(
             (curClass) => curClass.classId
           );
-          const gearTotalMetrics = singleTotalMetrics
+          const gearTotalMetrics = singlePeopleTotalCountMetrics
             .filter((m) => m.classId && gearClassIds.includes(m.classId))
             .map((m) => ({ ...m, metricId: TOTAL_METRIC_ID }));
           const gearMetrics = singleFullMetrics
@@ -152,31 +161,37 @@ const OusDemographics = () => {
                   msg={
                     <span>
                       This is a <b>draft</b> report. Further changes or
-                      corrections may be made. Please report any issues.
+                      corrections may be made. Please report any issues. Survey
+                      results last updated: 12/22/2022
                     </span>
                   }
                 />
               </p>
               <p>
-                This report summarizes the people that fish within this offshore
-                plan, as reported in the Ocean Use Survey. Plans should consider
-                the potential benefits and impacts to these people if access or
-                activities are restricted.
+                This report summarizes the people that use the ocean within this
+                offshore plan, as represented by the 2022 Ocean Use Survey.
+                Plans should consider the potential benefits and impacts to
+                these people if access or activities are restricted.
               </p>
               <KeySection>
-                <b>{sketchPeopleCountFormatted} fishers</b>, or{" "}
-                <b>{sketchPeopleCountPercFormatted}</b> of the total fishers
-                represented in the Ocean Use Survey, fish within this plan using{" "}
-                <b>{numGearsFormatted} gear types</b>. They come from{" "}
+                <b>{singlePeopleCountFormatted}</b> of the{" "}
+                <b>{singlePeopletotalCountFormatted}</b> people represented by
+                this survey, use the ocean within this plan. This is{" "}
+                <b>{singlePeopleCountPercFormatted}</b>. They come from{" "}
                 <b>{numIslandsFormatted} islands</b> within{" "}
-                <b>{numAtollsFormatted} atolls</b> to participate in{" "}
+                <b>{numAtollsFormatted} atolls</b> acros{" "}
                 <b>
-                  {numSectorsFormatted} fishing sector
+                  {numSectorsFormatted} sector
                   {numSectors > 1 ? "s" : ""}
                 </b>
-                .
+                . Those that fish within this plan use{" "}
+                <b>{numGearsFormatted} gear types</b>.
               </KeySection>
 
+              <p>
+                What follows is a breakdown of the number of people represented{" "}
+                <b>by sector</b>.
+              </p>
               <ClassTable
                 rows={sectorMetrics}
                 dataGroup={sectorMetricGroup}
@@ -187,7 +202,7 @@ const OusDemographics = () => {
                     width: 20,
                   },
                   {
-                    columnLabel: "Total Fishers Within Sector",
+                    columnLabel: "Total People Represented In Sector",
                     type: "metricValue",
                     metricId: TOTAL_METRIC_ID,
                     valueFormatter: (value) => Number.format(value as number),
@@ -198,7 +213,7 @@ const OusDemographics = () => {
                     colStyle: { textAlign: "right" },
                   },
                   {
-                    columnLabel: "# That Fish Within Plan",
+                    columnLabel: "People Using Ocean Within Plan",
                     type: "metricValue",
                     metricId: METRIC_ID,
                     valueFormatter: (value) => Number.format(value as number),
@@ -209,7 +224,7 @@ const OusDemographics = () => {
                     colStyle: { textAlign: "right" },
                   },
                   {
-                    columnLabel: "% That Fish Within Plan",
+                    columnLabel: "% Using Ocean Within Plan",
                     type: "metricChart",
                     metricId: PERC_METRIC_ID,
                     valueFormatter: "percent",
@@ -227,6 +242,13 @@ const OusDemographics = () => {
               />
 
               <Collapse title="Show by Gear Type">
+                <p>
+                  The <b>Unknown</b> gear type represents respondents the number
+                  of respondents that don't fish, so they don't have a gear
+                  type. Note that fishers can and did report multiple gear types
+                  within each of their areas, so these gear type totals *do not*
+                  sum to the total number of respondents above.
+                </p>
                 <ClassTable
                   rows={gearMetrics}
                   dataGroup={gearMetricGroup}
@@ -238,7 +260,7 @@ const OusDemographics = () => {
                       colStyle: { textAlign: "right" },
                     },
                     {
-                      columnLabel: "Total Fishers Using Gear Type",
+                      columnLabel: "Total People Using Gear Type",
                       type: "metricValue",
                       metricId: TOTAL_METRIC_ID,
                       valueFormatter: (value) => Number.format(value as number),
@@ -248,7 +270,7 @@ const OusDemographics = () => {
                       width: 20,
                     },
                     {
-                      columnLabel: "Fishers Using Gear Type Within Plan",
+                      columnLabel: "People Using Gear Type Within Plan",
                       type: "metricValue",
                       metricId: METRIC_ID,
                       valueFormatter: (value) => Number.format(value as number),
@@ -259,7 +281,7 @@ const OusDemographics = () => {
                       colStyle: { textAlign: "right" },
                     },
                     {
-                      columnLabel: "% Fishing Within Plan",
+                      columnLabel: "% Using Gear Type Within Plan",
                       type: "metricChart",
                       metricId: PERC_METRIC_ID,
                       valueFormatter: "percent",
@@ -283,12 +305,12 @@ const OusDemographics = () => {
                   dataGroup={atollMetricGroup}
                   columnConfig={[
                     {
-                      columnLabel: "Fisher Atoll Of Origin",
+                      columnLabel: "Person Atoll Of Origin",
                       type: "class",
                       width: 20,
                     },
                     {
-                      columnLabel: "Total Fishers From Atoll",
+                      columnLabel: "Total People Represented From Atoll",
                       type: "metricValue",
                       metricId: TOTAL_METRIC_ID,
                       valueFormatter: (value) => Number.format(value as number),
@@ -299,7 +321,7 @@ const OusDemographics = () => {
                       colStyle: { textAlign: "right" },
                     },
                     {
-                      columnLabel: "# That Fish Within Plan",
+                      columnLabel: "People From Atoll Within Plan",
                       type: "metricValue",
                       metricId: METRIC_ID,
                       valueFormatter: (value) => Number.format(value as number),
@@ -310,7 +332,7 @@ const OusDemographics = () => {
                       colStyle: { textAlign: "right" },
                     },
                     {
-                      columnLabel: "% Fishers Fishing Within Plan",
+                      columnLabel: "% People From Atoll Within Plan",
                       type: "metricChart",
                       metricId: PERC_METRIC_ID,
                       valueFormatter: "percent",
@@ -329,18 +351,22 @@ const OusDemographics = () => {
               </Collapse>
 
               <Collapse title="Show by Island">
+                <p>
+                  Island names are not unique, so they are prepended with the
+                  atoll number in order to differentiate them, and their counts
+                </p>
                 <ClassTable
                   rows={islandMetrics}
                   dataGroup={islandMetricGroup}
                   columnConfig={[
                     {
-                      columnLabel: "Fisher Island of Origin",
+                      columnLabel: "Person Island of Origin",
                       type: "class",
                       width: 20,
                       colStyle: { textAlign: "right" },
                     },
                     {
-                      columnLabel: "Total Fishers From Island",
+                      columnLabel: "Total People Represented From Island",
                       type: "metricValue",
                       metricId: TOTAL_METRIC_ID,
                       valueFormatter: (value) => Number.format(value as number),
@@ -350,7 +376,7 @@ const OusDemographics = () => {
                       width: 20,
                     },
                     {
-                      columnLabel: "# That Fish Within Plan",
+                      columnLabel: "People From Atoll Within Plan",
                       type: "metricValue",
                       metricId: METRIC_ID,
                       valueFormatter: (value) => Number.format(value as number),
@@ -361,7 +387,7 @@ const OusDemographics = () => {
                       colStyle: { textAlign: "right" },
                     },
                     {
-                      columnLabel: "% Fishing Within Plan",
+                      columnLabel: "% People From Atoll Within Plan",
                       type: "metricChart",
                       metricId: PERC_METRIC_ID,
                       valueFormatter: "percent",
@@ -385,23 +411,23 @@ const OusDemographics = () => {
                   who is using the ocean, and where they are using it.
                 </p>
                 <p>
-                  This report provides a breakdown of the fishers that use the
+                  This report provides a breakdown of the people that use the
                   ocean within this plan, by sector, atoll, and island.
                 </p>
                 <p>
                   Note, this report is only representative of the individuals
-                  that were surveyed and the number of fishers they were said to
+                  that were surveyed and the number of people they were said to
                   represent.
                 </p>
                 <p>
                   🎯 Planning Objective: there is no specific objective/target
-                  for limiting the potential impact to groups of fishers.
+                  for limiting the potential impact to groups of people.
                 </p>
                 <p>
                   📈 Report: Percentages are calculated by summing the number of
-                  fishers within a group that fishin within the boundaries of
-                  this plan and dividing it by the total number of fishers
-                  within this group.
+                  people that use the ocean within the boundaries of this plan
+                  for each sector and dividing it by the total number of people
+                  that use the ocean within the sector.
                 </p>
               </Collapse>
             </>
